@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lesson31.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MilkshapeModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lesson31.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MilkshapeModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loadGLTexture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

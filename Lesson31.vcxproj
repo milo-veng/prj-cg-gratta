@@ -14,6 +14,7 @@
     <SccProjectName />
     <SccLocalPath />
     <ProjectGuid>{81BD1CBD-9914-4113-836A-0AAC8D5D4147}</ProjectGuid>
+    <ProjectName>progetto cg</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -86,7 +87,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>.\Debug\Lesson31.exe</OutputFile>
+      <OutputFile>.\Debug\progetto cg.exe</OutputFile>
       <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
@@ -129,12 +130,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lesson31.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="MilkshapeModel.cpp" />
     <ClCompile Include="Model.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lesson31.h" />
+    <ClInclude Include="loadGLTexture.h" />
     <ClInclude Include="MilkshapeModel.h" />
     <ClInclude Include="Model.h" />
   </ItemGroup>

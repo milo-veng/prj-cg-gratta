@@ -15,7 +15,7 @@
 #include <gl\gl.h>			// Header File For The OpenGL32 Library
 
 #include "Model.h"
-#include "Lesson31.h"
+#include "loadGLTexture.h"
 
 Model::Model()
 {
