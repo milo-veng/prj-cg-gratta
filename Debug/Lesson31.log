@@ -1,0 +1,18 @@
+﻿Build started 04/12/2014 16.01.44.
+     1>Project "C:\Users\milo\Desktop\CG\nehe tutorials\lesson31-loading milkshape model\Lesson31\Lesson31.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio 2012 Express\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Lesson31.cpp
+         Lesson31.cpp
+     1>c:\users\milo\desktop\cg\nehe tutorials\lesson31-loading milkshape model\lesson31\lesson31.cpp(102): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio 2012 express\vc\include\stdio.h(218): vedere la dichiarazione di 'fopen'
+     1>c:\users\milo\desktop\cg\nehe tutorials\lesson31-loading milkshape model\lesson31\lesson31.cpp(220): warning C4244: 'argomento': conversione da 'float' a 'GLint'. Possibile perdita di dati.
+       Link:
+         D:\Visual Studio 2012 Express\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\Lesson31.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\Lesson31.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\Lesson31.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\Lesson31.obj
+         .\Debug\MilkshapeModel.obj
+         .\Debug\Model.obj
+         Lesson31.vcxproj -> C:\Users\milo\Desktop\CG\nehe tutorials\lesson31-loading milkshape model\Lesson31\.\Debug\Lesson31.exe
+     1>Done Building Project "C:\Users\milo\Desktop\CG\nehe tutorials\lesson31-loading milkshape model\Lesson31\Lesson31.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.21
