@@ -13,6 +13,8 @@
 
 #include <windows.h>		// Header File For Windows
 #include <gl\gl.h>			// Header File For The OpenGL32 Library
+#include <gl/GLU.h>
+#include <gl/GLAUX.H>
 
 #include "Model.h"
 #include "loadGLTexture.h"

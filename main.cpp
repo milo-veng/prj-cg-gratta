@@ -15,6 +15,7 @@
 using namespace std;
 
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
+#include "MyFPSCamera.h"											//header per la telecamera
 
 
 
@@ -23,7 +24,7 @@ using namespace std;
 #pragma comment( lib, "glaux.lib" )									// Search For GLaux.lib While Linking    ( NEW )
 
 
-const double PIGRECO = 3.14159265;
+#define PIGRECO 3.14159265
 
 
 HDC			hDC=NULL;												// Private GDI Device Context
@@ -37,58 +38,15 @@ bool	keys[256];													// Array Used For The Keyboard Routine
 bool	active=TRUE;												// Window Active Flag Set To TRUE By Default
 bool	fullscreen=TRUE;											// Fullscreen Flag Set To Fullscreen Mode By Default
 
-GLfloat	yrot=0.0f;													// Y Rotation
-
 //SKYDOME
 GLUquadricObj *skydome;
 GLuint skydomeTexture;
 
+//telecamera in 1 persona stile FPS
+MyFPSCamera camera;
+unsigned int lastUpdate = 0;
 
 
-//posizione player(telecamera)
-struct DATASTRUCT {
-	
-	//posiz. camera nello spazioe
-	double xpos;
-	double ypos;
-	double zpos;
-
-	//rotaz. camera rispetto ai 3 assi
-	double anglex;
-	double angley;
-	double anglez;
-
-	//line of sight
-	double lx;
-	double ly;
-	double lz;
-
-	double cameraMovementspeed; //velocità movimento avanti/indietro
-	double cameraRotationSpeed;
-
-
-	//movimento del mouse
-	double mouseDeltaX;
-	double mouseDeltaY;
-
-
-	DATASTRUCT() {
-		xpos  = 75; zpos = 1.0f; //posiz. sul terreno
-		ypos = 3.0f; //altezza
-		
-
-		anglex = angley = anglez = 0.0;
-
-		lx = ly = lz = 0.0;
-
-		cameraMovementspeed = 3.0;
-		cameraRotationSpeed = 0.1;
-
-		mouseDeltaX = mouseDeltaY = 0.0;
-	}
-} ;
-
-DATASTRUCT Data;
 
 
 LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);				// Declaration For WndProc
@@ -127,9 +85,11 @@ GLuint LoadGLTexture( const char *filename )						// Load Bitmaps And Convert To
 
 		// Typical Texture Generation Using Data From The Bitmap
 		glBindTexture(GL_TEXTURE_2D, texture);
+		//gluBuild2DMipmaps( GL_TEXTURE_2D, 3, 256, 256, GL_RGB, GL_UNSIGNED_BYTE, pImage );
 		glTexImage2D(GL_TEXTURE_2D, 0, 3, pImage->sizeX, pImage->sizeY, 0, GL_RGB, GL_UNSIGNED_BYTE, pImage->data);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+
 
 		free(pImage->data);											// Free The Texture Image Memory
 		free(pImage);												// Free The Image Structure
@@ -190,21 +150,31 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 	GLfloat diffuseLight[] = { 0.8f, 0.7f, 0.7f, 1.0f };
 	GLfloat lightPosition[] = { 75.0f, 90.0f, 75.0f, 1.0f };
 
+
+
+	//luce globale
+	GLfloat global_ambient[] = { 1.0f, 1.0f, 1.0f, 1.0f }; 
+	glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
+
+
+	//una luce
 	glLightfv( GL_LIGHT0, GL_AMBIENT, ambientLight );
 	glLightfv( GL_LIGHT0, GL_DIFFUSE, diffuseLight );
 	glLightfv( GL_LIGHT0, GL_POSITION, lightPosition );
 	glEnable( GL_LIGHT0 );
+	glEnable( GL_NORMALIZE );								//prima di applicare luci normalizza i vettori se necessario
 
 
-	//posiz. iniziale delle telecamera
-	gluLookAt( Data.xpos, Data.ypos, Data.zpos, 0, Data.angley, Data.anglex, 0, 1, 0 );
+	//direzione iniziale verso la quale è rivolta la telecamera
+	camera.lx = cos( camera.angley ); 
+	camera.lz = -sin( camera.angley );
+
+	//posiziona la telecamera
+	gluLookAt( camera.xpos, camera.ypos, camera.zpos, 0, camera.angley, camera.anglex, 0, 1, 0 );
 	
 
-	Data.angley += 0.1;
-	Data.lx = cos( Data.angley );
-	Data.lz = -sin( Data.angley );
 
-	//glEnable( GL_CULL_FACE );		//non lo uso per via della skybox
+	//glEnable( GL_CULL_FACE );		//non lo uso per via della skybox e degli interni dei modelli
 
 
 	return TRUE;													// Initialization Went OK
@@ -220,29 +190,34 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	
 	//telecamera, xpos + lx; zpos+lz
-	gluLookAt( Data.xpos, Data.ypos, Data.zpos, Data.xpos+Data.lx, Data.ypos, Data.zpos+Data.lz, 0.0f, 1.0f, 0.0f );
+	gluLookAt( camera.xpos, camera.ypos, camera.zpos, camera.xpos+camera.lx, camera.ypos, camera.zpos+camera.lz, 0.0f, 1.0f, 0.0f );
 
 
 
 	//disegno SKYDOME
 	glBindTexture( GL_TEXTURE_2D, skydomeTexture );
 	glEnable(GL_TEXTURE_2D );
-	float raggio = 400.0, slices = 400.0;
+	glPushMatrix();											//salva lo stato corrente prima di fare la rotazione
+	gluQuadricOrientation( skydome, GLU_INSIDE );			//inverte le normali, così posso usare l'illuminazione dentro alla sfera
+	glRotatef( 180.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
+	int raggio = 400, slices = 800;
 	gluSphere( skydome, raggio, slices, 10 );
-	
+	glPopMatrix();											//rimette a posto dopo la rotazione
+
 
 	//disegno modelli 3D
 	pModel->draw();
 
-
-	//????
-	//glTranslated(-Data.xpos,-Data.ypos,-Data.zpos); //translate the screento the position of our camera
 
 
 	glEnable (GL_DEPTH_TEST); //enable the depth testing
     glEnable (GL_LIGHTING); //enable the lighting
     glEnable (GL_LIGHT0); //enable LIGHT0, our Diffuse Light
     glShadeModel (GL_SMOOTH); //set the shader to smooth shader
+
+
+	//tempo impiegato dall'ultimo frame
+	lastUpdate = GetTickCount();
 
 
 	return TRUE;
@@ -503,12 +478,23 @@ LRESULT CALLBACK WndProc(	HWND	hWnd,							// Handle For This Window
 		case WM_KEYDOWN:											// Is A Key Being Held Down?
 		{
 			keys[wParam] = TRUE;									// If So, Mark It As TRUE
+
+			//tiene premuto left shift -> corsa
+			if( wParam == VK_SHIFT ) 
+				camera.run();
+			
+
 			return 0;												// Jump Back
 		}
 
 		case WM_KEYUP:												// Has A Key Been Released?
 		{
 			keys[wParam] = FALSE;									// If So, Mark It As FALSE
+
+			//left shift rilasciato -> walk
+			if( wParam == VK_SHIFT ) 
+				camera.walk();
+
 			return 0;												// Jump Back
 		}
 
@@ -532,7 +518,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	BOOL	done=FALSE;												// Bool Variable To Exit Loop
 
 	pModel = new MilkshapeModel();									// Memory To Hold The Model
-	if ( pModel->loadModelData( "data/terrenomio.ms3d" ) == false )		// Loads The Model And Checks For Errors
+	if ( pModel->loadModelData( "data/terrenodirt.ms3d" ) == false )		// Loads The Model And Checks For Errors
 	{
 		MessageBox( NULL, "Couldn't load the model data\\model.ms3d", "Error", MB_OK | MB_ICONERROR );
 		return 0;													// If Model Didn't Load Quit
@@ -553,6 +539,11 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	{
 		return 0;													// Quit If Window Was Not Created
 	}
+
+
+	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
+	lastUpdate = GetTickCount();
+
 
 	while(!done)													// Loop That Runs While done=FALSE
 	{
@@ -596,48 +587,39 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 			//rotazione telecamera
 			if( keys[VK_LEFT] ) {
-				//rotazione risp. asse y - YAW
-				if( Data.angley + Data.cameraRotationSpeed > 2*PIGRECO )
-					Data.angley = 0.0;
-
-				Data.angley += Data.cameraRotationSpeed;
-
-				Data.lx = cos( Data.angley );
-				Data.lz = -sin( Data.angley );
+				camera.rotateLeft(lastUpdate);
 			}
 			if(keys[VK_RIGHT] ) {
-				//rotaz. risp asse y - YAW
-				if( Data.angley - Data.cameraRotationSpeed < 0 ) 
-					Data.angley = 2*PIGRECO;
-
-				Data.angley -= Data.cameraRotationSpeed;
-
-
-				Data.lx = cos( Data.angley );
-				Data.lz = -sin( Data.angley );
-				
+				camera.rotateRight(lastUpdate);
 			}
 
 			//movimento avanti/indietro
 			if(keys[VK_UP] || keys[0x57]) { //W
-				Data.xpos += Data.lx*Data.cameraMovementspeed;
-				Data.zpos += Data.lz*Data.cameraMovementspeed;
+				camera.moveForward(lastUpdate);
 			}
 			if(keys[VK_DOWN] || keys[0x53] ) { //S
-				Data.xpos -= Data.lx*Data.cameraMovementspeed;
-				Data.zpos -= Data.lz*Data.cameraMovementspeed;
+				camera.moveBackward(lastUpdate);
 			}
 
 			//altezza telecamera
-			if( keys[0x45] ) { //Q
-				Data.ypos -= Data.cameraMovementspeed;
+			if( keys[0x51] ) { //Q
+				camera.moveUp(lastUpdate);
 			}
 
-			if( keys[0x51] ) { //E
-				Data.ypos += Data.cameraMovementspeed;
+			if( keys[0x45] ) { //E
+				camera.moveDown(lastUpdate);
 			}
 
+			//strafe laterale
+			if( keys[0x41] ) { //A
+				camera.strafeLeft(lastUpdate);
+			}
 
+			if( keys[0x44] ) { //D
+				camera.strafeRight(lastUpdate);
+			}
+
+			
 
 		}
 	}
