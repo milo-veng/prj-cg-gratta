@@ -135,7 +135,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 
 	glEnable(GL_TEXTURE_2D);										// Enable Texture Mapping ( NEW )
-	glShadeModel(GL_SMOOTH);										// Enable Smooth Shading
+	glShadeModel(GL_SMOOTH);										// Enable flat(low poly style) Shading
 	glClearColor(0.0f, 0.0f, 0.0f, 0.5f);							// Black Background
 	glClearDepth(1.0f);												// Depth Buffer Setup
 	glEnable(GL_DEPTH_TEST);										// Enables Depth Testing
@@ -147,7 +147,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 	glEnable( GL_LIGHTING );
 
 	GLfloat ambientLight[] = { 0.9f, 0.9f, 0.9f, 1.0f };
-	GLfloat diffuseLight[] = { 0.8f, 0.7f, 0.7f, 1.0f };
+	GLfloat diffuseLight[] = { 0.8f, 0.8f, 0.8f, 1.0f };
 	GLfloat lightPosition[] = { 75.0f, 90.0f, 75.0f, 1.0f };
 
 
@@ -213,7 +213,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	glEnable (GL_DEPTH_TEST); //enable the depth testing
     glEnable (GL_LIGHTING); //enable the lighting
     glEnable (GL_LIGHT0); //enable LIGHT0, our Diffuse Light
-    glShadeModel (GL_SMOOTH); //set the shader to smooth shader
+    glShadeModel (GL_SMOOTH); //set the shader to flat(per low poly effect) shader
 
 
 	//tempo impiegato dall'ultimo frame
@@ -520,7 +520,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	pModel = new MilkshapeModel();									// Memory To Hold The Model
 	if ( pModel->loadModelData( "data/terrenodirt.ms3d" ) == false )		// Loads The Model And Checks For Errors
 	{
-		MessageBox( NULL, "Couldn't load the model data\\model.ms3d", "Error", MB_OK | MB_ICONERROR );
+		MessageBox( NULL, "WinMain(...): impossibile caricare il modello ms3d!", "Error", MB_OK | MB_ICONERROR );
 		return 0;													// If Model Didn't Load Quit
 	}
 	else {
@@ -529,10 +529,11 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 
 	// Ask The User Which Screen Mode They Prefer
-	if (MessageBox(NULL,"Would You Like To Run In Fullscreen Mode?", "Start FullScreen?",MB_YESNO|MB_ICONQUESTION)==IDNO)
+	/*if (MessageBox(NULL,"Would You Like To Run In Fullscreen Mode?", "Start FullScreen?",MB_YESNO|MB_ICONQUESTION)==IDNO)
 	{
 		fullscreen=FALSE;											// Windowed Mode
-	}
+	}*/
+	fullscreen = FALSE;
 
 	// Create Our OpenGL Window
 	if (!CreateGLWindow("Brett Porter & NeHe's Model Rendering Tutorial",640,480,16,fullscreen))
