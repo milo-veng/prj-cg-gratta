@@ -47,6 +47,10 @@ MyFPSCamera camera;
 unsigned int lastUpdate = 0;
 
 
+//opzioni - DEBUG
+bool fodEnabled = true;
+
+
 
 
 LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);				// Declaration For WndProc
@@ -135,7 +139,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 
 	glEnable(GL_TEXTURE_2D);										// Enable Texture Mapping ( NEW )
-	glShadeModel(GL_SMOOTH);										// Enable flat(low poly style) Shading
+	glShadeModel(GL_FLAT);										// Enable flat(low poly style) Shading
 	glClearColor(0.0f, 0.0f, 0.0f, 0.5f);							// Black Background
 	glClearDepth(1.0f);												// Depth Buffer Setup
 	glEnable(GL_DEPTH_TEST);										// Enables Depth Testing
@@ -146,23 +150,44 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 	//illuminazione
 	glEnable( GL_LIGHTING );
 
-	GLfloat ambientLight[] = { 0.9f, 0.9f, 0.9f, 1.0f };
+	GLfloat ambientLight[] = { 0.4f, 0.4f, 0.4f, 1.0f };
 	GLfloat diffuseLight[] = { 0.8f, 0.8f, 0.8f, 1.0f };
-	GLfloat lightPosition[] = { 75.0f, 90.0f, 75.0f, 1.0f };
+	GLfloat lightPosition[] = { 0.0f, 30.0, 0.0f, 1.0f };
 
 
 
-	//luce globale
-	GLfloat global_ambient[] = { 1.0f, 1.0f, 1.0f, 1.0f }; 
-	glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
-
+	//luce globale - NB: meglio non usarlo con i terrain .ms3d perchè poichè c'è troppa luce!
+	//GLfloat global_ambient[] = { 0.2f, 0.2f, 0.2f, 1.0f }; 
+	//glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
+	//glEnable( GL_LIGHT_MODEL_AMBIENT );
 
 	//una luce
 	glLightfv( GL_LIGHT0, GL_AMBIENT, ambientLight );
 	glLightfv( GL_LIGHT0, GL_DIFFUSE, diffuseLight );
 	glLightfv( GL_LIGHT0, GL_POSITION, lightPosition );
-	glEnable( GL_LIGHT0 );
+	//glEnable( GL_LIGHT0 );
+
 	glEnable( GL_NORMALIZE );								//prima di applicare luci normalizza i vettori se necessario
+
+	
+
+
+
+
+	//prova nebbia
+	if( fodEnabled ) {
+		GLfloat fogDensity = 0.01;
+		GLfloat fogColor[] = { 0.5, 0.5, 0.5, 1.0 };
+
+		glEnable( GL_DEPTH_TEST );
+		glEnable( GL_FOG );
+		glFogi( GL_FOG_MODE, GL_EXP2 );
+		glFogfv( GL_FOG_COLOR, fogColor );
+		glFogf( GL_FOG_DENSITY, fogDensity );
+		glHint( GL_FOG_HINT, GL_NICEST ); 
+	}
+
+
 
 
 	//direzione iniziale verso la quale è rivolta la telecamera
@@ -195,6 +220,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 
 	//disegno SKYDOME
+	if( fodEnabled ) { glDisable(GL_FOG ); }				//se la nebbia è attiva la disabilita in modo da non coprire la skybox
 	glBindTexture( GL_TEXTURE_2D, skydomeTexture );
 	glEnable(GL_TEXTURE_2D );
 	glPushMatrix();											//salva lo stato corrente prima di fare la rotazione
@@ -203,6 +229,8 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	int raggio = 400, slices = 800;
 	gluSphere( skydome, raggio, slices, 10 );
 	glPopMatrix();											//rimette a posto dopo la rotazione
+	if( fodEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
+
 
 
 	//disegno modelli 3D
@@ -213,8 +241,9 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	glEnable (GL_DEPTH_TEST); //enable the depth testing
     glEnable (GL_LIGHTING); //enable the lighting
     glEnable (GL_LIGHT0); //enable LIGHT0, our Diffuse Light
-    glShadeModel (GL_SMOOTH); //set the shader to flat(per low poly effect) shader
+    glShadeModel (GL_FLAT); //set the shader to flat(per low poly effect) shader
 
+	
 
 	//tempo impiegato dall'ultimo frame
 	lastUpdate = GetTickCount();
@@ -518,7 +547,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	BOOL	done=FALSE;												// Bool Variable To Exit Loop
 
 	pModel = new MilkshapeModel();									// Memory To Hold The Model
-	if ( pModel->loadModelData( "data/terrenodirt.ms3d" ) == false )		// Loads The Model And Checks For Errors
+	if ( pModel->loadModelData( "data/lowpolyLandscape.ms3d" ) == false )		// Loads The Model And Checks For Errors
 	{
 		MessageBox( NULL, "WinMain(...): impossibile caricare il modello ms3d!", "Error", MB_OK | MB_ICONERROR );
 		return 0;													// If Model Didn't Load Quit

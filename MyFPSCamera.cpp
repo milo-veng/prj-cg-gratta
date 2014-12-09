@@ -10,7 +10,7 @@ MyFPSCamera::MyFPSCamera(void) {
 
 		PIGRECO = 3.14159265;
 
-		xpos  = 75; zpos = 1.0f; //posiz. sul terreno
+		xpos  = 0.0; zpos = 0.0f; //posiz. sul terreno
 		ypos = 4.5f; //altezza della telecamera( 1.0 è circa sul terreno)
 		
 
