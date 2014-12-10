@@ -48,7 +48,7 @@ unsigned int lastUpdate = 0;
 
 
 //opzioni - DEBUG
-bool fodEnabled = true;
+bool fodEnabled = false;
 
 
 
@@ -176,7 +176,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 	//prova nebbia
 	if( fodEnabled ) {
-		GLfloat fogDensity = 0.01;
+		GLfloat fogDensity = 0.005;
 		GLfloat fogColor[] = { 0.5, 0.5, 0.5, 1.0 };
 
 		glEnable( GL_DEPTH_TEST );

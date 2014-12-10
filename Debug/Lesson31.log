@@ -1,4 +1,4 @@
-﻿Compilazione avviata 09/12/2014 19.53.29.
+﻿Compilazione avviata 10/12/2014 22.42.10.
      1>Progetto "C:\Users\amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -16,4 +16,4 @@
 
 Compilazione completata.
 
-Tempo trascorso 00:00:00.94
+Tempo trascorso 00:00:00.97
