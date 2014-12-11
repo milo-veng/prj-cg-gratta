@@ -11,6 +11,8 @@
 	This file may be used only as long as this copyright notice remains intact.
 */
 
+#include <gl/GL.h>
+
 #ifndef MODEL_H
 #define MODEL_H
 
@@ -98,6 +100,15 @@ class Model
 
 		//posizione del modello nel mondo3d
 		float xpos, ypos, zpos;
+
+public: 
+	int getNumVertices() { return m_numVertices; }
+
+	Vertex getVertexByIndex(int i ) { return m_pVertices[i]; }
+
+	Vertex *getVertices() { return m_pVertices; }
+
+
 };
 
 #endif // ndef MODEL_H

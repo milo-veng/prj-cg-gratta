@@ -12,9 +12,11 @@
 #include <gl\glu.h>													// Header File For The GLu32 Library
 #include <gl\glaux.h>												// Header File For The Glaux Library
 #include <cmath>
+#include <cstring>
 using namespace std;
 
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
+#include "TerrainModel.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 
 
@@ -32,7 +34,7 @@ HGLRC		hRC=NULL;												// Permanent Rendering Context
 HWND		hWnd=NULL;												// Holds Our Window Handle
 HINSTANCE	hInstance;												// Holds The Instance Of The Application
 
-Model *pModel = NULL;												// Holds The Model Data
+TerrainModel *terrain = NULL;												// Holds The Model Data
 
 bool	keys[256];													// Array Used For The Keyboard Routine
 bool	active=TRUE;												// Window Active Flag Set To TRUE By Default
@@ -48,7 +50,7 @@ unsigned int lastUpdate = 0;
 
 
 //opzioni - DEBUG
-bool fodEnabled = false;
+bool fodEnabled = true;
 
 
 
@@ -129,7 +131,7 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 
 int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
-	pModel->reloadTextures();										// Loads Model Textures
+	terrain->pModel->reloadTextures();										// Loads Model Textures
 
 
 	//carico texture skydome
@@ -176,8 +178,8 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 	//prova nebbia
 	if( fodEnabled ) {
-		GLfloat fogDensity = 0.005;
-		GLfloat fogColor[] = { 0.5, 0.5, 0.5, 1.0 };
+		GLfloat fogDensity = 0.01;
+		GLfloat fogColor[] = { 0.9, 0.9, 0.9, 1.0 };
 
 		glEnable( GL_DEPTH_TEST );
 		glEnable( GL_FOG );
@@ -234,7 +236,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 
 	//disegno modelli 3D
-	pModel->draw();
+	terrain->draw();
 
 
 
@@ -513,6 +515,8 @@ LRESULT CALLBACK WndProc(	HWND	hWnd,							// Handle For This Window
 				camera.run();
 			
 
+			
+
 			return 0;												// Jump Back
 		}
 
@@ -546,22 +550,15 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	MSG		msg;													// Windows Message Structure
 	BOOL	done=FALSE;												// Bool Variable To Exit Loop
 
-	pModel = new MilkshapeModel();									// Memory To Hold The Model
-	if ( pModel->loadModelData( "data/lowpolyLandscape.ms3d" ) == false )		// Loads The Model And Checks For Errors
-	{
-		MessageBox( NULL, "WinMain(...): impossibile caricare il modello ms3d!", "Error", MB_OK | MB_ICONERROR );
-		return 0;													// If Model Didn't Load Quit
-	}
-	else {
-		pModel->translateModel( 0.0, 0.0, 0.0 );
-	}
+	
+	//carica la mappa del mondo
+	terrain = new TerrainModel();
+	terrain->loadTerrainModel();
+	terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
 
 
-	// Ask The User Which Screen Mode They Prefer
-	/*if (MessageBox(NULL,"Would You Like To Run In Fullscreen Mode?", "Start FullScreen?",MB_YESNO|MB_ICONQUESTION)==IDNO)
-	{
-		fullscreen=FALSE;											// Windowed Mode
-	}*/
+
+
 	fullscreen = FALSE;
 
 	// Create Our OpenGL Window
@@ -613,6 +610,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 				}
 			}
 			
+
 
 
 			//rotazione telecamera
