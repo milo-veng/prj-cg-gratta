@@ -9,10 +9,14 @@
 using namespace std;
 
 #pragma once
+
 #include "MilkshapeModel.h"
 #include "BoundingBox2D.h"
 
 
+/*
+	Gestisce il caricamento, il disegno e le collisioni del mondo 3D e degli oggetti statici stanti su di esso
+*/
 class TerrainModel
 {
 
@@ -31,14 +35,17 @@ public:
 	bool boundingBoxesLoaded;
 
 	Model *pModel;		//modello ms3d della mappa
+	
 	Model *pBoundingBoxes; //modello contenente le bounding boxes della mappa
+	BoundingBox2D *bb;		//struttura per gestire le Bounding Box come rettangolo 2D sul piano  x-z
+	int boundingBoxNum;		//numero di struttue Bounding Box in bb
+
 	//bool **collisionMatrix; 
 
 	//distanza max. tra due punti su asse X e Z
 	//chiamare calcMapExtensionXAxis, calcMapExtensionXAxis per inizializzare
 	float terrainSizeX;
 	float terrainSizeZ;
-
 
 
 
@@ -55,6 +62,10 @@ public:
 	//funzione per DEBUG
 	void drawBoundingBoxes() { pBoundingBoxes->draw(); }
 
+
+	//se player sta collidendo con una bounding box ritorna la bb corrispondente
+	//null altrimenti
+	BoundingBox2D isCollidingWith( BoundingBox2D playerBox );
 
 	
 	//gestione collisioni su piano

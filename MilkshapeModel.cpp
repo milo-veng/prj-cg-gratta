@@ -19,6 +19,9 @@
 #include <fstream>
 using namespace std;
 
+extern ofstream logFile;
+
+
 MilkshapeModel::MilkshapeModel()
 {
 }
@@ -214,6 +217,11 @@ bool MilkshapeModel::loadModelData( const char *filename )
 	reloadTextures();
 
 	delete[] pBuffer;
+
+	//LOG
+	logFile << "MilkshapeModel::loadModelData(): Caricati " << nVertices << " vertici" << endl;
+	
+
 
 	return true;
 }

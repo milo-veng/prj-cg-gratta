@@ -8,6 +8,10 @@ using namespace std;
 #ifndef _MY_FPS_CAMERA_
 #define _MY_FPS_CAMERA_
 
+#include "TerrainModel.h"
+
+extern TerrainModel *terrain;
+
 //posizione player(telecamera)
 struct MyFPSCamera {
 public:
@@ -39,7 +43,14 @@ public:
 
 
 	//se true il personaggio sta corrent
-	boolean running;
+	bool running;
+
+	
+	//true se le collisioni camera-mondo sono attive
+	bool collisionsEnabled;
+	float playerW;				//larghezza(asseX) bounding box del player(camera)
+	float playerH;				//altezza(asseZ) bounding box del player(camera)
+
 
 	//usato per creare un movimento frameindependent
 	//clock_t lastUpdate;

@@ -13,6 +13,9 @@
 #include <gl\glaux.h>												// Header File For The Glaux Library
 #include <cmath>
 #include <cstring>
+#include <fstream>
+#include <ctime>
+#include <ios>
 using namespace std;
 
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
@@ -50,7 +53,9 @@ unsigned int lastUpdate = 0;
 
 
 //opzioni - DEBUG
-bool fodEnabled = true;
+ofstream logFile;			//stream per file di log
+bool fogEnabled = true;
+bool wireframeOnly = false;	//se true disegna solo il wireframe
 
 
 
@@ -177,9 +182,9 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 
 	//prova nebbia
-	if( fodEnabled ) {
-		GLfloat fogDensity = 0.001;
-		GLfloat fogColor[] = { 0.9, 0.9, 0.9, 1.0 };
+	if( fogEnabled ) {
+		GLfloat fogDensity = 0.001f;
+		GLfloat fogColor[] = { 0.9f, 0.9f, 0.9f, 1.0f };
 
 		glEnable( GL_DEPTH_TEST );
 		glEnable( GL_FOG );
@@ -219,19 +224,28 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	//telecamera, xpos + lx; zpos+lz
 	gluLookAt( camera.xpos, camera.ypos, camera.zpos, camera.xpos+camera.lx, camera.ypos, camera.zpos+camera.lz, 0.0f, 1.0f, 0.0f );
 
+	
+	//disegno filled/wireframe
+	if( wireframeOnly ) {
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	}
+	else {
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	}
+
 
 
 	//disegno SKYDOME
-	if( fodEnabled ) { glDisable(GL_FOG ); }				//se la nebbia è attiva la disabilita in modo da non coprire la skybox
+	if( fogEnabled ) { glDisable(GL_FOG ); }				//se la nebbia è attiva la disabilita in modo da non coprire la skybox
 	glBindTexture( GL_TEXTURE_2D, skydomeTexture );
 	glEnable(GL_TEXTURE_2D );
 	glPushMatrix();											//salva lo stato corrente prima di fare la rotazione
 	gluQuadricOrientation( skydome, GLU_INSIDE );			//inverte le normali, così posso usare l'illuminazione dentro alla sfera
 	glRotatef( 180.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
-	int raggio = 400, slices = 800;
-	gluSphere( skydome, raggio, slices, 10 );
+	int raggio = 400, slices = 16;
+	gluSphere( skydome, raggio, slices, 16 );
 	glPopMatrix();											//rimette a posto dopo la rotazione
-	if( fodEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
+	if( fogEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
 
 
 
@@ -552,20 +566,29 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 {
 	MSG		msg;													// Windows Message Structure
 	BOOL	done=FALSE;												// Bool Variable To Exit Loop
-
+	time_t currentTime;
+    time(&currentTime);
+    
 	
+	//apre il file di log
+	logFile.open( "cg-prj-log.txt" , ios::out );
+	logFile << "Progetto CG" << endl;
+	logFile << asctime(localtime(&currentTime)) << endl;
+
 	//carica la mappa del mondo
+	logFile << "Caricamento file del mondo" << endl;
 	terrain = new TerrainModel();
 	terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
-	terrain->loadBoundingBoxes("data/lowpolyLandscapeBounding2DBoxOnly.ms3d");
+
+	logFile << "Caricamento file bounding box del mondo" << endl;
+	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBFinal.ms3d");
 	//terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
 
-
-
-
+	
 	fullscreen = FALSE;
-
+	
 	// Create Our OpenGL Window
+	logFile << "Creazione finestra" << endl;
 	if (!CreateGLWindow("Brett Porter & NeHe's Model Rendering Tutorial",640,480,16,fullscreen))
 	{
 		return 0;													// Quit If Window Was Not Created
@@ -650,6 +673,16 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			if( keys[0x44] ) { //D
 				camera.strafeRight(lastUpdate);
 			}
+
+			//altri comandi
+			if( keys[0x52]) { //R -> attiva/disattiva wireframe
+				wireframeOnly = !wireframeOnly;
+			}
+
+
+			//DEBUG POSIZ. TELECAMERA(PLAYER)
+			string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
+			OutputDebugString( pPos.c_str() );
 
 			
 

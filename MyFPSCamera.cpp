@@ -4,6 +4,8 @@ using namespace std;
 
 
 #include "MyFPSCamera.h"
+#include "BoundingBox2D.h"
+
 
 
 MyFPSCamera::MyFPSCamera(void) {
@@ -23,14 +25,20 @@ MyFPSCamera::MyFPSCamera(void) {
 		cameraMovementspeed = 0.1;
 		cameraRunningSpeedMult = 10; //runnigspeed = cameraMovSpeed*10
 		cameraRotationSpeed = 0.05;
-		cameraStrafeSpeed = 0.1;
+		cameraStrafeSpeed = 0.5;
 		cameraVerticalSpeed = 0.05;
 
 		mouseDeltaX = mouseDeltaY = 0.0;
 
 		running = false;
 
+
+		collisionsEnabled = true;
+		playerW = 5.0;
+		playerH = 5.0;
+
 		//lastUpdate = clock();
+
 }
 
 
@@ -70,10 +78,30 @@ void MyFPSCamera::rotateRight(double deltaT) {
 	
 //avanti, indietro
 void MyFPSCamera::moveForward(double deltaT) {
-	xpos += lx*cameraMovementspeed;
-	zpos += lz*cameraMovementspeed;
-	//xpos += lx*cameraMovementspeed;
-	//zpos += lz*cameraMovementspeed;
+
+	//prossima posiz. se mi muovessi
+	double tmpXPos = lx*cameraMovementspeed;
+	double tmpZPos = lz*cameraMovementspeed;
+
+	if( collisionsEnabled ) {
+		//creo boundingBox2D con la posiz. attuale del giocatore
+		BoundingBox2D player(tmpXPos, tmpZPos, playerW, playerH ); 
+
+		//verifica se ci sono collisioni
+		BoundingBox2D collider = terrain->isCollidingWith( player );
+
+		//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
+		//altrimenti isNull() è true
+		if( !collider.isNull() ) {
+			MessageBox(NULL, "collisione", "", MB_OK );
+		}
+
+	}
+
+	//update posiz.
+	xpos += tmpXPos,
+	zpos += tmpZPos;
+	
 }
 
 void MyFPSCamera::moveBackward(double deltaT) {
