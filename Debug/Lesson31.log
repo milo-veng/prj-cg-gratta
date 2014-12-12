@@ -1,17 +1,30 @@
-﻿Build started 11/12/2014 16.06.32.
-     1>Project "C:\Users\milo\Desktop\CG\prj-cg-gratta\Lesson31.vcxproj" on node 2 (Build target(s)).
+﻿Build started 12/12/2014 16.39.30.
+     1>Project "C:\Users\milo\Desktop\CG\prj-cg-gratta\Lesson31.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         D:\Visual Studio 2012 Express\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TerrainModel.cpp
+         D:\Visual Studio 2012 Express\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BoundingBox2D.cpp main.cpp MilkshapeModel.cpp Model.cpp MyFPSCamera.cpp TerrainModel.cpp
          TerrainModel.cpp
-       Link:
-         D:\Visual Studio 2012 Express\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\main.obj
-         .\Debug\MilkshapeModel.obj
-         .\Debug\Model.obj
-         .\Debug\MyFPSCamera.obj
-         .\Debug\TerrainModel.obj
-         Lesson31.vcxproj -> C:\Users\milo\Desktop\CG\prj-cg-gratta\.\Debug\progetto cg.exe
-     1>Done Building Project "C:\Users\milo\Desktop\CG\prj-cg-gratta\Lesson31.vcxproj" (Build target(s)).
+         MyFPSCamera.cpp
+         Model.cpp
+         MilkshapeModel.cpp
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\milkshapemodel.cpp(123): warning C4244: 'inizializzazione': conversione da 'std::streamoff' a 'long'. Possibile perdita di dati.
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\milkshapemodel.cpp(210): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio 2012 express\vc\include\string.h(110): vedere la dichiarazione di 'strcpy'
+         main.cpp
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\main.cpp(69): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio 2012 express\vc\include\stdio.h(218): vedere la dichiarazione di 'fopen'
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\main.cpp(181): warning C4305: 'inizializzazione': troncamento da 'double' a 'GLfloat'
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\main.cpp(182): warning C4305: 'inizializzazione': troncamento da 'double' a 'GLfloat'
+         BoundingBox2D.cpp
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(9): error C2062: tipo 'float' imprevisto
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(10): error C2062: tipo 'float' imprevisto
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(22): error C2065: 'maxX': identificatore non dichiarato
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(23): error C2065: 'maxX': identificatore non dichiarato
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(27): error C2065: 'maxZ': identificatore non dichiarato
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(28): error C2065: 'maxZ': identificatore non dichiarato
+     1>c:\users\milo\desktop\cg\prj-cg-gratta\boundingbox2d.cpp(34): error C2065: 'maxX': identificatore non dichiarato
+         Generazione del codice in corso...
+     1>Done Building Project "C:\Users\milo\Desktop\CG\prj-cg-gratta\Lesson31.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:08.13
+Time Elapsed 00:00:28.22

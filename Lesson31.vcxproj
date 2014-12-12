@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoundingBox2D.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MilkshapeModel.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -137,6 +138,7 @@
     <ClCompile Include="TerrainModel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoundingBox2D.h" />
     <ClInclude Include="loadGLTexture.h" />
     <ClInclude Include="MilkshapeModel.h" />
     <ClInclude Include="Model.h" />

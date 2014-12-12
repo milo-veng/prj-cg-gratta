@@ -178,7 +178,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 	//prova nebbia
 	if( fodEnabled ) {
-		GLfloat fogDensity = 0.01;
+		GLfloat fogDensity = 0.001;
 		GLfloat fogColor[] = { 0.9, 0.9, 0.9, 1.0 };
 
 		glEnable( GL_DEPTH_TEST );
@@ -237,6 +237,9 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	//disegno modelli 3D
 	terrain->draw();
+
+	//debug
+	terrain->drawBoundingBoxes();
 
 
 
@@ -553,8 +556,9 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	
 	//carica la mappa del mondo
 	terrain = new TerrainModel();
-	terrain->loadTerrainModel();
-	terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
+	terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
+	terrain->loadBoundingBoxes("data/lowpolyLandscapeBounding2DBoxOnly.ms3d");
+	//terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
 
 
 

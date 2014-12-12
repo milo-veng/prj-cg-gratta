@@ -10,7 +10,7 @@
 
 	This file may be used only as long as this copyright notice remains intact.
 */
-
+#include <Windows.h>
 #include <gl/GL.h>
 
 #ifndef MODEL_H
@@ -102,11 +102,13 @@ class Model
 		float xpos, ypos, zpos;
 
 public: 
+
+	//funzioni helper
 	int getNumVertices() { return m_numVertices; }
 
 	Vertex getVertexByIndex(int i ) { return m_pVertices[i]; }
 
-	Vertex *getVertices() { return m_pVertices; }
+	const Vertex *getVerticesArray() { return m_pVertices; }
 
 
 };
