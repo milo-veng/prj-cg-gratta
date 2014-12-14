@@ -53,9 +53,10 @@ unsigned int lastUpdate = 0;
 
 
 //opzioni - DEBUG
-ofstream logFile;			//stream per file di log
-bool fogEnabled = true;
-bool wireframeOnly = false;	//se true disegna solo il wireframe
+ofstream logFile;				//stream per file di log
+bool fogEnabled = true;			//nebbia on/off
+bool wireframeOnly = false;		//se true disegna solo il wireframe
+bool drawBoundingBoxes = false;	//se true disegna le bounding boxes degli oggetti collidibili
 
 
 
@@ -252,8 +253,11 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	//disegno modelli 3D
 	terrain->draw();
 
-	//debug
-	terrain->drawBoundingBoxes();
+
+	//disegna le bounding box degli oggetti collidibili
+	if( drawBoundingBoxes ) {
+		terrain->drawBoundingBoxes();
+	}
 
 
 
@@ -581,7 +585,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
 
 	logFile << "Caricamento file bounding box del mondo" << endl;
-	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBFinal.ms3d");
+	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");
 	//terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
 
 	
@@ -679,6 +683,13 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 				wireframeOnly = !wireframeOnly;
 			}
 
+			if( keys[0x42]) { //B - disegna o meno le Bounding Box oggetti collidibili
+				drawBoundingBoxes = !drawBoundingBoxes;
+			}
+
+			if( keys[0x43]) { //C - attiva/disattiva collisioni camera(player) - mondo
+				camera.collisionsEnabled = !camera.collisionsEnabled;
+			}
 
 			//DEBUG POSIZ. TELECAMERA(PLAYER)
 			string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
