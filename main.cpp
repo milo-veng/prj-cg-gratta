@@ -127,7 +127,7 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 
 	// Calculate The Aspect Ratio Of The Window
 	//i clipping plane sono in 1 e 500 -> view depth di 500
-	gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,1.0f,1000.0f);	// View Depth of 500
+	gluPerspective(45.0f,(GLfloat)width/(GLfloat)height,0.1f,2000.0f);	// View Depth of 500
 
 	glMatrixMode(GL_MODELVIEW);										// Select The Modelview Matrix
 	glLoadIdentity();												// Reset The Modelview Matrix
@@ -184,8 +184,8 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 	//prova nebbia
 	if( fogEnabled ) {
-		GLfloat fogDensity = 0.001f;
-		GLfloat fogColor[] = { 0.9f, 0.9f, 0.9f, 1.0f };
+		GLfloat fogDensity = 0.0025f;
+		GLfloat fogColor[] = { 0.028f, 0.39f, 0.7f, 1.0f };
 
 		glEnable( GL_DEPTH_TEST );
 		glEnable( GL_FOG );
@@ -242,9 +242,10 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	glEnable(GL_TEXTURE_2D );
 	glPushMatrix();											//salva lo stato corrente prima di fare la rotazione
 	gluQuadricOrientation( skydome, GLU_INSIDE );			//inverte le normali, così posso usare l'illuminazione dentro alla sfera
-	glRotatef( 180.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
-	int raggio = 400, slices = 16;
-	gluSphere( skydome, raggio, slices, 16 );
+	//glRotatef( 180.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
+	glRotatef( -90.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
+	int raggio = 800, slices = 32;
+	gluSphere( skydome, raggio, slices, 32 );
 	glPopMatrix();											//rimette a posto dopo la rotazione
 	if( fogEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
 
