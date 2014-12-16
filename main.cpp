@@ -586,13 +586,18 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	
 	//apre il file di log
 	logFile.open( "cg-prj-log.txt" , ios::out );
+	if( !logFile.is_open() ) {
+		MessageBox(NULL, "Impossibile creare il file di log!", "Warning", MB_OK|MB_ICONWARNING);
+	}
+
 	logFile << "Progetto CG" << endl;
 	logFile << asctime(localtime(&currentTime)) << endl;
 
 	//carica la mappa del mondo
 	logFile << "Caricamento file del mondo" << endl;
 	terrain = new TerrainModel();
-	terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
+	//terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
+	terrain->loadTerrainModel("data/lowPolyLandscape.ms3d");
 
 	logFile << "Caricamento file bounding box del mondo" << endl;
 	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");

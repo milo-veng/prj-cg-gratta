@@ -35,6 +35,7 @@ void TerrainModel::loadTerrainModel(string ms3dFilename) {
 		if ( pModel->loadModelData( ms3dFilename.c_str() ) == false )		// Loads The Model And Checks For Errors
 		{
 			MessageBox( NULL, "WinMain(...): impossibile caricare il modello ms3d!", "Error", MB_OK | MB_ICONERROR );
+			logFile << "TerrainModel::loadTerrainModel(): impossibile caricare il modello ms3d!" << endl;
 			return;													// If Model Didn't Load Quit
 		}
 		else {
@@ -78,10 +79,10 @@ void TerrainModel::loadBoundingBoxes( string ms3dFilename ) {
 
 
 		//genero le boundinBox2D -> cioè iniz. i valori (x,y,w,h) di ciascun rettangolo
-		logFile << "BoundingBoxes (x,z,w,h):" << endl;
+		//logFile << "BoundingBoxes (x,z,w,h):" << endl;
 		for( int i = 0, bbi = 0; i < nVertices; i+=4,bbi++ ) {
 			
-			logFile << "BB #" << i/4 << ": ";
+			//logFile << "BB #" << i/4 << ": ";
 			
 			Model::Vertex v[4];
 			v[0] = pBoundingBoxes->getVertexByIndex(i);
@@ -118,7 +119,7 @@ BoundingBox2D TerrainModel::isCollidingWith( BoundingBox2D playerBox ) {
 	for( int i = 0;  i <  boundingBoxNum; i++ ) {
 		BoundingBox2D tmpbb = bb[i];
 		
-		logFile << "Ricerco collisione tra (" << tmpbb.x << "," << tmpbb.z << "," << tmpbb.w << "," << tmpbb.h << ") e (" << playerBox.x << "," << playerBox.z << "," << playerBox.w << "," << playerBox.h << ")"<< endl;
+		//logFile << "Ricerco collisione tra (" << tmpbb.x << "," << tmpbb.z << "," << tmpbb.w << "," << tmpbb.h << ") e (" << playerBox.x << "," << playerBox.z << "," << playerBox.w << "," << playerBox.h << ")"<< endl;
 
 		if( tmpbb.x < playerBox.x + playerBox.w &&
 			tmpbb.x + tmpbb.w > playerBox.x &&

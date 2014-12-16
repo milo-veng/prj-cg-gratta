@@ -119,8 +119,10 @@ struct MS3DKeyframe
 bool MilkshapeModel::loadModelData( const char *filename )
 {
 	ifstream inputFile( filename, ios::in | ios::binary );
-	if ( inputFile.fail())
+	if ( inputFile.fail()) {
+		logFile << "MilkshapeModel::loadModelData(): impossibile aprire il file specificato!" << endl;
 		return false;	// "Couldn't open the model file."
+	}
 
 	inputFile.seekg( 0, ios::end );
 	long fileSize = inputFile.tellg();
@@ -134,11 +136,15 @@ bool MilkshapeModel::loadModelData( const char *filename )
 	MS3DHeader *pHeader = ( MS3DHeader* )pPtr;
 	pPtr += sizeof( MS3DHeader );
 
-	if ( strncmp( pHeader->m_ID, "MS3D000000", 10 ) != 0 )
+	if ( strncmp( pHeader->m_ID, "MS3D000000", 10 ) != 0 ) {
+		logFile << "MilkshapeModel::loadModelData(): il file specificato non e' un file ms3d valido!" << endl;
 		return false; // "Not a valid Milkshape3D model file."
+	}
 
-	if ( pHeader->m_version < 3 || pHeader->m_version > 4 )
+	if ( pHeader->m_version < 3 || pHeader->m_version > 4 ) {
+		logFile << "MilkshapeModel::loadModelData(): versione del file ms3d non supportata(supporto v. 3 e 4)" << endl;
 		return false; // "Unhandled file version. Only Milkshape3D Version 1.3 and 1.4 is supported." );
+	}
 
 	int nVertices = *( word* )pPtr; 
 	m_numVertices = nVertices;
