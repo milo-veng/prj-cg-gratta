@@ -53,5 +53,8 @@
     <ClInclude Include="BoundingBox2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="deltaT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -18,6 +18,7 @@
 #include <ios>
 using namespace std;
 
+#include "deltaT.h"
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
 #include "MyFPSCamera.h"											//header per la telecamera
@@ -49,7 +50,7 @@ GLuint skydomeTexture;
 
 //telecamera in 1 persona stile FPS
 MyFPSCamera camera;
-unsigned int lastUpdate = 0;
+extern clock_t lastUpdate;
 
 
 //opzioni - DEBUG
@@ -270,7 +271,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	
 
 	//tempo impiegato dall'ultimo frame
-	lastUpdate = GetTickCount();
+	//lastUpdate = GetTickCount();
 
 
 	return TRUE;
@@ -558,6 +559,14 @@ LRESULT CALLBACK WndProc(	HWND	hWnd,							// Handle For This Window
 			ReSizeGLScene(LOWORD(lParam),HIWORD(lParam));			// LoWord=Width, HiWord=Height
 			return 0;												// Jump Back
 		}
+
+		 case WM_MOUSEMOVE:
+      {
+		 POINTS p;
+         p = MAKEPOINTS(lParam);
+
+		  return 0;
+	  }
 	}
 
 	// Pass All Unhandled Messages To DefWindowProc
@@ -601,8 +610,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 
 	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
-	lastUpdate = GetTickCount();
-
+	//lastUpdate = GetTickCount();
+	lastUpdate = clock();
 
 	while(!done)													// Loop That Runs While done=FALSE
 	{
@@ -643,40 +652,40 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			}
 			
 
-
+			double deltaT = calculateDeltaT();
 
 			//rotazione telecamera
 			if( keys[VK_LEFT] ) {
-				camera.rotateLeft(lastUpdate);
+				camera.rotateLeft(deltaT);
 			}
 			if(keys[VK_RIGHT] ) {
-				camera.rotateRight(lastUpdate);
+				camera.rotateRight(deltaT);
 			}
 
 			//movimento avanti/indietro
 			if(keys[VK_UP] || keys[0x57]) { //W
-				camera.moveForward(lastUpdate);
+				camera.moveForward(deltaT);
 			}
 			if(keys[VK_DOWN] || keys[0x53] ) { //S
-				camera.moveBackward(lastUpdate);
+				camera.moveBackward(deltaT);
 			}
 
 			//altezza telecamera
 			if( keys[0x51] ) { //Q
-				camera.moveUp(lastUpdate);
+				camera.moveUp(deltaT);
 			}
 
 			if( keys[0x45] ) { //E
-				camera.moveDown(lastUpdate);
+				camera.moveDown(deltaT);
 			}
 
 			//strafe laterale
 			if( keys[0x41] ) { //A
-				camera.strafeLeft(lastUpdate);
+				camera.strafeLeft(deltaT);
 			}
 
 			if( keys[0x44] ) { //D
-				camera.strafeRight(lastUpdate);
+				camera.strafeRight(deltaT);
 			}
 
 			//altri comandi

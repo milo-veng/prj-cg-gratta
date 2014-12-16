@@ -80,8 +80,8 @@ void MyFPSCamera::rotateRight(double deltaT) {
 void MyFPSCamera::moveForward(double deltaT) {
 
 	// di qnto mi sposterei nel prossimo frame rispetto alla posizione attuale nel caso mi muovessi
-	double xDelta = lx*cameraMovementspeed;
-	double zDelta = lz*cameraMovementspeed;
+	double xDelta = lx*cameraMovementspeed*deltaT;
+	double zDelta = lz*cameraMovementspeed*deltaT;
 
 	if( collisionsEnabled ) {
 		//creo boundingBox2D con la posiz. attuale del giocatore
