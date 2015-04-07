@@ -1,5 +1,5 @@
 Progetto CG
-Tue Dec 16 22:33:14 2014
+Tue Apr 07 13:09:55 2015
 
 Caricamento file del mondo
 MilkshapeModel::loadModelData(): Caricati 956 vertici
@@ -124,6 +124,7047 @@ TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=-128.55,-57.0547,179.445,8.51021
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
 Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
@@ -220,827 +7261,986 @@ Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
+Collisione con (x,z,w,h)=35.139,11.2397,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=25.8313,24.8551,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
@@ -1575,174 +8775,132 @@ TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-99.9415,-27.0165,100.562,23.1005
 
 
 TerrainModel:isCollidingWith(playerBox)
@@ -1809,454 +8967,342 @@ TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-61.2398,5.77702,3.05555,2.61111
 
 
 TerrainModel:isCollidingWith(playerBox)
@@ -2722,86 +9768,1188 @@ TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
 
 
 TerrainModel:isCollidingWith(playerBox)
-Collisione con (x,z,w,h)=-113.543,15.613,2.93059,3.27809
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
+
+
+TerrainModel:isCollidingWith(playerBox)
 
 
 TerrainModel:isCollidingWith(playerBox)
