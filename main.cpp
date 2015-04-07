@@ -22,7 +22,7 @@ using namespace std;
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
 #include "MyFPSCamera.h"											//header per la telecamera
-
+#include "SoundMgr.h"
 
 
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
@@ -52,14 +52,15 @@ GLuint skydomeTexture;
 MyFPSCamera camera;
 extern clock_t lastUpdate;
 
+//gestore suoni
+SoundMgr *sndMgr;
+
 
 //opzioni - DEBUG
 ofstream logFile;				//stream per file di log
 bool fogEnabled = true;			//nebbia on/off
 bool wireframeOnly = false;		//se true disegna solo il wireframe
 bool drawBoundingBoxes = false;	//se true disegna le bounding boxes degli oggetti collidibili
-
-
 
 
 LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);				// Declaration For WndProc
@@ -593,6 +594,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	logFile << "Progetto CG" << endl;
 	logFile << asctime(localtime(&currentTime)) << endl;
 
+
+	/* CARICAMENTO OGGETTI 3D */
 	//carica la mappa del mondo
 	logFile << "Caricamento file del mondo" << endl;
 	terrain = new TerrainModel();
@@ -604,6 +607,18 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
 
 	
+
+	/* CARICAMENTO SUONI */
+	vector<string> soundFiles;
+	vector<string> soundNames;
+	sndMgr = new SoundMgr();
+	sndMgr->playBackgroundMusic();
+	//...
+
+
+
+
+
 	fullscreen = FALSE;
 	
 	// Create Our OpenGL Window
@@ -707,8 +722,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			}
 
 			//DEBUG POSIZ. TELECAMERA(PLAYER)
-			string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
-			OutputDebugString( pPos.c_str() );
+			//string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
+			//OutputDebugString( pPos.c_str() );
 
 			
 

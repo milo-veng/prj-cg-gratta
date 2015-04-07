@@ -90,7 +90,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OutputFile>.\Debug\progetto cg.exe</OutputFile>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;audiere.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
@@ -137,6 +137,8 @@
     <ClCompile Include="MilkshapeModel.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="MyFPSCamera.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundMgr.cpp" />
     <ClCompile Include="TerrainModel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +148,8 @@
     <ClInclude Include="MilkshapeModel.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="MyFPSCamera.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundMgr.h" />
     <ClInclude Include="TerrainModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

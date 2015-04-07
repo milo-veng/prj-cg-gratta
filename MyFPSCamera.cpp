@@ -58,6 +58,7 @@ void MyFPSCamera::rotateLeft(double deltaT) {
 
 			lx = cos( angley );
 			lz = -sin( angley );
+
 }
 
 void MyFPSCamera::rotateRight(double deltaT) {
