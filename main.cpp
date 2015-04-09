@@ -612,7 +612,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	vector<string> soundFiles;
 	vector<string> soundNames;
 	sndMgr = new SoundMgr();
-	sndMgr->playBackgroundMusic();
+	//sndMgr->playBackgroundMusic();
 	//...
 
 

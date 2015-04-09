@@ -22,10 +22,10 @@ MyFPSCamera::MyFPSCamera(void) {
 
 
 		/* valori camera */
-		cameraMovementspeed = 0.5;
+		cameraMovementspeed = 25;
 		cameraRunningSpeedMult = 2; //runnigspeed = cameraMovSpeed*10
-		cameraRotationSpeed = 0.05;
-		cameraStrafeSpeed = 0.5;
+		cameraRotationSpeed = 2.5;
+		cameraStrafeSpeed = 25;
 		cameraVerticalSpeed = 0.05;
 
 		mouseDeltaX = mouseDeltaY = 0.0;
@@ -46,11 +46,11 @@ MyFPSCamera::MyFPSCamera(void) {
 //rotazioni
 void MyFPSCamera::rotateLeft(double deltaT) {
 			//rotazione risp. asse y - YAW
-			if( angley + cameraRotationSpeed > 2*PIGRECO )
+			if( angley + cameraRotationSpeed*deltaT > 2*PIGRECO )
 				angley = 0.0;
 
 			
-			angley += cameraRotationSpeed;
+			angley += cameraRotationSpeed*deltaT;
 
 			
 			//lx = cos( angley )*deltaT;
@@ -63,10 +63,10 @@ void MyFPSCamera::rotateLeft(double deltaT) {
 
 void MyFPSCamera::rotateRight(double deltaT) {
 			//rotaz. risp asse y - YAW
-			if( angley - cameraRotationSpeed < 0 ) 
+			if( angley - cameraRotationSpeed*deltaT < 0 ) 
 				angley = 2*PIGRECO;
 
-			angley -= cameraRotationSpeed;
+			angley -= cameraRotationSpeed*deltaT;
 
 
 			//lx = cos( angley )*deltaT;
@@ -81,10 +81,8 @@ void MyFPSCamera::rotateRight(double deltaT) {
 void MyFPSCamera::moveForward(double deltaT) {
 
 	// di qnto mi sposterei nel prossimo frame rispetto alla posizione attuale nel caso mi muovessi
-	/*double xDelta = lx*cameraMovementspeed*deltaT;
-	double zDelta = lz*cameraMovementspeed*deltaT;*/
-	double xDelta = lx*cameraMovementspeed;
-	double zDelta = lz*cameraMovementspeed;
+	double xDelta = lx*cameraMovementspeed*deltaT;
+	double zDelta = lz*cameraMovementspeed*deltaT;
 
 	if( collisionsEnabled ) {
 		//creo boundingBox2D con la posiz. attuale del giocatore
@@ -106,16 +104,15 @@ void MyFPSCamera::moveForward(double deltaT) {
 	}
 
 	//update posiz.
-	xpos += xDelta,
+	xpos += xDelta;
 	zpos += zDelta;
 	
 }
 
 void MyFPSCamera::moveBackward(double deltaT) {
-	double xDelta = -lx*cameraMovementspeed;
-	double zDelta = -lz*cameraMovementspeed;
-	//xpos -= lx*cameraMovementspeed*deltaT;
-	//zpos -= lz*cameraMovementspeed*deltaT;
+	double xDelta = -lx*cameraMovementspeed*deltaT;
+	double zDelta = -lz*cameraMovementspeed*deltaT;
+
 
 
 	if( collisionsEnabled ) {
@@ -154,8 +151,8 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 			double normalToCameraDirectionZ = lx;
 
 			//strafe a sx
-			double xDelta = -normalToCameraDirectionX*cameraStrafeSpeed;
-			double zDelta = -normalToCameraDirectionZ*cameraStrafeSpeed;
+			double xDelta = -normalToCameraDirectionX*cameraStrafeSpeed*deltaT;
+			double zDelta = -normalToCameraDirectionZ*cameraStrafeSpeed*deltaT;
 			//xpos -= normalToCameraDirectionX*cameraStrafeSpeed*deltaT;
 			//zpos -= normalToCameraDirectionZ*cameraStrafeSpeed*deltaT;
 
@@ -195,8 +192,8 @@ void MyFPSCamera::strafeRight(double deltaT) {
 			double normalToCameraDirectionZ = lx;
 
 			//strafe a sx
-			double xDelta = normalToCameraDirectionX*cameraStrafeSpeed;
-			double zDelta = normalToCameraDirectionZ*cameraStrafeSpeed;
+			double xDelta = normalToCameraDirectionX*cameraStrafeSpeed*deltaT;
+			double zDelta = normalToCameraDirectionZ*cameraStrafeSpeed*deltaT;
 			//xpos += normalToCameraDirectionX*cameraStrafeSpeed*deltaT;
 			//zpos += normalToCameraDirectionZ*cameraStrafeSpeed*deltaT;
 
@@ -228,11 +225,11 @@ void MyFPSCamera::strafeRight(double deltaT) {
 
 //mov. verticale
 void MyFPSCamera::moveUp(double deltaT) {
-	ypos -= cameraMovementspeed;
+	ypos -= cameraMovementspeed*deltaT;
 }
 
 void MyFPSCamera::moveDown(double deltaT) {
-	ypos += cameraMovementspeed;
+	ypos += cameraMovementspeed*deltaT;
 }
 
 
