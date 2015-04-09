@@ -28,7 +28,9 @@ MyFPSCamera::MyFPSCamera(void) {
 		cameraStrafeSpeed = 25;
 		cameraVerticalSpeed = 0.05;
 
+		oldMouseX = oldMouseY = 0.0;
 		mouseDeltaX = mouseDeltaY = 0.0;
+		mousePosReset = false;
 
 		running = false;
 
@@ -42,6 +44,50 @@ MyFPSCamera::MyFPSCamera(void) {
 }
 
 
+//aggiorna i valori di mouseDeltaX e mouseDeltaY
+//passo dei long int perchè la struttura POINTS delle WINANPI usa LONG = long int
+void MyFPSCamera::updateMouseDeltaPos(long x, long y) {
+	//calcolo di quanto si è spostato il mouse in un frame
+	mouseDeltaX = x - oldMouseX;
+	mouseDeltaY = y - oldMouseY;
+
+	oldMouseX = x;
+	oldMouseY = y;
+
+	//sposto la telecamera di conseguenza
+	if (mouseDeltaX > 0) {
+		//giro verso dx
+		mouseRotateRight();
+	}
+	else if(mouseDeltaX < 0) {
+		//giro verso sx
+		mouseRotateLeft();
+	}
+
+	OutputDebugString("updateMousePos\n");
+
+}
+
+
+//riposiziona il cursore del mouse al centro dello schermo
+//serve per usare il mouse per muovere la telecamera in stile fps(GetWindowRect(hWnd, &r);
+void MyFPSCamera::resetCursorPos(RECT windowRect, POINTS mousePos, int SCREEN_W, int SCREEN_H) {
+
+	int windowCenterX = windowRect.left + SCREEN_W / 2;
+	int windowCenterY = windowRect.top + SCREEN_H / 2;
+
+	//string debug = "r.left=" + to_string(r.left) + ", r.top=" + to_string(r.top);
+	//OutputDebugString( debug.c_str() );
+
+
+	if (mousePos.x < windowRect.left + 250 || mousePos.x > windowRect.right - 250) {
+		SetCursorPos(windowCenterX, windowCenterY);
+		mousePosReset = true;
+	}
+
+	OutputDebugString("resetCursorPos\n");
+
+}
 
 //rotazioni
 void MyFPSCamera::rotateLeft(double deltaT) {
@@ -51,11 +97,7 @@ void MyFPSCamera::rotateLeft(double deltaT) {
 
 			
 			angley += cameraRotationSpeed*deltaT;
-
 			
-			//lx = cos( angley )*deltaT;
-			//lz = -sin( angley )*deltaT;
-
 			lx = cos( angley );
 			lz = -sin( angley );
 
@@ -68,11 +110,42 @@ void MyFPSCamera::rotateRight(double deltaT) {
 
 			angley -= cameraRotationSpeed*deltaT;
 
-
-			//lx = cos( angley )*deltaT;
-			//lz = -sin( angley )*deltaT;
 			lx = cos( angley );
 			lz = -sin( angley );
+
+}
+
+//ruota a sx la telecamera in modo proporzionale a mouseDeltaX
+void MyFPSCamera::mouseRotateLeft() {
+	//angolo di cui ruotare la telecamera(yaw)
+	double rotationAngle = cameraRotationSpeed*0.01;
+
+
+	//rotazione risp. asse y - YAW
+	//if (angley + rotationAngle > 2 * PIGRECO)
+	//	angley = 0.0;
+
+
+	angley += rotationAngle;
+
+	lx = cos(angley);
+	lz = -sin(angley);
+
+}
+
+
+void MyFPSCamera::mouseRotateRight() {
+	//angolo di cui ruotare la telecamera(yaw)
+	double rotationAngle = cameraRotationSpeed*0.01;
+
+	//rotaz. risp asse y - YAW
+	//if (angley - rotationAngle < 0)
+	//	angley = 2 * PIGRECO;
+
+	angley -= rotationAngle;
+
+	lx = cos(angley);
+	lz = -sin(angley);
 
 }
 

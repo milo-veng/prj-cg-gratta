@@ -38,11 +38,18 @@ HGLRC		hRC=NULL;												// Permanent Rendering Context
 HWND		hWnd=NULL;												// Holds Our Window Handle
 HINSTANCE	hInstance;												// Holds The Instance Of The Application
 
-TerrainModel *terrain = NULL;												// Holds The Model Data
+//impostazioni finestra
+const int SCREEN_W = 640;
+const int SCREEN_H = 480;
+const int SCREEN_BIT = 16;
 
 bool	keys[256];													// Array Used For The Keyboard Routine
 bool	active=TRUE;												// Window Active Flag Set To TRUE By Default
 bool	fullscreen=TRUE;											// Fullscreen Flag Set To Fullscreen Mode By Default
+
+
+//mondo 3D
+TerrainModel *terrain = NULL;												// Holds The Model Data
 
 //SKYDOME
 GLUquadricObj *skydome;
@@ -51,6 +58,7 @@ GLuint skydomeTexture;
 //telecamera in 1 persona stile FPS
 MyFPSCamera camera;
 extern clock_t lastUpdate;
+POINTS p;		//posizione del mouse
 
 //gestore suoni
 SoundMgr *sndMgr;
@@ -563,8 +571,10 @@ LRESULT CALLBACK WndProc(	HWND	hWnd,							// Handle For This Window
 
 		 case WM_MOUSEMOVE:
       {
-		 POINTS p;
          p = MAKEPOINTS(lParam);
+
+		 //calcolo di quanto si è spostato il mouse in un frame
+		 camera.updateMouseDeltaPos(p.x, p.y );
 
 		  return 0;
 	  }
@@ -618,12 +628,11 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 
 
-
 	fullscreen = FALSE;
 	
 	// Create Our OpenGL Window
 	logFile << "Creazione finestra" << endl;
-	if (!CreateGLWindow("Brett Porter & NeHe's Model Rendering Tutorial",640,480,16,fullscreen))
+	if (!CreateGLWindow("Brett Porter & NeHe's Model Rendering Tutorial",SCREEN_W,SCREEN_H,SCREEN_BIT,fullscreen))
 	{
 		return 0;													// Quit If Window Was Not Created
 	}
@@ -632,6 +641,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
 	//lastUpdate = GetTickCount();
 	lastUpdate = clock();
+
 
 	while(!done)													// Loop That Runs While done=FALSE
 	{
@@ -725,7 +735,10 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			//string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
 			//OutputDebugString( pPos.c_str() );
 
-			
+			RECT r;
+			GetWindowRect(hWnd, &r);
+			camera.resetCursorPos( r, p, SCREEN_W, SCREEN_H);
+
 
 		}
 	}

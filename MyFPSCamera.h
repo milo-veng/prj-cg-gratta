@@ -38,8 +38,11 @@ public:
 	double cameraVerticalSpeed;	//x debug, non esiste movimento verticale nel gioco finito
 
 	//movimento del mouse
-	double mouseDeltaX;
+	double oldMouseX;			//la pos. del mouse al frame precedente
+	double oldMouseY;
+	double mouseDeltaX;			//la funzione updateMouseDeltaPos(newPos) aggiorna il valore di mouseDeltaX e mouseDeltaY
 	double mouseDeltaY;
+	bool mousePosReset;			//true nel freame in cui faccio reset della posiz. mouse al centro dello schermo
 
 
 	//se true il personaggio sta corrent
@@ -63,11 +66,18 @@ public:
 	MyFPSCamera();
 
 
+	//aggiorna mouseDeltaX e mouseDeltaY
+	void updateMouseDeltaPos(long x, long y );
+
+	//riposiziona il cursore al centro dello schermo(rotaz. telecamera col mouse)
+	void resetCursorPos(RECT windowRect, POINTS mousePos, int SCREEN_W, int SCREEN_H);
 
 
 	//rotazioni
 	void rotateLeft(double deltaT);
 	void rotateRight(double deltaT);
+	void mouseRotateLeft();
+	void mouseRotateRight();
 	
 	//avanti, indietro
 	void moveForward(double deltaT);
