@@ -39,6 +39,11 @@ local.properties
 #altri
 *.tlog
 *.pdb
+*.sdf
+*.obj
+*.ilk
+*.log
+*.txt
 
 
 # User-specific files
