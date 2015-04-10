@@ -39,8 +39,8 @@ HWND		hWnd=NULL;												// Holds Our Window Handle
 HINSTANCE	hInstance;												// Holds The Instance Of The Application
 
 //impostazioni finestra
-const int SCREEN_W = 640;
-const int SCREEN_H = 480;
+const int SCREEN_W = 800;
+const int SCREEN_H = 600;
 const int SCREEN_BIT = 16;
 
 bool	keys[256];													// Array Used For The Keyboard Routine
@@ -233,7 +233,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	
 	//telecamera, xpos + lx; zpos+lz
-	gluLookAt( camera.xpos, camera.ypos, camera.zpos, camera.xpos+camera.lx, camera.ypos, camera.zpos+camera.lz, 0.0f, 1.0f, 0.0f );
+	gluLookAt( camera.xpos, camera.ypos, camera.zpos, camera.xpos+camera.lx, camera.ypos+camera.ly, camera.zpos+camera.lz, 0.0f, 1.0f, 0.0f );
 
 	
 	//disegno filled/wireframe
@@ -627,7 +627,6 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 
 
-
 	fullscreen = FALSE;
 	
 	// Create Our OpenGL Window
@@ -641,6 +640,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
 	//lastUpdate = GetTickCount();
 	lastUpdate = clock();
+
+	//ShowCursor(FALSE);
 
 
 	while(!done)													// Loop That Runs While done=FALSE

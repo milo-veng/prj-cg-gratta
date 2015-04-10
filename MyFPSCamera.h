@@ -78,6 +78,8 @@ public:
 	void rotateRight(double deltaT);
 	void mouseRotateLeft();
 	void mouseRotateRight();
+	void mouseRotateUp();
+	void mouseRotateDown();
 	
 	//avanti, indietro
 	void moveForward(double deltaT);

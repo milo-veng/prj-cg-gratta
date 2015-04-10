@@ -64,7 +64,14 @@ void MyFPSCamera::updateMouseDeltaPos(long x, long y) {
 		mouseRotateLeft();
 	}
 
-	OutputDebugString("updateMousePos\n");
+	if (mouseDeltaY > 0) {
+		//guardo in alto
+		mouseRotateUp();
+	}
+	else if (mouseDeltaY < 0) {
+		//guardo in basso
+		mouseRotateDown();
+	}
 
 }
 
@@ -79,13 +86,19 @@ void MyFPSCamera::resetCursorPos(RECT windowRect, POINTS mousePos, int SCREEN_W,
 	//string debug = "r.left=" + to_string(r.left) + ", r.top=" + to_string(r.top);
 	//OutputDebugString( debug.c_str() );
 
-
+	//centratura orizzontale
 	if (mousePos.x < windowRect.left + 250 || mousePos.x > windowRect.right - 250) {
 		SetCursorPos(windowCenterX, windowCenterY);
 		mousePosReset = true;
 	}
 
-	OutputDebugString("resetCursorPos\n");
+	//centratura verticale
+	if ( mousePos.y < windowRect.top + 150 || mousePos.y > windowRect.bottom - 150 ) {
+		SetCursorPos(windowCenterX, windowCenterY);
+		mousePosReset = true;
+	}
+
+	//OutputDebugString("resetCursorPos\n");
 
 }
 
@@ -142,11 +155,44 @@ void MyFPSCamera::mouseRotateRight() {
 	//if (angley - rotationAngle < 0)
 	//	angley = 2 * PIGRECO;
 
+
 	angley -= rotationAngle;
 
 	lx = cos(angley);
 	lz = -sin(angley);
+}
 
+
+//guarda in alto con il mouse
+void MyFPSCamera::mouseRotateUp() {
+	//angolo di cui ruotare la telecamera(pitch)
+	double rotationAngle = cameraRotationSpeed*0.01;
+
+	//rotaz. risp asse y - YAW
+	if (anglez - rotationAngle < -PIGRECO/2.0 )
+		anglez = -PIGRECO/2.0;
+
+	anglez -= rotationAngle;
+	string debug = "rotataUP: " + std::to_string(anglez) + "\n";
+	OutputDebugString(debug.c_str());
+
+	ly = sin(anglez);
+}
+
+//guarda in basso con il mouse
+void MyFPSCamera::mouseRotateDown() {
+	//angolo di cui ruotare la telecamera(pitch)
+	double rotationAngle = cameraRotationSpeed*0.01;
+
+	//rotaz. risp asse y - YAW
+	if (anglez + rotationAngle > PIGRECO / 2.0)
+		anglez = PIGRECO / 2.0;
+
+	anglez += rotationAngle;
+	string debug = "rotataDOWN: " + std::to_string(anglez) + "\n";
+	OutputDebugString(debug.c_str());
+
+	ly = sin(anglez);
 }
 
 	
