@@ -23,6 +23,7 @@ using namespace std;
 #include "TerrainModel.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "SoundMgr.h"
+#include "Text.h"
 
 
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
@@ -47,6 +48,7 @@ bool	keys[256];													// Array Used For The Keyboard Routine
 bool	active=TRUE;												// Window Active Flag Set To TRUE By Default
 bool	fullscreen=TRUE;											// Fullscreen Flag Set To Fullscreen Mode By Default
 
+double deltaT = 0;			//deltaT tra un frame e l'altro
 
 //mondo 3D
 TerrainModel *terrain = NULL;												// Holds The Model Data
@@ -63,6 +65,11 @@ POINTS p;		//posizione del mouse
 //gestore suoni
 SoundMgr *sndMgr;
 
+//testo su schermo
+Text *txt;
+string fps = "";
+int frameCounter = 0;		//usato per calcolo fps, conta 100 frame renderizzati e poi torna a 0
+float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
 
 //opzioni - DEBUG
 ofstream logFile;				//stream per file di log
@@ -187,9 +194,6 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 	glEnable( GL_NORMALIZE );								//prima di applicare luci normalizza i vettori se necessario
 
-	
-
-
 
 
 	//prova nebbia
@@ -281,6 +285,25 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	//tempo impiegato dall'ultimo frame
 	//lastUpdate = GetTickCount();
+
+
+	//SCRITTE A SCHERMO - overlyay, gui, ...
+	//scritte a schermo(OVERLAY e GUI varie)
+
+
+	//calcolo fps ogni 100 frame
+	if (frameCounter >= 100) {
+		 fps = "FPS = " + to_string(int(frameCounter / cumulativeDeltaT));
+		
+		frameCounter = 0;
+		cumulativeDeltaT = 0.0f;
+	}
+	else {
+		frameCounter++;
+		cumulativeDeltaT += deltaT;
+	}
+
+	txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);
 
 
 	return TRUE;
@@ -625,8 +648,6 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//sndMgr->playBackgroundMusic();
 	//...
 
-
-
 	fullscreen = FALSE;
 	
 	// Create Our OpenGL Window
@@ -637,11 +658,20 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	}
 
 
+	//nasconde punt. mouse
+	ShowCursor(FALSE);
+
+	//iniz. testo a schermo
+	txt = new Text(GLUT_BITMAP_HELVETICA_18, 1.0f, 1.0f, 1.0f);
+
+
 	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
 	//lastUpdate = GetTickCount();
 	lastUpdate = clock();
 
-	//ShowCursor(FALSE);
+
+
+
 
 
 	while(!done)													// Loop That Runs While done=FALSE
@@ -670,6 +700,9 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 				SwapBuffers(hDC);									// Swap Buffers (Double Buffering)
 			}
 
+
+
+			//fullscreen
 			if (keys[VK_F1])										// Is F1 Being Pressed?
 			{
 				keys[VK_F1]=FALSE;									// If So Make Key FALSE
@@ -683,7 +716,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			}
 			
 
-			double deltaT = calculateDeltaT();
+			//tempo passato a causa del disegno del frame
+			deltaT = calculateDeltaT();
 
 			//rotazione telecamera
 			if( keys[VK_LEFT] ) {

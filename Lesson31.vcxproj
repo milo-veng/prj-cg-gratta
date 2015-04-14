@@ -140,6 +140,7 @@
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="SoundMgr.cpp" />
     <ClCompile Include="TerrainModel.cpp" />
+    <ClCompile Include="Text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoundingBox2D.h" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundMgr.h" />
     <ClInclude Include="TerrainModel.h" />
+    <ClInclude Include="Text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
