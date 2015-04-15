@@ -73,6 +73,9 @@ Model::~Model()
 
 void Model::draw() 
 {
+	//glPushMatrix();		//### lo aggiungo per colpa della chiama a glTranslatef in questa funzione
+						//che mi sposta tutto il sist. di rif., con il popMatrix faccio tornare tutto come era prima della chiamata
+
 	GLboolean texEnabled = glIsEnabled( GL_TEXTURE_2D );
 
 	// Draw by group
@@ -133,6 +136,9 @@ void Model::draw()
 		glEnable( GL_TEXTURE_2D );
 	else
 		glDisable( GL_TEXTURE_2D );
+
+
+	//glPopMatrix();		//####
 }
 
 void Model::reloadTextures()

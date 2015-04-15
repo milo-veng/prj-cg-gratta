@@ -21,6 +21,7 @@ using namespace std;
 #include "deltaT.h"
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
+#include "Pickable3DObject.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "SoundMgr.h"
 #include "Text.h"
@@ -70,6 +71,10 @@ Text *txt;
 string fps = "";
 int frameCounter = 0;		//usato per calcolo fps, conta 100 frame renderizzati e poi torna a 0
 float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
+
+//prova aku aku
+Pickable3DObject *aku;
+
 
 //opzioni - DEBUG
 ofstream logFile;				//stream per file di log
@@ -155,7 +160,7 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
 	terrain->pModel->reloadTextures();										// Loads Model Textures
-
+	aku->reloadTextures();
 
 	//carico texture skydome
 	skydomeTexture = LoadGLTexture("data/skydome.bmp");
@@ -264,12 +269,20 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	if( fogEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
 
 
+	
+	//disegno aku
+	OutputDebugString((to_string(deltaT)+"\n").c_str());
+	aku->draw(deltaT);
+
+	if (drawBoundingBoxes) {
+		//disegna bb del oggetto, lo faccio qui a parte e non tutti insieme in fondo per problemi di traslazione
+		aku->drawBoundingBoxes();
+	}
 
 	//disegno modelli 3D
 	terrain->draw();
 
-
-	//disegna le bounding box degli oggetti collidibili
+	//disegna le bounding box del terrain
 	if( drawBoundingBoxes ) {
 		terrain->drawBoundingBoxes();
 	}
@@ -637,7 +650,17 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	logFile << "Caricamento file bounding box del mondo" << endl;
 	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");
-	//terrain->generateCollisionMatrix(100); //passo la risoluzione della matrice collisioni
+	
+
+
+	//################################################
+	//provo a caricare aku aku
+	aku = new Pickable3DObject( Pickable3DObject::Pickable3DObjectType::GEM );
+	logFile << "Caricamento modello 3d aku aku...";
+	aku->loadModelData("data/gem.ms3d");
+	aku->setPosition(0.0, 0.0f, 0.0f); 
+
+
 
 	
 
@@ -676,6 +699,13 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	while(!done)													// Loop That Runs While done=FALSE
 	{
+
+
+
+		//tempo passato a causa del disegno del frame
+		deltaT = calculateDeltaT();
+
+
 		if (PeekMessage(&msg,NULL,0,0,PM_REMOVE))					// Is There A Message Waiting?
 		{
 			if (msg.message==WM_QUIT)								// Have We Received A Quit Message?
@@ -715,9 +745,6 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 				}
 			}
 			
-
-			//tempo passato a causa del disegno del frame
-			deltaT = calculateDeltaT();
 
 			//rotazione telecamera
 			if( keys[VK_LEFT] ) {

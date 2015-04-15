@@ -137,6 +137,7 @@
     <ClCompile Include="MilkshapeModel.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="MyFPSCamera.cpp" />
+    <ClCompile Include="Pickable3DObject.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="SoundMgr.cpp" />
     <ClCompile Include="TerrainModel.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="MilkshapeModel.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="MyFPSCamera.h" />
+    <ClInclude Include="Pickable3DObject.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundMgr.h" />
     <ClInclude Include="TerrainModel.h" />

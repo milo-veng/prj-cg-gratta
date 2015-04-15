@@ -1,6 +1,9 @@
 #include <ctime>
 using namespace std;
 
+#ifndef _CALC_DELTA_T_
+#define _CALC_DELTA_T_
+
 clock_t lastUpdate=0;
 
 // la funzione deve calcolare il deltaT,
@@ -18,3 +21,5 @@ double calculateDeltaT()
 
   return deltaT;
 }
+
+#endif
