@@ -64,7 +64,10 @@ public:
 
 
 	MyFPSCamera();
-
+	
+	
+	//ritorna la BB del player, Nota: non tiene conto del deltaPos del frame attuale!
+	BoundingBox2D getBoundingBox() { BoundingBox2D bb(xpos, zpos, playerW, playerH); return bb; }
 
 	//aggiorna mouseDeltaX e mouseDeltaY
 	void updateMouseDeltaPos(long x, long y );

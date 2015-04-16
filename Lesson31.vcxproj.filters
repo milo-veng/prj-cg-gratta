@@ -45,6 +45,9 @@
     <ClCompile Include="Pickable3DObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PickableObjectsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MilkshapeModel.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Pickable3DObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PickableObjectsManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

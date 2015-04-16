@@ -22,25 +22,30 @@ public:
 
 
 private:
+	int ID;					//num. UNIVOCO che identifica l'oggetto(corrisp. alla posiz. nel vett. gems\masks in PickableObjectManager
+
 	BoundingBox2D *bb;
+	BoundingBox2D randomPosLimits;		//contiene il rettangolo dentro al quale può essere posiz. a caso da setRandomPosition()
 
 	int points;			//# di punti che il giocatore riceve quando ci passa sopra
 	//i dati del modello e le funz. per il disegno sono ereditate da Model.h
 
 	float rotationSpeed;
 	float angle;			//angolo di rotazione
-	bool visible;
+	bool active;			//se true viene disegnato ed è collidibile
 
 	Pickable3DObjectType objType;
 
 public:
 
-	Pickable3DObject(Pickable3DObjectType type);
+	Pickable3DObject(int id, Pickable3DObjectType type, int points = 10);
 	~Pickable3DObject();
+
 
 	BoundingBox2D *getBoundingBox() { return bb; }
 
-	void setVisibility(bool visible) { this->visible = visible; }
+
+	void setActive(bool a) { this->active = a; }
 
 	//imposta posizione oggetto e bounding box, specifica anche dimensioni bounding box
 	void setPosition(float x, float y, float z);

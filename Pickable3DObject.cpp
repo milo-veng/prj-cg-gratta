@@ -12,7 +12,10 @@ using namespace std;
 extern ofstream logFile;
 
 
-Pickable3DObject::Pickable3DObject(Pickable3DObjectType type)
+//costruisce un Pickable3DObj del tipo specificato(GEM,AKU) e stabilisce il punteggio
+//assegnato al giocatore quando lo raccoglie, valore di default = 10(gemma standard)
+//id è un num. UNIVOCO che identifica l'oggetto
+Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points )
 {
 	bb = new BoundingBox2D(0.0f, 0.0f, 0.0f, 0.0f);
 	bb->x = 0.0f;
@@ -34,10 +37,9 @@ Pickable3DObject::Pickable3DObject(Pickable3DObjectType type)
 
 
 
-
 	float rotationSpeed = 0.000001f;
 
-	bool visible = true;
+	bool active = true;
 
 	angle = 0.0;
 }
@@ -65,26 +67,21 @@ void Pickable3DObject::setPosition(float x, float y, float z) {
 //riposiziona l'oggetto in un punto qualsiasi dentro al rettangolo
 //e ricalcola la bounding box
 //definito da limit sul piano X-Z
-//setPosition(...) DEVE essere stato chiamato almeno 1 volta prima di questa funzione
+//N.B: non controlla se due oggetti siano troppo vicini o sovrapposti!
 void Pickable3DObject::setRandomPosition(BoundingBox2D limit) {
 
-	//se setPosition(...) non è mai stata chiamata allora ritorna
-	//if (bb->x == bb->z == bb->w == bb->h == 0.0f)
-		//return;
+	randomPosLimits = limit;
 
 
 	srand(time(NULL));
 	
 	//genera due valori casuali contenuti dentro i limiti della bounding box limits
-	float randX = rand() % (int)(limit.w + limit.x) + limit.x;
-	float randZ = rand() % (int)(limit.h + limit.z) + limit.z;
+	float randX = rand() % (int)(randomPosLimits.w) + randomPosLimits.x;
+	float randZ = rand() % (int)(randomPosLimits.h) + randomPosLimits.z;
 
-	//sposto il modello
-	translateModel(randX, this->ypos, randZ);
 
-	//aggiorno posiz. BB( l'oggetto 3D è centrato all'interno della bounding box)
-	bb->x = xpos - bb->w / 2;
-	bb->z = ypos - bb->h / 2;
+	//sposto il modello+
+	setPosition(randX, 0.0f, randZ);
 
 }
 
@@ -116,7 +113,7 @@ bool Pickable3DObject::isCollidingWith(BoundingBox2D other) {
 //ridefinisco la funzione draw() di Model.h
 void Pickable3DObject::draw(float deltaT) {
 	
-	if (!visible)
+	if (!active)
 		return;
 
 
@@ -154,20 +151,23 @@ void Pickable3DObject::draw(float deltaT) {
 		}
 
 
-		//traslo il modello nella sua posizione attuale
-		//glTranslatef(xpos, ypos, zpos);
+		//N.B: le funzioni vanno chiamate nell'ordine inverso a quello in cui vengono eseguite
+		//glTranslatef(-xpos, -ypos, -zpos); //porto nell'origine
+		float oldX = xpos; float oldY = ypos; float oldZ = zpos;
+
+		//glTranslatef(xpos, ypos, zpos);	//3) riporto nella posiz. di partenza
+		glTranslatef(oldX, oldY, oldZ);
 
 
-		glTranslatef(-xpos, -ypos, -zpos);
-		
-		if(angle + rotationSpeed*deltaT >= 2*PI_GRECO)
+		if (angle + rotationSpeed*deltaT >= 2 * PI_GRECO)
 			angle = 0.0f;
 
 		angle += rotationSpeed*deltaT*0.0000001f;
+		glRotatef(-angle, 0.0f, 1.0f, 0.0f);  // 2) ruoto su se stesso poichè sono nell'origine
 
-		glRotatef(-angle, 0.0f, 1.0f, 0.0f);
+		
+		glTranslatef(0.0f, 0.0f, 0.0f);			//1) trasla nell'origine
 
-		glTranslatef(xpos, ypos, zpos);
 		
 
 
@@ -204,6 +204,11 @@ void Pickable3DObject::draw(float deltaT) {
 
 
 void Pickable3DObject::drawBoundingBoxes() {
+
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);	//wireframe
+
+
 	//aku BB
 	glBegin(GL_QUADS);
 	const BoundingBox2D *b = bb;
@@ -213,4 +218,16 @@ void Pickable3DObject::drawBoundingBoxes() {
 	glVertex3f(b->x + b->w, 0.0f, b->z + b->h);
 	glVertex3f(b->x, 0.0f, b->z + b->h);
 	glEnd();
+
+
+	//setRandomPos limit bb
+
+	glBegin(GL_QUADS);
+	glVertex3f(randomPosLimits.x, 0.0f, randomPosLimits.z);
+	glVertex3f(randomPosLimits.x + randomPosLimits.w, 0.0f, randomPosLimits.z);
+	glVertex3f(randomPosLimits.x + randomPosLimits.w, 0.0f, randomPosLimits.z + randomPosLimits.h);
+	glVertex3f(randomPosLimits.x, 0.0f, randomPosLimits.z + randomPosLimits.h);
+	glEnd();
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //filled
 }

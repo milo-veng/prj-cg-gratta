@@ -73,7 +73,7 @@ int frameCounter = 0;		//usato per calcolo fps, conta 100 frame renderizzati e p
 float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
 
 //prova aku aku
-Pickable3DObject *aku;
+//Pickable3DObject *aku;
 
 
 //opzioni - DEBUG
@@ -160,7 +160,7 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
 	terrain->pModel->reloadTextures();										// Loads Model Textures
-	aku->reloadTextures();
+	//aku->reloadTextures();
 
 	//carico texture skydome
 	skydomeTexture = LoadGLTexture("data/skydome.bmp");
@@ -271,12 +271,11 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	
 	//disegno aku
-	OutputDebugString((to_string(deltaT)+"\n").c_str());
-	aku->draw(deltaT);
+	//aku->draw(deltaT);
 
 	if (drawBoundingBoxes) {
 		//disegna bb del oggetto, lo faccio qui a parte e non tutti insieme in fondo per problemi di traslazione
-		aku->drawBoundingBoxes();
+		//aku->drawBoundingBoxes();
 	}
 
 	//disegno modelli 3D
@@ -303,7 +302,6 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	//SCRITTE A SCHERMO - overlyay, gui, ...
 	//scritte a schermo(OVERLAY e GUI varie)
 
-
 	//calcolo fps ogni 100 frame
 	if (frameCounter >= 100) {
 		 fps = "FPS = " + to_string(int(frameCounter / cumulativeDeltaT));
@@ -316,7 +314,11 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 		cumulativeDeltaT += deltaT;
 	}
 
+	//scrivo la posiz. (x,y,z) della telecamera(player)
+	string camPos = "POS = " + to_string(camera.xpos) + ", " + to_string(camera.ypos) + ", " + to_string(camera.zpos);
+
 	txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);
+	txt->drawText(camPos, 10, 35, SCREEN_W, SCREEN_H);
 
 
 	return TRUE;
@@ -655,11 +657,14 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	//################################################
 	//provo a caricare aku aku
-	aku = new Pickable3DObject( Pickable3DObject::Pickable3DObjectType::GEM );
+	//aku = new Pickable3DObject( Pickable3DObject::Pickable3DObjectType::GEM ); 
 	logFile << "Caricamento modello 3d aku aku...";
-	aku->loadModelData("data/gem.ms3d");
-	aku->setPosition(0.0, 0.0f, 0.0f); 
+	//aku->loadModelData("data/gem.ms3d");
+	//aku->setPosition(10.0, 0.0f, 10.0f); 
 
+	//riposiziona in pos. random la gemma
+	//BoundingBox2D limit(-140.0f, -32.0f, 277.0f, 170.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
+	//aku->setRandomPosition( limit );
 
 
 	
