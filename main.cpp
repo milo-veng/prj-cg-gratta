@@ -16,12 +16,13 @@
 #include <fstream>
 #include <ctime>
 #include <ios>
+#include <random>
 using namespace std;
 
 #include "deltaT.h"
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
-#include "Pickable3DObject.h"
+#include "PickableObjectsManager.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "SoundMgr.h"
 #include "Text.h"
@@ -74,6 +75,7 @@ float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
 
 //prova aku aku
 //Pickable3DObject *aku;
+PickableObjectsManager *objMgr;
 
 
 //opzioni - DEBUG
@@ -161,6 +163,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
 	terrain->pModel->reloadTextures();										// Loads Model Textures
 	//aku->reloadTextures();
+	objMgr->reloadTextures();
 
 	//carico texture skydome
 	skydomeTexture = LoadGLTexture("data/skydome.bmp");
@@ -272,10 +275,12 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	
 	//disegno aku
 	//aku->draw(deltaT);
+	objMgr->drawAll(deltaT);
 
 	if (drawBoundingBoxes) {
 		//disegna bb del oggetto, lo faccio qui a parte e non tutti insieme in fondo per problemi di traslazione
 		//aku->drawBoundingBoxes();
+		objMgr->drawAllBoundingBoxes();
 	}
 
 	//disegno modelli 3D
@@ -658,14 +663,16 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//################################################
 	//provo a caricare aku aku
 	//aku = new Pickable3DObject( Pickable3DObject::Pickable3DObjectType::GEM ); 
-	logFile << "Caricamento modello 3d aku aku...";
+	logFile << "Caricamento e posizionamento gemme e maschere...";
 	//aku->loadModelData("data/gem.ms3d");
 	//aku->setPosition(10.0, 0.0f, 10.0f); 
 
 	//riposiziona in pos. random la gemma
-	//BoundingBox2D limit(-140.0f, -32.0f, 277.0f, 170.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
+	//srand(time(NULL));
+	BoundingBox2D limit(-140.0f, -32.0f, 268.0f, 170.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
 	//aku->setRandomPosition( limit );
-
+	objMgr = new PickableObjectsManager();
+	objMgr->placeGems(limit, terrain, 10);
 
 	
 

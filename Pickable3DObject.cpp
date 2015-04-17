@@ -4,6 +4,7 @@
 #include <cmath>
 using namespace std;
 
+#include "randomNum.h"
 #include "Pickable3DObject.h"
 
 
@@ -73,11 +74,12 @@ void Pickable3DObject::setRandomPosition(BoundingBox2D limit) {
 	randomPosLimits = limit;
 
 
-	srand(time(NULL));
 	
 	//genera due valori casuali contenuti dentro i limiti della bounding box limits
-	float randX = rand() % (int)(randomPosLimits.w) + randomPosLimits.x;
-	float randZ = rand() % (int)(randomPosLimits.h) + randomPosLimits.z;
+	//float randX = rand() % (int)(randomPosLimits.w) + randomPosLimits.x;
+	//float randZ = rand() % (int)(randomPosLimits.h) + randomPosLimits.z;
+	float randX = getRandomFloat(randomPosLimits.x, randomPosLimits.x + randomPosLimits.w);
+	float randZ = getRandomFloat(randomPosLimits.z, randomPosLimits.z + randomPosLimits.h);
 
 
 	//sposto il modello+

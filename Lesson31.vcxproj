@@ -153,6 +153,7 @@
     <ClInclude Include="MyFPSCamera.h" />
     <ClInclude Include="Pickable3DObject.h" />
     <ClInclude Include="PickableObjectsManager.h" />
+    <ClInclude Include="randomNum.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundMgr.h" />
     <ClInclude Include="TerrainModel.h" />
