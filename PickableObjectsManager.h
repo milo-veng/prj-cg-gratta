@@ -19,6 +19,10 @@ class PickableObjectsManager
 
 	int RANDOM_PLACING_MAX_ITERATIONS;
 
+	//usati per evitare di piazzare nuove gemme troppo vicine all'ultima piazzata
+	float oldX;
+	float oldZ;
+
 public:
 	PickableObjectsManager();
 	~PickableObjectsManager();

@@ -1,15 +1,24 @@
-﻿Compilazione avviata 17/04/2015 17.50.41.
+﻿Compilazione avviata 20/04/2015 11.54.50.
      1>Progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Pickable3DObject.cpp
-         Pickable3DObject.cpp
-     1>c:\users\amila\documents\github\prj-cg-gratta\randomnum.h(20): warning C4244: 'return': conversione da 'int' a 'float'. Possibile perdita di dati.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Overlay.cpp PickableObjectsManager.cpp
+         PickableObjectsManager.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(85): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(162): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(167): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(178): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(183): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(194): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(199): warning C4018: '<': errata corrispondenza tra signed e unsigned
+         Overlay.cpp
+         Generazione del codice in corso...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib audiere.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\BoundingBox2D.obj
          .\Debug\main.obj
          .\Debug\MilkshapeModel.obj
          .\Debug\Model.obj
          .\Debug\MyFPSCamera.obj
+         .\Debug\Overlay.obj
          .\Debug\Pickable3DObject.obj
          .\Debug\PickableObjectsManager.obj
          .\Debug\Sound.obj
@@ -21,4 +30,4 @@
 
 Compilazione completata.
 
-Tempo trascorso 00:00:01.18
+Tempo trascorso 00:00:02.38

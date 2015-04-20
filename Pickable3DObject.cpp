@@ -80,7 +80,7 @@ void Pickable3DObject::setRandomPosition(BoundingBox2D limit) {
 	//float randZ = rand() % (int)(randomPosLimits.h) + randomPosLimits.z;
 	float randX = getRandomFloat(randomPosLimits.x, randomPosLimits.x + randomPosLimits.w);
 	float randZ = getRandomFloat(randomPosLimits.z, randomPosLimits.z + randomPosLimits.h);
-
+	
 
 	//sposto il modello+
 	setPosition(randX, 0.0f, randZ);

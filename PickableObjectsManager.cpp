@@ -5,6 +5,7 @@ extern ofstream logFile;
 PickableObjectsManager::PickableObjectsManager()
 {
 	RANDOM_PLACING_MAX_ITERATIONS = 100;
+	oldX = oldZ = 0.0f;
 }
 
 
@@ -80,6 +81,26 @@ bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terr
 BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
 	BoundingBox2D bb(0.0f, 0.0f, 0.0f, 0.0f);
 
+	//coll. con gemme
+	for (int i = 0; i < gems.size(); i++) {
+		BoundingBox2D b = *gems.at(i)->getBoundingBox();
+
+		//camera sta collidendo con una gemma
+		if (!(camera.x > b.x + b.w
+			|| camera.x + camera.w < b.x
+			|| camera.z > b.z + b.h
+			|| camera.z + camera.h < b.z)) {
+			
+			bb = b;
+
+		}
+
+
+	}
+
+
+	//coll. con maschere
+
 
 	return bb;
 }
@@ -101,18 +122,29 @@ bool PickableObjectsManager::isGoodPosition(BoundingBox2D obj, BoundingBox2D lim
 	}
 
 
+	//è troppo vicino alla gemma piazzata all'iteraz. prec. di placeGems(...)?, calcola la distanza.
+	if (sqrt(pow(obj.x - oldX, 2) + pow(obj.z - oldZ, 2)) < 25.0f ) {
+		return false;
+	}
+
+	oldX = obj.x;
+	oldZ = obj.z;
+
+
 	//collide con qualche elemento del Terrain( alberi, rocce, ...)
 	for (int i = 0; i < terrain->boundingBoxNum; i++) {
 
 		BoundingBox2D b = terrain->bb[i];
 
-		if (obj.x < b.x + b.w &&
-			obj.x + obj.w > b.x &&
-			obj.z + b.z + b.h &&
-			obj.z + obj.h > b.z) {
-			//vi è una collisione!
+		if (!(obj.x > b.x + b.w
+			|| obj.x + obj.w < b.x
+			|| obj.z > b.z + b.h
+			|| obj.z + obj.h < b.z)) {
+
+			//la gemma è dentro ad un albero!
 			return false;
 		}
+
 
 	}
 

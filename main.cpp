@@ -669,10 +669,10 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	//riposiziona in pos. random la gemma
 	//srand(time(NULL));
-	BoundingBox2D limit(-140.0f, -32.0f, 268.0f, 170.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
+	BoundingBox2D limit(-140.0f, -32.0f, 268.0f, 168.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
 	//aku->setRandomPosition( limit );
 	objMgr = new PickableObjectsManager();
-	objMgr->placeGems(limit, terrain, 10);
+	objMgr->placeGems(limit, terrain, 30);
 
 	
 
