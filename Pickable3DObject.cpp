@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <cmath>
+#include <string>
 using namespace std;
 
 #include "randomNum.h"
@@ -43,6 +44,13 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 	bool active = true;
 
 	angle = 0.0;
+
+	upDownSpeed = 20.0f;		//1/upDownSpeed, più grande -> animaz,. più lenta
+	defaultYPos = ypos;
+
+	//###
+	ypos = defaultYPos = 1.0f;
+
 }
 
 
@@ -93,14 +101,25 @@ bool Pickable3DObject::isCollidingWith(BoundingBox2D other) {
 	BoundingBox2D collider;	//iniz. coi valori nulli => isNull() == true adesso
 
 	//se arg. nullo ritorna subito
-	if (other.isNull())
+	if (other.isNull()) {
+		OutputDebugString("Pickable3DObj::isCollidingWith(): other è null!");
 		return false;
+	}
 
+	BoundingBox2D tmpbb = *bb;
 	
-	if (bb->x < other.x + other.w &&
+	
+	/*if (bb->x < other.x + other.w &&
 		bb->x + bb->w > other.x &&
 		bb->z < other.z + other.h &&
-		bb->h + bb->z > other.z)
+		bb->h + bb->z > other.z)*/
+
+
+	//######### NON FUNZIONA LA COLLISIONE!!!!!
+	if (tmpbb.x < other.x + other.w &&
+		tmpbb.x + tmpbb.w > other.x &&
+		tmpbb.z < other.z + other.h &&
+		tmpbb.h + tmpbb.z > other.z)
 	{
 		//collisione avvenuta!
 		logFile << "Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=" << other.x << "," << other.z << "," << other.w << "," << other.h << endl;
@@ -152,9 +171,14 @@ void Pickable3DObject::draw(float deltaT) {
 			glDisable(GL_TEXTURE_2D);
 		}
 
-
 		//N.B: le funzioni vanno chiamate nell'ordine inverso a quello in cui vengono eseguite
-		//glTranslatef(-xpos, -ypos, -zpos); //porto nell'origine
+				//glTranslatef(-xpos, -ypos, -zpos); //porto nell'origine
+
+		//OSCILLAZION SU ASSE Y
+		ypos = defaultYPos*cos(angle / 10.0f);
+
+
+		//ROTAZIONE SU SE STESSO
 		float oldX = xpos; float oldY = ypos; float oldZ = zpos;
 
 		//glTranslatef(xpos, ypos, zpos);	//3) riporto nella posiz. di partenza
@@ -232,4 +256,12 @@ void Pickable3DObject::drawBoundingBoxes() {
 	glEnd();
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //filled
+}
+
+
+//se true inverte la direzione di traslazione su asse y per fare l'animazione
+bool Pickable3DObject::hasReachedAnimationLimit() {
+
+	return (abs(ypos - defaultYPos) > 2.0f);
+
 }

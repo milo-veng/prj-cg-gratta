@@ -24,6 +24,7 @@ using namespace std;
 #include "TerrainModel.h"
 #include "PickableObjectsManager.h"
 #include "MyFPSCamera.h"											//header per la telecamera
+#include "PlayerStats.h"
 #include "SoundMgr.h"
 #include "Text.h"
 
@@ -69,6 +70,7 @@ SoundMgr *sndMgr;
 
 //testo su schermo
 Text *txt;
+PlayerStats pStats(SCREEN_W, SCREEN_H);
 string fps = "";
 int frameCounter = 0;		//usato per calcolo fps, conta 100 frame renderizzati e poi torna a 0
 float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
@@ -286,9 +288,10 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	//disegno modelli 3D
 	terrain->draw();
 
-	//disegna le bounding box del terrain
+	//disegna le bounding box del terrain e della camera
 	if( drawBoundingBoxes ) {
 		terrain->drawBoundingBoxes();
+		camera.drawBoundingBox();
 	}
 
 
@@ -306,6 +309,8 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	//SCRITTE A SCHERMO - overlyay, gui, ...
 	//scritte a schermo(OVERLAY e GUI varie)
+	//barra vita
+
 
 	//calcolo fps ogni 100 frame
 	if (frameCounter >= 100) {
@@ -321,10 +326,18 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	//scrivo la posiz. (x,y,z) della telecamera(player)
 	string camPos = "POS = " + to_string(camera.xpos) + ", " + to_string(camera.ypos) + ", " + to_string(camera.zpos);
+	string points = "Punteggio: " + to_string(pStats.getPoints());
+
 
 	txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);
 	txt->drawText(camPos, 10, 35, SCREEN_W, SCREEN_H);
+	txt->drawText(points, SCREEN_W-140, 75, SCREEN_W, SCREEN_H);
 
+
+	//aggiorna punteggio
+	pStats.updateLifeAmount(deltaT);
+	pStats.drawLifeBar();
+	
 
 	return TRUE;
 }
@@ -677,11 +690,12 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	
 
 	/* CARICAMENTO SUONI */
-	vector<string> soundFiles;
-	vector<string> soundNames;
 	sndMgr = new SoundMgr();
-	//sndMgr->playBackgroundMusic();
-	//...
+	//sndMgr->playBackgroundMusic(); //Secrets of Monkey Island - Title
+	vector<string> sounds; sounds.push_back("Data/audio/gem.wav");
+	vector<string> soundNames; soundNames.push_back("GEM");
+	sndMgr->loadSounds(sounds, soundNames);
+
 
 	fullscreen = FALSE;
 	
@@ -808,6 +822,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 			//DEBUG POSIZ. TELECAMERA(PLAYER)
 			//string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
 			//OutputDebugString( pPos.c_str() );
+
 
 			RECT r;
 			GetWindowRect(hWnd, &r);

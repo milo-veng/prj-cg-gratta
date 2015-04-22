@@ -31,10 +31,13 @@ private:
 	//i dati del modello e le funz. per il disegno sono ereditate da Model.h
 
 	float rotationSpeed;
+	float upDownSpeed;
+	float defaultYPos;
 	float angle;			//angolo di rotazione
 	bool active;			//se true viene disegnato ed è collidibile
 
 	Pickable3DObjectType objType;
+
 
 public:
 
@@ -46,6 +49,7 @@ public:
 
 
 	void setActive(bool a) { this->active = a; }
+	bool isActive() { return active; }
 
 	//imposta posizione oggetto e bounding box, specifica anche dimensioni bounding box
 	void setPosition(float x, float y, float z);
@@ -69,5 +73,9 @@ public:
 
 	//disegna la bounding box dell'oggetto(all'altezza predefinita di 0.0f)
 	void drawBoundingBoxes();
+
+
+	//se true inverte la direzione di traslazione su asse y per fare l'animazione
+	bool hasReachedAnimationLimit();
 };
 

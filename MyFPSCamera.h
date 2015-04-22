@@ -9,8 +9,10 @@ using namespace std;
 #define _MY_FPS_CAMERA_
 
 #include "TerrainModel.h"
+#include "PickableObjectsManager.h"
 
 extern TerrainModel *terrain;
+extern PickableObjectsManager *objMgr;
 
 //posizione player(telecamera)
 struct MyFPSCamera {
@@ -67,13 +69,16 @@ public:
 	
 	
 	//ritorna la BB del player, Nota: non tiene conto del deltaPos del frame attuale!
-	BoundingBox2D getBoundingBox() { BoundingBox2D bb(xpos, zpos, playerW, playerH); return bb; }
+	BoundingBox2D getBoundingBox() { BoundingBox2D bb(xpos-playerW/2.0f, zpos-playerH/2.0f, playerW, playerH); return bb; }
 
 	//aggiorna mouseDeltaX e mouseDeltaY
 	void updateMouseDeltaPos(long x, long y );
 
 	//riposiziona il cursore al centro dello schermo(rotaz. telecamera col mouse)
 	void resetCursorPos(RECT windowRect, POINTS mousePos, int SCREEN_W, int SCREEN_H);
+
+	//disegna la BB della camera
+	void drawBoundingBox();
 
 
 	//rotazioni

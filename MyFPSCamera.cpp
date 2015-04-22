@@ -173,8 +173,8 @@ void MyFPSCamera::mouseRotateUp() {
 		anglez = -PIGRECO/2.0;
 
 	anglez -= rotationAngle;
-	string debug = "rotataUP: " + std::to_string(anglez) + "\n";
-	OutputDebugString(debug.c_str());
+	//string debug = "rotataUP: " + std::to_string(anglez) + "\n";
+	//OutputDebugString(debug.c_str());
 
 	ly = sin(anglez);
 }
@@ -189,8 +189,8 @@ void MyFPSCamera::mouseRotateDown() {
 		anglez = PIGRECO / 2.0;
 
 	anglez += rotationAngle;
-	string debug = "rotataDOWN: " + std::to_string(anglez) + "\n";
-	OutputDebugString(debug.c_str());
+	//string debug = "rotataDOWN: " + std::to_string(anglez) + "\n";
+	//OutputDebugString(debug.c_str());
 
 	ly = sin(anglez);
 }
@@ -208,7 +208,9 @@ void MyFPSCamera::moveForward(double deltaT) {
 		//BoundingBox2D player(tmpXPos, tmpZPos, playerW, playerH ); 
 		BoundingBox2D player(xpos+xDelta, zpos+zDelta, playerW, playerH );	//predice la prossima posizione del player
 
-		//verifica se ci sono collisioni
+
+
+		//Collisioni con la mappa
 		BoundingBox2D collider = terrain->isCollidingWith( player );
 
 		//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
@@ -220,7 +222,14 @@ void MyFPSCamera::moveForward(double deltaT) {
 
 		}
 
-	}
+
+
+		//Collisioni con le gemme e gestione di esse
+		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
+		BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+
+	} //fine collisioni
+
 
 	//update posiz.
 	xpos += xDelta;
@@ -250,6 +259,11 @@ void MyFPSCamera::moveBackward(double deltaT) {
 			xDelta = zDelta = 0.0;
 
 		}
+
+
+		//Collisioni con le gemme e gestione di esse
+		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
+		BoundingBox2D gemCollider = objMgr->checkCollisions(player);
 
 	}
 
@@ -293,6 +307,10 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 
 				}
 
+				//Collisioni con le gemme e gestione di esse
+				//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
+				BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+
 			}
 
 			//update posiz.
@@ -334,6 +352,10 @@ void MyFPSCamera::strafeRight(double deltaT) {
 
 				}
 
+				//Collisioni con le gemme e gestione di esse
+				//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
+				BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+
 			}
 
 			//update posiz.
@@ -351,6 +373,24 @@ void MyFPSCamera::moveDown(double deltaT) {
 	ypos += cameraMovementspeed*deltaT;
 }
 
+
+//disegna la BB della camera
+void MyFPSCamera::drawBoundingBox() {
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);	//wireframe
+
+
+	BoundingBox2D *b = &getBoundingBox();
+	
+	glBegin(GL_QUADS);
+	glVertex3f(b->x, 0.0f, b->z);
+	glVertex3f(b->x + b->w, 0.0f, b->z);
+	glVertex3f(b->x + b->w, 0.0f, b->z + b->h);
+	glVertex3f(b->x, 0.0f, b->z + b->h);
+	glEnd();
+
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //filled
+}
 
 
 

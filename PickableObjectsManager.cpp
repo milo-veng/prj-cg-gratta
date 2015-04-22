@@ -51,6 +51,9 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 				break;
 			}
 		}
+
+		obj->setActive(true);
+
 		logFile << "Piazzata una gemma in (x,z)=" << obj->getBoundingBox()->x << ", " << obj->getBoundingBox()->z << endl;
 
 		//inserisce il puntatore nel vettore
@@ -59,6 +62,7 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 	} //for
 
 
+	gemsNum = gems.size();
 
 	return true;
 
@@ -69,9 +73,16 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 //dentro alla BB limits. 
 //Si occupa di allocare gli elementi del vettore gems e 
 //di richiamare per ciascuno setRandomPosition()
-bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain, int num) {
+bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain) {
+	//le posizioni e il num. di maschere sono HARD CODED!
+	const int MASK_NUM = 4;
+	float posX[MASK_NUM] = {1.0f, 10.0f, 20.0f, 30.0f};
+	float posZ[MASK_NUM] = {1.0f, 10.0f, 20.0f, 30.0f};
+
+	//...
 
 
+	masksNum = masks.size();
 
 	return true;
 }
@@ -83,20 +94,22 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
 
 	//coll. con gemme
 	for (int i = 0; i < gems.size(); i++) {
-		BoundingBox2D b = *gems.at(i)->getBoundingBox();
+		if (!gems.at(i)->isActive()) continue;	//considero solo le gemme "ACTIVE"
 
-		//camera sta collidendo con una gemma
-		if (!(camera.x > b.x + b.w
-			|| camera.x + camera.w < b.x
-			|| camera.z > b.z + b.h
-			|| camera.z + camera.h < b.z)) {
+		BoundingBox2D *b = gems.at(i)->getBoundingBox();
+
+		if (gems.at(i)->isCollidingWith(camera)) {
+			gems.at(i)->setActive(false);
 			
-			bb = b;
+			//gestione punteggio
+			pStats.gemCollected();
+
+			//effetto sonoro gemma presa
+			sndMgr->play("GEM");
 
 		}
 
-
-	}
+	} //for gemme
 
 
 	//coll. con maschere

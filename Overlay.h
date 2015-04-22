@@ -13,12 +13,15 @@ class Overlay
 public:
 	int SCREEN_W;
 	int SCREEN_H;
-	float w_max;
-	float h1,h2;
+
+	//nota: sono float perchè li passa alle funzioni gl*f()
+	float x1;			//ascissa di partenza della barra	
+	float w_max;		//ascissa di arrivo della barra
+	float h1,h2;		//h2-h1 = altezza della barra
 
 public:
 	Overlay(int SCREEN_W, int SCREEN_H);
-	void drawLife(int life);
+	void drawLife(float life);
 
 
 };

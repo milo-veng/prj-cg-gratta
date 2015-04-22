@@ -5,8 +5,13 @@ using namespace std;
 #include "BoundingBox2D.h"
 #include "Pickable3DObject.h"
 #include "TerrainModel.h"
+#include "SoundMgr.h"
+#include "PlayerStats.h"
 
 #pragma once
+
+extern SoundMgr *sndMgr;
+extern PlayerStats pStats;
 
 
 class PickableObjectsManager
@@ -29,7 +34,7 @@ public:
 
 	bool placeGems(BoundingBox2D limits, TerrainModel *terrain, int num);				//piazza le gemme in giro per la mappa
 
-	bool placeMasks(BoundingBox2D limits, TerrainModel *terrain, int num);				//idem
+	bool placeMasks(BoundingBox2D limits, TerrainModel *terrain);				//idem
 			
 
 	void reloadTextures();																//ricarica tutte le texture dei modelli 3d, chiamato in GLinit()

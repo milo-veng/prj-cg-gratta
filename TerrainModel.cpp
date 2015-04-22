@@ -128,7 +128,7 @@ BoundingBox2D TerrainModel::isCollidingWith( BoundingBox2D playerBox ) {
 		{
 			//collisione avvenuta!
 			collider = tmpbb;
-			logFile << "Collisione con (x,z,w,h)=" << collider.x << "," << collider.z << "," << collider.w << "," << collider.h << endl;
+			//logFile << "TerrainModel::isCollidingWith(camera): collisione con (x,z,w,h)=" << collider.x << "," << collider.z << "," << collider.w << "," << collider.h << endl;
 			break;
 		} 
 

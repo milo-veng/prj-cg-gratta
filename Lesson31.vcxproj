@@ -140,6 +140,7 @@
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Pickable3DObject.cpp" />
     <ClCompile Include="PickableObjectsManager.cpp" />
+    <ClCompile Include="PlayerStats.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="SoundMgr.cpp" />
     <ClCompile Include="TerrainModel.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Overlay.h" />
     <ClInclude Include="Pickable3DObject.h" />
     <ClInclude Include="PickableObjectsManager.h" />
+    <ClInclude Include="PlayerStats.h" />
     <ClInclude Include="randomNum.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundMgr.h" />
