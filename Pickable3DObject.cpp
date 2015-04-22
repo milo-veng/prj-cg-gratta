@@ -33,8 +33,8 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 	}
 	else if (type == Pickable3DObjectType::AKUAKU) {
 		//da verificare!!!!!!!!!!!!!!!
-		bb->w = 1.0f;
-		bb->h = 2.0f;
+		bb->w = 3.0f;
+		bb->h = 3.0f;
 	}
 
 
@@ -45,8 +45,7 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 
 	angle = 0.0;
 
-	upDownSpeed = 20.0f;		//1/upDownSpeed, più grande -> animaz,. più lenta
-	defaultYPos = ypos;
+	upDownSpeed = 10.0f;		//1/upDownSpeed, più grande -> animaz,. più lenta
 
 	//###
 	ypos = defaultYPos = 1.0f;
@@ -175,7 +174,7 @@ void Pickable3DObject::draw(float deltaT) {
 				//glTranslatef(-xpos, -ypos, -zpos); //porto nell'origine
 
 		//OSCILLAZION SU ASSE Y
-		ypos = defaultYPos*cos(angle / 10.0f);
+		ypos = defaultYPos*cos(angle / upDownSpeed) - 2.5f;
 
 
 		//ROTAZIONE SU SE STESSO
@@ -249,10 +248,10 @@ void Pickable3DObject::drawBoundingBoxes() {
 	//setRandomPos limit bb
 
 	glBegin(GL_QUADS);
-	glVertex3f(randomPosLimits.x, 0.0f, randomPosLimits.z);
-	glVertex3f(randomPosLimits.x + randomPosLimits.w, 0.0f, randomPosLimits.z);
-	glVertex3f(randomPosLimits.x + randomPosLimits.w, 0.0f, randomPosLimits.z + randomPosLimits.h);
-	glVertex3f(randomPosLimits.x, 0.0f, randomPosLimits.z + randomPosLimits.h);
+	glVertex3f(randomPosLimits.x, -2.5f, randomPosLimits.z);
+	glVertex3f(randomPosLimits.x + randomPosLimits.w, -2.5f, randomPosLimits.z);
+	glVertex3f(randomPosLimits.x + randomPosLimits.w, -2.5f, randomPosLimits.z + randomPosLimits.h);
+	glVertex3f(randomPosLimits.x, -2.5f, randomPosLimits.z + randomPosLimits.h);
 	glEnd();
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //filled
@@ -260,8 +259,10 @@ void Pickable3DObject::drawBoundingBoxes() {
 
 
 //se true inverte la direzione di traslazione su asse y per fare l'animazione
-bool Pickable3DObject::hasReachedAnimationLimit() {
+/*bool Pickable3DObject::hasReachedAnimationLimit() {
 
-	return (abs(ypos - defaultYPos) > 2.0f);
+	OutputDebugString( std::to_string(abs(ypos - defaultYPos)).c_str() );
 
-}
+	return (abs(ypos - defaultYPos) > 0.1f);
+
+}*/

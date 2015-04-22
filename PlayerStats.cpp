@@ -21,7 +21,7 @@ void PlayerStats::updateLifeAmount(float deltaT) {
 
 	elapsedTime += deltaT;
 
-	OutputDebugString( (std::to_string(elapsedTime) + "\n" ).c_str() );
+	//OutputDebugString( (std::to_string(elapsedTime) + "\n" ).c_str() );
 
 	//controlla se è passato un secondo
 	if (elapsedTime >= 1.0f) {

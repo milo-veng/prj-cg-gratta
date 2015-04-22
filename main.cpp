@@ -686,12 +686,13 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	//aku->setRandomPosition( limit );
 	objMgr = new PickableObjectsManager();
 	objMgr->placeGems(limit, terrain, 30);
+	objMgr->placeMasks(limit, terrain);
 
 	
 
 	/* CARICAMENTO SUONI */
 	sndMgr = new SoundMgr();
-	//sndMgr->playBackgroundMusic(); //Secrets of Monkey Island - Title
+	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
 	vector<string> sounds; sounds.push_back("Data/audio/gem.wav");
 	vector<string> soundNames; soundNames.push_back("GEM");
 	sndMgr->loadSounds(sounds, soundNames);

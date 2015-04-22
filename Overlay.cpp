@@ -28,8 +28,8 @@ Overlay::Overlay(int SCREEN_W, int SCREEN_H)
 
 void Overlay::drawLife(float life)
 {
-	if (life < 0)
-		life = 1;
+	if (life <= 0.0f)
+		life = 1.0f;
 
 	float w = (w_max*life) / 100.0f;
 	

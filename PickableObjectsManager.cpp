@@ -6,6 +6,9 @@ PickableObjectsManager::PickableObjectsManager()
 {
 	RANDOM_PLACING_MAX_ITERATIONS = 100;
 	oldX = oldZ = 0.0f;
+	gemsNum = 0;
+
+	//masksNum = 3;		//valore hard coded
 }
 
 
@@ -75,14 +78,37 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 //di richiamare per ciascuno setRandomPosition()
 bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain) {
 	//le posizioni e il num. di maschere sono HARD CODED!
-	const int MASK_NUM = 4;
-	float posX[MASK_NUM] = {1.0f, 10.0f, 20.0f, 30.0f};
-	float posZ[MASK_NUM] = {1.0f, 10.0f, 20.0f, 30.0f};
+	float posX[PickableObjectsManager::masksNum] = {92.8f, -42.0f, 20.0f };
+	float posZ[PickableObjectsManager::masksNum] = { -127.9f, -87.0f, 20.0f };
 
-	//...
+	
+
+	//crea e piazza le gemme
+	for (int i = 0, ID = gemsNum; i < masksNum; i++, ID++) {
+
+		//gemma standard(10 punti)
+		Pickable3DObject *obj = new Pickable3DObject(ID, Pickable3DObject::Pickable3DObjectType::AKUAKU);
+
+		//carica modello 3d gemma
+		if (!obj->loadModelData("data/cubeMask.ms3d")) {
+			logFile << "PickableObjectsManager::placeMasks(): Impossibile caricare modello akuaku!" << endl;
+			return false;
+		}
 
 
-	masksNum = masks.size();
+		//posizioni hard coded
+		obj->setPosition( posX[i], 0.0f, posZ[i] );
+
+
+		obj->setActive(true);
+
+		logFile << "PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=" << ID << "," << obj->getBoundingBox()->x << ", " << obj->getBoundingBox()->z << endl;
+
+		//inserisce il puntatore nel vettore
+		masks.push_back(obj);
+
+	} //for
+
 
 	return true;
 }

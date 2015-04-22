@@ -76,6 +76,6 @@ public:
 
 
 	//se true inverte la direzione di traslazione su asse y per fare l'animazione
-	bool hasReachedAnimationLimit();
+	//bool hasReachedAnimationLimit();
 };
 

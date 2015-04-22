@@ -20,7 +20,6 @@ class PickableObjectsManager
 	vector<Pickable3DObject*> masks;			//aku aku sparsi per la mappa
 
 	int gemsNum;							//# di gemme presenti( = a gems.size()) 
-	int masksNum;							//# di maschere presenti( = a masks.size() )
 
 	int RANDOM_PLACING_MAX_ITERATIONS;
 
@@ -29,6 +28,10 @@ class PickableObjectsManager
 	float oldZ;
 
 public:
+
+	static const int masksNum = 3;						//# di maschere presenti( = a masks.size() )
+
+
 	PickableObjectsManager();
 	~PickableObjectsManager();
 
