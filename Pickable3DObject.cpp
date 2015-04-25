@@ -30,11 +30,16 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 		//OK
 		bb->w = 2.8f;
 		bb->h = 2.8f;
+
+		
+		ypos = defaultYPos = 1.0f;
 	}
 	else if (type == Pickable3DObjectType::AKUAKU) {
 		//da verificare!!!!!!!!!!!!!!!
 		bb->w = 3.0f;
 		bb->h = 3.0f;
+		
+		ypos = defaultYPos = 0.35f;
 	}
 
 
@@ -47,8 +52,6 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 
 	upDownSpeed = 10.0f;		//1/upDownSpeed, più grande -> animaz,. più lenta
 
-	//###
-	ypos = defaultYPos = 1.0f;
 
 }
 
@@ -114,7 +117,7 @@ bool Pickable3DObject::isCollidingWith(BoundingBox2D other) {
 		bb->h + bb->z > other.z)*/
 
 
-	//######### NON FUNZIONA LA COLLISIONE!!!!!
+	//check collisione tra le BB
 	if (tmpbb.x < other.x + other.w &&
 		tmpbb.x + tmpbb.w > other.x &&
 		tmpbb.z < other.z + other.h &&
@@ -137,10 +140,44 @@ void Pickable3DObject::draw(float deltaT) {
 		return;
 
 
-	glPushMatrix();		//### lo aggiungo per colpa della chiama a glTranslatef in questa funzione
-	//che mi sposta tutto il sist. di rif., con il popMatrix faccio tornare tutto come era prima della chiamata
+	glPushMatrix();		
 
 	GLboolean texEnabled = glIsEnabled(GL_TEXTURE_2D);
+
+	if( objType == Pickable3DObjectType::GEM || objType == Pickable3DObjectType::AKUAKU ) {
+			//OSCILLAZION SU ASSE Y
+			ypos = defaultYPos*cos(angle / upDownSpeed) - 2.5f;
+
+
+			//ROTAZIONE SU SE STESSO
+			float oldX = xpos; float oldY = ypos; float oldZ = zpos;
+
+			//glTranslatef(xpos, ypos, zpos);	//3) riporto nella posiz. di partenza
+			glTranslatef(oldX, oldY, oldZ);
+
+
+			if (angle + rotationSpeed*deltaT >= 2 * PI_GRECO)
+				angle = 0.0f;
+
+			angle += rotationSpeed*deltaT*0.0000001f;
+			glRotatef(-angle, 0.0f, 1.0f, 0.0f);  // 2) ruoto su se stesso poichè sono nell'origine
+
+		
+			glTranslatef(0.0f, 0.0f, 0.0f);			//1) trasla nell'origine
+		}
+		else if( objType == Pickable3DObjectType::AKUAKU ) {
+
+			//OSCILLAZION SU ASSE Y
+			//ypos = defaultYPos*cos(angle / upDownSpeed) - 2.5f;
+
+			//glTranslatef(xpos, ypos, zpos );
+
+			//#################### ora disegna tutte le mask coincidenti in 0,0,0
+			//#################### se traslo nella posizione giusta la maschera si "apre" e viene diseganta un pò qua un pò la!
+		}
+
+
+
 
 	// Draw by group
 	for (int i = 0; i < m_numMeshes; i++)
@@ -173,26 +210,8 @@ void Pickable3DObject::draw(float deltaT) {
 		//N.B: le funzioni vanno chiamate nell'ordine inverso a quello in cui vengono eseguite
 				//glTranslatef(-xpos, -ypos, -zpos); //porto nell'origine
 
-		//OSCILLAZION SU ASSE Y
-		ypos = defaultYPos*cos(angle / upDownSpeed) - 2.5f;
 
-
-		//ROTAZIONE SU SE STESSO
-		float oldX = xpos; float oldY = ypos; float oldZ = zpos;
-
-		//glTranslatef(xpos, ypos, zpos);	//3) riporto nella posiz. di partenza
-		glTranslatef(oldX, oldY, oldZ);
-
-
-		if (angle + rotationSpeed*deltaT >= 2 * PI_GRECO)
-			angle = 0.0f;
-
-		angle += rotationSpeed*deltaT*0.0000001f;
-		glRotatef(-angle, 0.0f, 1.0f, 0.0f);  // 2) ruoto su se stesso poichè sono nell'origine
-
-		
-		glTranslatef(0.0f, 0.0f, 0.0f);			//1) trasla nell'origine
-
+		///...
 		
 
 
@@ -215,7 +234,7 @@ void Pickable3DObject::draw(float deltaT) {
 			}
 		}
 		glEnd();
-	}
+	} //for
 
 	if (texEnabled)
 		glEnable(GL_TEXTURE_2D);

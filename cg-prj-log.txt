@@ -1,5 +1,5 @@
 Progetto CG
-Wed Apr 22 17:32:22 2015
+Sat Apr 25 17:20:05 2015
 
 Caricamento file del mondo
 MilkshapeModel::loadModelData(): Caricati 956 vertici
@@ -7,74 +7,71 @@ Caricamento file bounding box del mondo
 MilkshapeModel::loadModelData(): Caricati 84 vertici
 Generate 21 boundingBox2D
 Caricamento e posizionamento gemme e maschere...MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-114.267, 99.719
+Piazzata una gemma in (x,z)=74.7789, 78.5361
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-29.4151, 8.90725
+Piazzata una gemma in (x,z)=-113.016, 28.2976
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-135.744, 22.7478
+Piazzata una gemma in (x,z)=-103.481, -9.33417
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=3.78038, 34.5048
+Piazzata una gemma in (x,z)=70.1771, 11.9912
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-65.5456, 2.78416
+Piazzata una gemma in (x,z)=-112.841, 30.8621
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=77.057, 35.6409
+Piazzata una gemma in (x,z)=75.6822, 105.337
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=48.8565, 92.6034
+Piazzata una gemma in (x,z)=-39.5989, 77.6898
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-89.7172, 20.5484
+Piazzata una gemma in (x,z)=79.0137, 25.9187
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-40.2421, 14.7146
+Piazzata una gemma in (x,z)=20.1459, 26.4725
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-131.961, -32.5533
+Piazzata una gemma in (x,z)=-30.8163, 39.7257
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-107.525, 95.5392
+Piazzata una gemma in (x,z)=98.4997, 32.988
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=125.518, 65.9751
+Piazzata una gemma in (x,z)=117.073, 115.082
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-53.4764, 110.882
+Piazzata una gemma in (x,z)=-109.309, 129.863
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-111.818, 1.6919
+Piazzata una gemma in (x,z)=6.67296, 52.585
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-46.3532, 124.404
+Piazzata una gemma in (x,z)=-15.648, 103.084
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=89.1496, 107.603
+Piazzata una gemma in (x,z)=-110.69, -16.55
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-81.2655, 33.8884
+Piazzata una gemma in (x,z)=13.825, 20.9167
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=56.0573, 24.929
+Piazzata una gemma in (x,z)=20.7115, -16.5928
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=45.8126, 56.0607
+Piazzata una gemma in (x,z)=4.8123, 60.9371
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=52.8264, -20.7484
+Piazzata una gemma in (x,z)=-64.3032, 12.9948
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=63.5604, 31.8256
+Piazzata una gemma in (x,z)=-105.106, 51.6892
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=48.8052, 81.2951
+Piazzata una gemma in (x,z)=104.675, -2.20013
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=2.12915, 49.3716
+Piazzata una gemma in (x,z)=-95.887, 76.9939
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-108.858, 105.615
+Piazzata una gemma in (x,z)=-93.6244, 16.5754
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-43.8618, 73.3239
+Piazzata una gemma in (x,z)=19.0118, 127.821
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-115.506, 26.7931
+Piazzata una gemma in (x,z)=-115.276, 8.01914
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-69.3608, 118.798
+Piazzata una gemma in (x,z)=17.7706, -4.07055
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=113.975, 128.494
+Piazzata una gemma in (x,z)=-35.5772, 100.589
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=108.236, 80.3653
+Piazzata una gemma in (x,z)=-8.30198, 124.885
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=108.467, -25.9194
-MilkshapeModel::loadModelData(): Caricati 8 vertici
+Piazzata una gemma in (x,z)=-130.103, -8.12568
+MilkshapeModel::loadModelData(): Caricati 279 vertici
 PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=30,91.3, -129.4
-MilkshapeModel::loadModelData(): Caricati 8 vertici
-PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=31,-43.5, -88.5
-MilkshapeModel::loadModelData(): Caricati 8 vertici
+MilkshapeModel::loadModelData(): Caricati 279 vertici
+PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=31,-137.5, -103.3
+MilkshapeModel::loadModelData(): Caricati 279 vertici
 PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=32,18.5, 18.5
 Creazione finestra
-Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=51.3633,-18.038,5,5
-Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-118.32,29.1617,5,5
-Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-48.3189,68.5136,5,5
-Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-49.249,119.734,5,5
-Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-50.6885,111.665,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=9.64011,23.6419,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=13.5172,18.2288,5,5

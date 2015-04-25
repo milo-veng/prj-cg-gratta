@@ -3,6 +3,7 @@
 #include <cstring>
 #include "Overlay.h"
 
+
 class PlayerStats
 {
 
@@ -20,6 +21,7 @@ class PlayerStats
 
 
 public:
+	static const int MAX_LIFE = 100;
 
 	static const int LIFE_INC_AMOUNT_PER_GEM = 1;		//di quanto aumenta la vita quando prendo una gemma
 	static const float LIFE_DEC_PER_SEC;						//di quanto diminuisce la vita ogni secondo che passa

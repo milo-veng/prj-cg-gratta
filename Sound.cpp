@@ -40,6 +40,22 @@ void Sound::playSound()
 
 }
 
+
+//loop del suono
+void Sound::playSoundRepeat() {
+	if(!stream)
+	{
+		MessageBox( NULL, "Sound::playSound(): impossibile avviare il file", "Errore", MB_ICONWARNING );
+	}
+
+	if( stream->isPlaying() ) stream->reset();
+	else {
+		stream->play();
+		stream->setRepeat(true);
+	}
+
+}
+
 void Sound::stopSound()
 {
 	if(!stream)

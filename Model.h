@@ -13,6 +13,10 @@
 #include <Windows.h>
 #include <gl/GL.h>
 
+
+extern GLuint LoadGLTexture( const char *filename );
+
+
 #ifndef MODEL_H
 #define MODEL_H
 

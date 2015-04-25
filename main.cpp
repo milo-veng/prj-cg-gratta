@@ -19,6 +19,7 @@
 #include <random>
 using namespace std;
 
+#include "loadGLTexture.h"
 #include "deltaT.h"
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
@@ -89,55 +90,7 @@ bool drawBoundingBoxes = false;	//se true disegna le bounding boxes degli oggett
 
 LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);				// Declaration For WndProc
 
-AUX_RGBImageRec *LoadBMP(const char *Filename)						// Loads A Bitmap Image
-{
-	FILE *File=NULL;												// File Handle
 
-	if (!Filename)													// Make Sure A Filename Was Given
-	{
-		return NULL;												// If Not Return NULL
-	}
-
-	File=fopen(Filename,"r");										// Check To See If The File Exists
-
-	if (File)														// Does The File Exist?
-	{
-		fclose(File);												// Close The Handle
-		return auxDIBImageLoad(Filename);							// Load The Bitmap And Return A Pointer
-	}
-
-	return NULL;													// If Load Failed Return NULL
-}
-
-GLuint LoadGLTexture( const char *filename )						// Load Bitmaps And Convert To Textures
-{
-	AUX_RGBImageRec *pImage;										// Create Storage Space For The Texture
-	GLuint texture = 0;												// Texture ID
-
-	pImage = LoadBMP( filename );									// Loads The Bitmap Specified By filename
-
-	// Load The Bitmap, Check For Errors, If Bitmap's Not Found Quit
-	if ( pImage != NULL && pImage->data != NULL )					// If Texture Image Exists
-	{
-		glGenTextures(1, &texture);									// Create The Texture
-
-		// Typical Texture Generation Using Data From The Bitmap
-		glBindTexture(GL_TEXTURE_2D, texture);
-		//gluBuild2DMipmaps( GL_TEXTURE_2D, 3, 256, 256, GL_RGB, GL_UNSIGNED_BYTE, pImage );
-		glTexImage2D(GL_TEXTURE_2D, 0, 3, pImage->sizeX, pImage->sizeY, 0, GL_RGB, GL_UNSIGNED_BYTE, pImage->data);
-		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
-
-
-		free(pImage->data);											// Free The Texture Image Memory
-		free(pImage);												// Free The Image Structure
-	}
-	else {
-		MessageBox(NULL,filename, "Errore carimento texture", MB_OK );
-	}
-
-	return texture;													// Return The Status
-}
 
 GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize The GL Window
 {
@@ -313,7 +266,7 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 
 	//calcolo fps ogni 100 frame
-	if (frameCounter >= 100) {
+	if (frameCounter >= 10) {
 		 fps = "FPS = " + to_string(int(frameCounter / cumulativeDeltaT));
 		
 		frameCounter = 0;
@@ -673,17 +626,10 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	
 
 
-	//################################################
-	//provo a caricare aku aku
-	//aku = new Pickable3DObject( Pickable3DObject::Pickable3DObjectType::GEM ); 
 	logFile << "Caricamento e posizionamento gemme e maschere...";
-	//aku->loadModelData("data/gem.ms3d");
-	//aku->setPosition(10.0, 0.0f, 10.0f); 
 
-	//riposiziona in pos. random la gemma
-	//srand(time(NULL));
+	//Mette sulla mappa le gemme(pos. random) e le maschere(pos. predefinite)
 	BoundingBox2D limit(-140.0f, -32.0f, 268.0f, 168.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
-	//aku->setRandomPosition( limit );
 	objMgr = new PickableObjectsManager();
 	objMgr->placeGems(limit, terrain, 30);
 	objMgr->placeMasks(limit, terrain);
@@ -693,9 +639,10 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	/* CARICAMENTO SUONI */
 	sndMgr = new SoundMgr();
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
-	vector<string> sounds; sounds.push_back("Data/audio/gem.wav");
-	vector<string> soundNames; soundNames.push_back("GEM");
+	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3");
+	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");
 	sndMgr->loadSounds(sounds, soundNames);
+	
 
 
 	fullscreen = FALSE;
@@ -716,10 +663,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 
 	//iniz. timer per contare i tick tra un frame e l altro -> fps independent movement
-	//lastUpdate = GetTickCount();
 	lastUpdate = clock();
-
-
 
 
 
@@ -820,11 +764,9 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 				camera.collisionsEnabled = !camera.collisionsEnabled;
 			}
 
-			//DEBUG POSIZ. TELECAMERA(PLAYER)
-			//string pPos = "(" + to_string(camera.xpos) + "," + to_string(camera.ypos) + "," + to_string(camera.zpos) + ")\n";
-			//OutputDebugString( pPos.c_str() );
+			
 
-
+			//riposiz. il puntatore al centro della finestra
 			RECT r;
 			GetWindowRect(hWnd, &r);
 			camera.resetCursorPos( r, p, SCREEN_W, SCREEN_H);

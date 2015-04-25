@@ -17,7 +17,8 @@
 #include <gl/GLAUX.H>
 
 #include "Model.h"
-#include "loadGLTexture.h"
+//#include "loadGLTexture.h"
+
 
 Model::Model()
 {

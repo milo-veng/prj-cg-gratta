@@ -7,7 +7,7 @@ PlayerStats::PlayerStats(int SCREEN_W, int SCREEN_H)
 
 	overlay = new Overlay(SCREEN_W, SCREEN_H);
 	points = 0;
-	life = 100;
+	life = PlayerStats::MAX_LIFE;
 }
 
 
@@ -44,7 +44,7 @@ void PlayerStats::gemCollected() {
 //presa maschera -> aggiorna lifef e points di conseguenza
 
 void PlayerStats::maskCollected() {
-	life = 100;
+	life = PlayerStats::MAX_LIFE;
 
-	points += 100;
+	points += PlayerStats::MAX_LIFE;
 }								

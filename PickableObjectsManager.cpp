@@ -78,8 +78,10 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 //di richiamare per ciascuno setRandomPosition()
 bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain) {
 	//le posizioni e il num. di maschere sono HARD CODED!
-	float posX[PickableObjectsManager::masksNum] = {92.8f, -42.0f, 20.0f };
-	float posZ[PickableObjectsManager::masksNum] = { -127.9f, -87.0f, 20.0f };
+	float posX[PickableObjectsManager::masksNum] = {92.8f, -136.0f, 20.0f };
+	float posZ[PickableObjectsManager::masksNum] = { -127.9f, -101.8f, 20.0f };
+	//float posX[PickableObjectsManager::masksNum] = {92.8f, -42.0f, 20.0f };
+	//float posZ[PickableObjectsManager::masksNum] = { -101.8f, -87.0f, 20.0f };
 
 	
 
@@ -90,7 +92,7 @@ bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terr
 		Pickable3DObject *obj = new Pickable3DObject(ID, Pickable3DObject::Pickable3DObjectType::AKUAKU);
 
 		//carica modello 3d gemma
-		if (!obj->loadModelData("data/cubeMask.ms3d")) {
+		if (!obj->loadModelData("data/akuaku.ms3d")) {
 			logFile << "PickableObjectsManager::placeMasks(): Impossibile caricare modello akuaku!" << endl;
 			return false;
 		}
@@ -139,6 +141,24 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
 
 
 	//coll. con maschere
+	for( int i = 0; i < masks.size(); i++ ) {
+
+		if(!masks.at(i)->isActive()) continue;
+
+		BoundingBox2D *b = masks.at(i)->getBoundingBox();
+
+		if( masks.at(i)->isCollidingWith(camera)) {
+
+			masks.at(i)->setActive(false);
+
+			//punteggio.
+			pStats.maskCollected();
+
+			sndMgr->play("BUDEGA");
+
+		}
+
+	}
 
 
 	return bb;
