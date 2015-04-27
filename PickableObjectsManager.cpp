@@ -2,11 +2,15 @@
 
 extern ofstream logFile;
 
+int PickableObjectsManager::masksNum;
+
 PickableObjectsManager::PickableObjectsManager()
 {
 	RANDOM_PLACING_MAX_ITERATIONS = 100;
 	oldX = oldZ = 0.0f;
 	gemsNum = 0;
+
+	PickableObjectsManager::masksNum = 3;	//valori di default
 
 	//masksNum = 3;		//valore hard coded
 }
@@ -76,16 +80,24 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 //dentro alla BB limits. 
 //Si occupa di allocare gli elementi del vettore gems e 
 //di richiamare per ciascuno setRandomPosition()
-bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain) {
+bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain, vector<float> posX, vector<float> posZ) {
 	//le posizioni e il num. di maschere sono HARD CODED!
-	float posX[PickableObjectsManager::masksNum] = {92.8f, -136.0f, 20.0f };
-	float posZ[PickableObjectsManager::masksNum] = { -127.9f, -101.8f, 20.0f };
+	//float posX[PickableObjectsManager::masksNum] = {92.8f, -136.0f, 20.0f };
+	//float posZ[PickableObjectsManager::masksNum] = { -127.9f, -101.8f, 20.0f };
 	//float posX[PickableObjectsManager::masksNum] = {92.8f, -42.0f, 20.0f };
 	//float posZ[PickableObjectsManager::masksNum] = { -101.8f, -87.0f, 20.0f };
 
-	
+	//parsing delle posizioni passateper le maschere
+	if (posX.size() != posZ.size()) {
+		logFile << "PickableObjMgr::placeMasks(): i vettori posX e posZ hanno dimensioni diverse!!" << endl;
+		return false;
+	}
 
-	//crea e piazza le gemme
+	PickableObjectsManager::masksNum = posX.size();
+
+
+
+	//crea e piazza le masks
 	for (int i = 0, ID = gemsNum; i < masksNum; i++, ID++) {
 
 		//gemma standard(10 punti)
@@ -99,7 +111,7 @@ bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terr
 
 
 		//posizioni hard coded
-		obj->setPosition( posX[i], 0.0f, posZ[i] );
+		obj->setPosition( posX.at(i), 0.0f, posZ.at(i) );
 
 
 		obj->setActive(true);

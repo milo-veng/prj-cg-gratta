@@ -26,16 +26,14 @@ using namespace std;
 #include "PickableObjectsManager.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "PlayerStats.h"
-#include "SoundMgr.h"
+#include "SoundMgr.h" 
 #include "Text.h"
-
-
+ 
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
 #pragma comment( lib, "glu32.lib" )									// Search For GLu32.lib While Linking    ( NEW )
 #pragma comment( lib, "glaux.lib" )									// Search For GLaux.lib While Linking    ( NEW )
 
-
-#define PIGRECO 3.14159265
+                                                                                                                                           
 
 
 HDC			hDC=NULL;												// Private GDI Device Context
@@ -117,7 +115,6 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
 	terrain->pModel->reloadTextures();										// Loads Model Textures
-	//aku->reloadTextures();
 	objMgr->reloadTextures();
 
 	//carico texture skydome
@@ -203,6 +200,8 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	gluLookAt( camera.xpos, camera.ypos, camera.zpos, camera.xpos+camera.lx, camera.ypos+camera.ly, camera.zpos+camera.lz, 0.0f, 1.0f, 0.0f );
 
 	
+
+	/*   ############ riportato in Level::drawLevel() #############, da togliere*/
 	//disegno filled/wireframe
 	if( wireframeOnly ) {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -242,10 +241,21 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	terrain->draw();
 
 	//disegna le bounding box del terrain e della camera
-	if( drawBoundingBoxes ) {
+	if( drawBoundingBoxes ) 
 		terrain->drawBoundingBoxes();
+
+
+
+
+	/* ########### fine codice riportato in Level::drawLevel() ######### */
+
+
+
+
+
+
+	if ( drawBoundingBoxes ) 
 		camera.drawBoundingBox();
-	}
 
 
 
@@ -630,12 +640,13 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	//Mette sulla mappa le gemme(pos. random) e le maschere(pos. predefinite)
 	BoundingBox2D limit(-140.0f, -32.0f, 268.0f, 168.0f);	//limit di lowPolyLandscape(parte verde davanti, fuori dalla montagna)
+	vector<float> posX = {92.8f, -136.0f, 20.0f };
+	vector<float> posZ = { -127.9f, -101.8f, 20.0f };
 	objMgr = new PickableObjectsManager();
 	objMgr->placeGems(limit, terrain, 30);
-	objMgr->placeMasks(limit, terrain);
+	objMgr->placeMasks(limit, terrain, posX, posZ);
 
 	
-
 
 	/* CARICAMENTO SUONI */
 	sndMgr = new SoundMgr();
@@ -643,7 +654,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3");
 	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");
 	sndMgr->loadSounds(sounds, soundNames);
-
+	
 
 
 	fullscreen = FALSE;

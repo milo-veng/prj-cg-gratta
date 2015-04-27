@@ -29,7 +29,7 @@ class PickableObjectsManager
 
 public:
 
-	static const int masksNum = 3;						//# di maschere presenti( = a masks.size() )
+	static int masksNum;						//# di maschere presenti( = a masks.size() )
 
 
 	PickableObjectsManager();
@@ -37,7 +37,7 @@ public:
 
 	bool placeGems(BoundingBox2D limits, TerrainModel *terrain, int num);				//piazza le gemme in giro per la mappa
 
-	bool placeMasks(BoundingBox2D limits, TerrainModel *terrain);				//idem
+	bool placeMasks(BoundingBox2D limits, TerrainModel *terrain, vector<float> posX, vector<float> posZ);				//idem
 			
 
 	void reloadTextures();																//ricarica tutte le texture dei modelli 3d, chiamato in GLinit()
