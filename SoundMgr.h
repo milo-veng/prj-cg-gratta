@@ -28,6 +28,10 @@ public:
 
 	void stop(string name);
 
+
+	void mute(bool muted);
+	void setVolume(float vol);	//[0;1]
+
 	
 };
 

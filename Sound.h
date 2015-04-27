@@ -25,6 +25,7 @@ public:
 
 	void reset();
 
+	void setVolume(float v);
 
 
 	~Sound(void);

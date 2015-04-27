@@ -636,13 +636,14 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	
 
+
 	/* CARICAMENTO SUONI */
 	sndMgr = new SoundMgr();
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
 	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3");
 	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");
 	sndMgr->loadSounds(sounds, soundNames);
-	
+
 
 
 	fullscreen = FALSE;

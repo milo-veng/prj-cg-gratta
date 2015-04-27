@@ -92,3 +92,12 @@ void Sound::reset()
 Sound::~Sound(void)
 {
 }
+
+
+
+void Sound::setVolume(float v) {
+	if (v < 0.0f || v > 1.0f)
+		return;
+
+	stream->setVolume(v);
+}
