@@ -19,7 +19,7 @@ Level::Level()
 	}
 
 	fogDensity = 0.0025f;
-	limits = BoundingBox2D(-140.0f, -32.0f, 268.0f, 168.0f);
+	limits = BoundingBox2D(-140.0f, -32.0f, 268.0f, 168.0f);		//limits livello 1
 	gemNum = 30;
 	masksNum = 3;
 
@@ -57,11 +57,12 @@ void Level::loadLevel(string terrainFilename, string terrainBBFilename) {
 
 	//carica la mappa del mondo
 	logFile << "Caricamento file del mondo..." << endl;
-	terrain->loadTerrainModel("data/lowPolyLandscape.ms3d");
+	//terrain->loadTerrainModel("data/lowPolyLandscape.ms3d");
+	terrain->loadTerrainModel(terrainFilename);
 
 	logFile << "Caricamento file bounding box del mondo..." << endl;
-	terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");
-
+	//terrain->loadBoundingBoxes("data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");
+	terrain->loadBoundingBoxes(terrainBBFilename);
 
 	logFile << "Caricamento e posizionamento gemme e maschere...";
 

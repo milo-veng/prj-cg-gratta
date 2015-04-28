@@ -71,6 +71,10 @@ public:
 	~Level();
 
 
+	bool isLevelLoaded() { return levelLoaded; }
+
+
+
 	//iniz. Terrain, skybox, PickableObjsMgr, Suoni
 	void loadLevel(string terrainFilename, string terrainBBFilename);
 
