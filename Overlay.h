@@ -28,10 +28,17 @@ public:
 
 public:
 	Overlay(int SCREEN_W, int SCREEN_H);
+
+	//disegna barra vita
 	void drawLife(float life);
 
+	//carica immagini maschere e crea texture
 	void initMasks(string f1, string f2) { akus->init(f1, f2); }
+
+	//disegna le maschere a schermo in overlay
 	void drawMasks() { if (akus != NULL) { akus->drawmask(); } }
+
+	//inc/dec # maschere raccolte
 	void maskPicked() { akus->maskPicked(); }
 	void removeMask() { akus->maskDelete(); }
 

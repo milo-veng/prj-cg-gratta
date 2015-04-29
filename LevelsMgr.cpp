@@ -9,7 +9,8 @@ LevelsMgr::LevelsMgr()
 
 	//impostazioni per ciascun livello:
 	terrainFiles.push_back("Data/lowPolyLandscape.ms3d");	//mappa liv.1
-	terrainFiles.push_back("Data/floatingIslandSnowRoseTreems3dBig.ms3d");	//mappa liv.2
+	//terrainFiles.push_back("Data/floatingIslandSnowRoseTreems3dBig.ms3d");	//mappa liv.2 lowPolyFloatingIslandPineta.ms3d
+	terrainFiles.push_back("lowPolyFloatingIslandPineta.ms3d");
 
 	bbFiles.push_back("Data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");	//bb liv.1
 	bbFiles.push_back("Data/lowpolyLandscapeOnly2DBBVeryFinal.ms3d");	//bb liv.2

@@ -37,6 +37,7 @@ void Overlay::drawLife(float life)
 
 	float w = (w_max*life) / 100.0f;
 	
+	//glDisable(GL_LIGHTING);
 
 	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
 	glPushMatrix(); // Store The Projection Matrix
@@ -60,5 +61,6 @@ void Overlay::drawLife(float life)
 	glMatrixMode(GL_MODELVIEW); // Select The Modelview Matrix
 	glPopMatrix();
 
+	//glEnable(GL_LIGHTING);
 	
 }

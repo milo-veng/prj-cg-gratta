@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include <cstring>ù
+#include <cstring>
 #include <map>
 #include <windows.h>	
 #include "audiere.h"
