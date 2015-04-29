@@ -5,8 +5,13 @@
 #include <gl\glu.h>													// Header File For The GLu32 Library
 #include <gl\glaux.h>	
 #include <gl\glut.h>											// Header File For The Glaux Library
-#include <cstring>
+#include <string>
 #include <sstream>
+#include <fstream>
+using namespace std;
+
+#include "MaskOverlay.h"
+
 
 class Overlay
 {
@@ -19,9 +24,16 @@ public:
 	float w_max;		//ascissa di arrivo della barra
 	float h1,h2;		//h2-h1 = altezza della barra
 
+	AkuAku *akus;
+
 public:
 	Overlay(int SCREEN_W, int SCREEN_H);
 	void drawLife(float life);
+
+	void initMasks(string f1, string f2) { akus->init(f1, f2); }
+	void drawMasks() { if (akus != NULL) { akus->drawmask(); } }
+	void maskPicked() { akus->maskPicked(); }
+	void removeMask() { akus->maskDelete(); }
 
 
 };

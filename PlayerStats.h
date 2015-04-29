@@ -1,8 +1,8 @@
 #pragma once
 
-#include <cstring>
+#include <string>
 #include "Overlay.h"
-
+using namespace std;
 
 class PlayerStats
 {
@@ -29,6 +29,7 @@ public:
 	static const int POINTS_PER_GEM = 10;				//# di punti per gemma raccolta
 	static const int POINTS_PER_MASK = 100;				//# di punti per mask raccolta
 
+	static const int MAX_MASKS_NUM = 3;					//# di maschere max. presenti contemporaneamente in un livello
 
 
 	float getLife() { return life;  }
@@ -42,8 +43,11 @@ public:
 	void gemCollected();								//presa uan gemma -> aggiorna life e points di conseguenza
 
 	void maskCollected();								//presa maschera -> aggiorna lifef e points di conseguenza
+	void maskRemoved();									//rimuovo una delle machere già prese, niente se non ne ho nessuna
 
 	void drawLifeBar() { overlay->drawLife(life); }
+	void drawPickedMasks() { overlay->drawMasks(); }
+	void initMasksOverlay(string f1, string f2) { overlay->initMasks(f1, f2); }
 
 	PlayerStats(int SCREEN_W, int SCREEN_H);
 	~PlayerStats();

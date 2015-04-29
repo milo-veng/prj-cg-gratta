@@ -211,7 +211,8 @@ void MyFPSCamera::moveForward(double deltaT) {
 
 
 		//Collisioni con la mappa
-		BoundingBox2D collider = terrain->isCollidingWith( player );
+		//BoundingBox2D collider = terrain->isCollidingWith( player );
+		BoundingBox2D collider = levelsMgr->get()->getTerrainModel()->isCollidingWith(player);
 
 		//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
 		//altrimenti isNull() è true
@@ -226,7 +227,8 @@ void MyFPSCamera::moveForward(double deltaT) {
 
 		//Collisioni con le gemme e gestione di esse
 		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
-		BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+		//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+		BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
 	} //fine collisioni
 
@@ -249,7 +251,8 @@ void MyFPSCamera::moveBackward(double deltaT) {
 		BoundingBox2D player(xpos+xDelta, zpos+zDelta, playerW, playerH );	//predice la prossima posizione del player
 
 		//verifica se ci sono collisioni
-		BoundingBox2D collider = terrain->isCollidingWith( player );
+		//BoundingBox2D collider = terrain->isCollidingWith( player );
+		BoundingBox2D collider = levelsMgr->get()->getTerrainModel()->isCollidingWith(player);
 
 		//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
 		//altrimenti isNull() è true
@@ -263,7 +266,8 @@ void MyFPSCamera::moveBackward(double deltaT) {
 
 		//Collisioni con le gemme e gestione di esse
 		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
-		BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+		//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+		BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
 	}
 
@@ -296,7 +300,8 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 				BoundingBox2D player(xpos+xDelta, zpos+zDelta, playerW, playerH );	//predice la prossima posizione del player
 
 				//verifica se ci sono collisioni
-				BoundingBox2D collider = terrain->isCollidingWith( player );
+				//BoundingBox2D collider = terrain->isCollidingWith( player );
+				BoundingBox2D collider = levelsMgr->get()->getTerrainModel()->isCollidingWith(player);
 
 				//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
 				//altrimenti isNull() è true
@@ -309,7 +314,8 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 
 				//Collisioni con le gemme e gestione di esse
 				//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
-				BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+				//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+				BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
 			}
 
@@ -341,7 +347,8 @@ void MyFPSCamera::strafeRight(double deltaT) {
 				BoundingBox2D player(xpos+xDelta, zpos+zDelta, playerW, playerH );	//predice la prossima posizione del player
 
 				//verifica se ci sono collisioni
-				BoundingBox2D collider = terrain->isCollidingWith( player );
+				//BoundingBox2D collider = terrain->isCollidingWith( player );
+				BoundingBox2D collider = levelsMgr->get()->getTerrainModel()->isCollidingWith(player);
 
 				//se c'è stata 1 collisione collider contiene la bounding box dell'ogg. con cui sto collidendo
 				//altrimenti isNull() è true
@@ -354,7 +361,8 @@ void MyFPSCamera::strafeRight(double deltaT) {
 
 				//Collisioni con le gemme e gestione di esse
 				//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
-				BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+				//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
+				BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
 			}
 

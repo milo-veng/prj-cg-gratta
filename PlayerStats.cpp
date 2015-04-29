@@ -39,12 +39,39 @@ void PlayerStats::gemCollected() {
 	life += PlayerStats::LIFE_INC_AMOUNT_PER_GEM;
 
 	points += PlayerStats::POINTS_PER_GEM;
+
+	collectedGemsNum++;
 }								
 
 //presa maschera -> aggiorna lifef e points di conseguenza
 
 void PlayerStats::maskCollected() {
+	if (collectedMasksNum >= MAX_MASKS_NUM)
+		return;
+
 	life = PlayerStats::MAX_LIFE;
 
-	points += PlayerStats::MAX_LIFE;
-}								
+	points += PlayerStats::POINTS_PER_MASK;
+
+	collectedMasksNum++;
+
+	//aggiorno overlay disegno # maschere
+	overlay->maskPicked();
+
+}				
+
+
+void PlayerStats::maskRemoved() {
+
+	if (collectedMasksNum <= 0)
+		return;
+
+	life -= PlayerStats::LIFE_INC_AMOUNT_PER_GEM;
+
+	points -= PlayerStats::POINTS_PER_MASK;
+
+	collectedMasksNum--;
+
+	overlay->removeMask();
+
+}

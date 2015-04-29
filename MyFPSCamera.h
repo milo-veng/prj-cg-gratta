@@ -10,9 +10,12 @@ using namespace std;
 
 #include "TerrainModel.h"
 #include "PickableObjectsManager.h"
+#include "Level.h"
+#include "LevelsMgr.h"
 
-extern TerrainModel *terrain;
-extern PickableObjectsManager *objMgr;
+
+extern LevelsMgr *levelsMgr;		
+
 
 //posizione player(telecamera)
 struct MyFPSCamera {

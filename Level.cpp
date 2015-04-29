@@ -103,13 +103,17 @@ void Level::reloadTextures() {
 
 //dealloca elementi caricati in memoria da loadLevel()
 void Level::unloadLevel() {
-	//!!! da TESTARE !!!
+	if (!levelLoaded)
+		return;
 	
-	sndMgr->stopBackgroundMusic();
+	//sndMgr->stopBackgroundMusic();
+	gluDeleteQuadric(skydome);
 
 
 	delete terrain;
 	delete objMgr;
+
+	levelLoaded = false;
 
 }
 
@@ -117,6 +121,8 @@ void Level::unloadLevel() {
 
 //disegna tutti i componenti del livello
 void Level::drawLevel(float deltaT) {
+	if (!levelLoaded)
+		return;
 
 	if (wireframeOnly) {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -138,7 +144,7 @@ void Level::drawLevel(float deltaT) {
 	gluSphere(skydome, raggio, slices, 32);
 	glPopMatrix();											//rimette a posto dopo la rotazione
 	if (fogEnabled) { glEnable(GL_FOG); }
-
+	
 
 	objMgr->drawAll(deltaT);
 

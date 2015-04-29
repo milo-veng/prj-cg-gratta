@@ -31,9 +31,6 @@ class Level
 	PickableObjectsManager *objMgr;				//gemme e maschere
 
 
-	GLUquadricObj *skydome;					//skydome
-	GLuint skydomeTexture;
-
 	BoundingBox2D limits;					//rettangolo nel quale si possono posiz. le gemme(random)
 	int gemNum;								//# di gemme da posiz. nella gem. Area
 	int masksNum;							//# di maschere da piazzare
@@ -47,6 +44,10 @@ class Level
 
 
 public:
+	//skydome
+	GLUquadricObj *skydome;	
+	GLuint skydomeTexture;
+
 
 	//luci livello
 	GLfloat ambient[4];
@@ -97,6 +98,12 @@ public:
 	void setGemAreaLimits(BoundingBox2D l) { limits = l; }	///Area rettangolo all'interno della quale verranno posiz. random le gemme
 	void setGemNumber(int n) { gemNum = n; }
 	void setBackgroundMusicFilename(string s) { backgroundMusicFile = s;}
+
+
+
+	//getter
+	TerrainModel *getTerrainModel() { return terrain; }
+	PickableObjectsManager *getPickableObjMgr() { return objMgr; }
 
 };
 

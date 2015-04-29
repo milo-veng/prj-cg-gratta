@@ -55,7 +55,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <Optimization>Disabled</Optimization>
@@ -90,8 +90,11 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OutputFile>.\Debug\progetto cg.exe</OutputFile>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;audiere.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;audiere.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -136,6 +139,7 @@
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="LevelsMgr.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaskOverlay.cpp" />
     <ClCompile Include="MilkshapeModel.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="MyFPSCamera.cpp" />
@@ -154,6 +158,7 @@
     <ClInclude Include="Level.h" />
     <ClInclude Include="LevelsMgr.h" />
     <ClInclude Include="loadGLTexture.h" />
+    <ClInclude Include="MaskOverlay.h" />
     <ClInclude Include="MilkshapeModel.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="MyFPSCamera.h" />

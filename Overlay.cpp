@@ -23,6 +23,10 @@ Overlay::Overlay(int SCREEN_W, int SCREEN_H)
 	h1 = SCREEN_H / 60.0f;				//l'altezza barra è prop. all'altezza finestra
 	h2 = h1 + SCREEN_H / 15.0f;			
 
+
+	//iniz. oggetto per disegno del # maschere raccolte
+	akus = NULL;
+	akus = new AkuAku(SCREEN_W, SCREEN_H);
 	
 }
 

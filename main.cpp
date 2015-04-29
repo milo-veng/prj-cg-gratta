@@ -28,6 +28,8 @@ using namespace std;
 #include "PlayerStats.h"
 #include "SoundMgr.h" 
 #include "Text.h"
+#include "Level.h"
+#include "LevelsMgr.h"
  
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
 #pragma comment( lib, "glu32.lib" )									// Search For GLu32.lib While Linking    ( NEW )
@@ -53,11 +55,11 @@ bool	fullscreen=TRUE;											// Fullscreen Flag Set To Fullscreen Mode By Def
 double deltaT = 0;			//deltaT tra un frame e l'altro
 
 //mondo 3D
-TerrainModel *terrain = NULL;												// Holds The Model Data
+//TerrainModel *terrain = NULL;												// Holds The Model Data
 
 //SKYDOME
-GLUquadricObj *skydome;
-GLuint skydomeTexture;
+//GLUquadricObj *skydome;
+//GLuint skydomeTexture;
 
 //telecamera in 1 persona stile FPS
 MyFPSCamera camera;
@@ -76,14 +78,16 @@ float cumulativeDeltaT = 0.0f; //deltaT per renderizzare 100 frame
 
 //prova aku aku
 //Pickable3DObject *aku;
-PickableObjectsManager *objMgr;
+//PickableObjectsManager *objMgr;
+LevelsMgr *levelsMgr;
+
 
 
 //opzioni - DEBUG
 ofstream logFile;				//stream per file di log
-bool fogEnabled = true;			//nebbia on/off
-bool wireframeOnly = false;		//se true disegna solo il wireframe
-bool drawBoundingBoxes = false;	//se true disegna le bounding boxes degli oggetti collidibili
+//bool fogEnabled = true;			//nebbia on/off
+//bool wireframeOnly = false;		//se true disegna solo il wireframe
+//bool drawBoundingBoxes = false;	//se true disegna le bounding boxes degli oggetti collidibili
 
 
 LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);				// Declaration For WndProc
@@ -114,13 +118,14 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And Initialize
 
 int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
-	terrain->pModel->reloadTextures();										// Loads Model Textures
+	/*terrain->pModel->reloadTextures();										// Loads Model Textures
 	objMgr->reloadTextures();
-
+	
 	//carico texture skydome
 	skydomeTexture = LoadGLTexture("data/skydome.bmp");
 	skydome = gluNewQuadric();
-	gluQuadricTexture( skydome, GLU_TRUE );
+	gluQuadricTexture( skydome, GLU_TRUE );*/
+	levelsMgr->get()->reloadTextures();
 
 
 	glEnable(GL_TEXTURE_2D);										// Enable Texture Mapping ( NEW )
@@ -157,7 +162,7 @@ int InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 
 
 	//prova nebbia
-	if( fogEnabled ) {
+	if( levelsMgr->get()->fogEnabled ) {
 		GLfloat fogDensity = 0.0025f;
 		GLfloat fogColor[] = { 0.028f, 0.39f, 0.7f, 1.0f };
 
@@ -203,46 +208,46 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 	/*   ############ riportato in Level::drawLevel() #############, da togliere*/
 	//disegno filled/wireframe
-	if( wireframeOnly ) {
+	if( levelsMgr->get()->wireframeOnly ) {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	}
 	else {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	}
 
-
+	levelsMgr->get()->drawLevel(deltaT);
 
 	//disegno SKYDOME
-	if( fogEnabled ) { glDisable(GL_FOG ); }				//se la nebbia è attiva la disabilita in modo da non coprire la skybox
-	glBindTexture( GL_TEXTURE_2D, skydomeTexture );
+	/*if (levelsMgr->get()->fogEnabled ) { glDisable(GL_FOG); }				//se la nebbia è attiva la disabilita in modo da non coprire la skybox
+	glBindTexture( GL_TEXTURE_2D, levelsMgr->get()->skydomeTexture );
 	glEnable(GL_TEXTURE_2D );
 	glPushMatrix();											//salva lo stato corrente prima di fare la rotazione
-	gluQuadricOrientation( skydome, GLU_INSIDE );			//inverte le normali, così posso usare l'illuminazione dentro alla sfera
+	gluQuadricOrientation( levelsMgr->get()->skydome, GLU_INSIDE );			//inverte le normali, così posso usare l'illuminazione dentro alla sfera
 	//glRotatef( 180.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
 	glRotatef( -90.0f, 1.0f, 0.0f, 0.0f );					//ruota la sfera da creare
 	int raggio = 800, slices = 32;
-	gluSphere( skydome, raggio, slices, 32 );
+	gluSphere(levelsMgr->get()->skydome, raggio, slices, 32);
 	glPopMatrix();											//rimette a posto dopo la rotazione
-	if( fogEnabled ) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
-
+	if (levelsMgr->get()->fogEnabled) { glEnable(GL_FOG); }					//riattivo la nebbia in modo che "copra" tutti gli altri oggetti
+	*/
 
 	
 	//disegno aku
 	//aku->draw(deltaT);
-	objMgr->drawAll(deltaT);
+	//objMgr->drawAll(deltaT);
 
-	if (drawBoundingBoxes) {
+	//if (levelsMgr->get()->drawBoundingBoxes) {
 		//disegna bb del oggetto, lo faccio qui a parte e non tutti insieme in fondo per problemi di traslazione
 		//aku->drawBoundingBoxes();
-		objMgr->drawAllBoundingBoxes();
-	}
+		//objMgr->drawAllBoundingBoxes();
+	//}
 
 	//disegno modelli 3D
-	terrain->draw();
+	//terrain->draw();
 
 	//disegna le bounding box del terrain e della camera
-	if( drawBoundingBoxes ) 
-		terrain->drawBoundingBoxes();
+	//if (levelsMgr->get()->drawBoundingBoxes)
+		//terrain->drawBoundingBoxes();
 
 
 
@@ -254,8 +259,8 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 
 
 
-	if ( drawBoundingBoxes ) 
-		camera.drawBoundingBox();
+	//if (levelsMgr->get()->drawBoundingBoxes)
+		//camera.drawBoundingBox();
 
 
 
@@ -295,12 +300,12 @@ int DrawGLScene(GLvoid)												// Here's Where We Do All The Drawing
 	txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);
 	txt->drawText(camPos, 10, 35, SCREEN_W, SCREEN_H);
 	txt->drawText(points, SCREEN_W-140, 75, SCREEN_W, SCREEN_H);
+	pStats.drawPickedMasks();
 
 
 	//aggiorna punteggio
 	pStats.updateLifeAmount(deltaT);
 	pStats.drawLifeBar();
-	
 
 	return TRUE;
 }
@@ -626,7 +631,7 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 	/* CARICAMENTO OGGETTI 3D */
 	//carica la mappa del mondo
-	logFile << "Caricamento file del mondo" << endl;
+	/*logFile << "Caricamento file del mondo" << endl;
 	terrain = new TerrainModel();
 	//terrain->loadTerrainModel("data/lowpolyLandscape.ms3d");
 	terrain->loadTerrainModel("data/lowPolyLandscape.ms3d");
@@ -645,7 +650,10 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 	objMgr = new PickableObjectsManager();
 	objMgr->placeGems(limit, terrain, 30);
 	objMgr->placeMasks(limit, terrain, posX, posZ);
-
+	*/
+	levelsMgr = new LevelsMgr();
+	levelsMgr->loadLevel(levelsMgr->LEVEL_1);
+	
 	
 
 	/* CARICAMENTO SUONI */
@@ -666,6 +674,9 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 		return 0;													// Quit If Window Was Not Created
 	}
 
+
+	//carica le immagini degli aku aku per l'overlay
+	pStats.initMasksOverlay("Data/texture/Aku_Aku2.png","Data/texture/Aku_Aku1.png");
 
 	//nasconde punt. mouse
 	ShowCursor(FALSE);
@@ -765,17 +776,22 @@ int WINAPI WinMain(	HINSTANCE	hInstance,							// Instance
 
 			//altri comandi
 			if( keys[0x52]) { //R -> attiva/disattiva wireframe
-				wireframeOnly = !wireframeOnly;
+				levelsMgr->get()->wireframeOnly = !levelsMgr->get()->wireframeOnly;
 			}
 
 			if( keys[0x42]) { //B - disegna o meno le Bounding Box oggetti collidibili
-				drawBoundingBoxes = !drawBoundingBoxes;
+				levelsMgr->get()->drawBoundingBoxes = !levelsMgr->get()->drawBoundingBoxes;
 			}
 
 			if( keys[0x43]) { //C - attiva/disattiva collisioni camera(player) - mondo
 				camera.collisionsEnabled = !camera.collisionsEnabled;
 			}
 
+			if (keys[0x4E]) { //N - carica prox. livello
+				if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
+					levelsMgr->loadLevel(levelsMgr->LEVEL_2);
+				}
+			}
 			
 
 			//riposiz. il puntatore al centro della finestra
