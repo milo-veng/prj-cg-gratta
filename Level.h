@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include <windows.h>												// Header File For Windows
 #include <stdio.h>													// Header File For Standard Input/Output
 #include <gl\gl.h>													// Header File For The OpenGL32 Library
@@ -23,6 +22,7 @@ using namespace std;
 
 extern ofstream logFile;
 extern SoundMgr *sndMgr;
+
 
 class Level
 {

@@ -2,12 +2,12 @@
 
 #include <string>
 #include "Overlay.h"
-#include "Level.h"
-#include "LevelsMgr.h"
+//#include "Level.h"
+//#include "LevelsMgr.h"
+
 using namespace std;
 
-
-extern LevelsMgr *levelsMgr;
+//extern LevelsMgr *levelsMgr;
 
 
 class PlayerStats

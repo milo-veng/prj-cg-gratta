@@ -25,13 +25,14 @@ using namespace std;
 #include "deltaT.h"
 #include "MilkshapeModel.h"											// Header File For Milkshape Fil
 #include "TerrainModel.h"
+#include "SoundMgr.h" 
+#include "Level.h"
+#include "LevelsMgr.h"
 #include "PickableObjectsManager.h"
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "PlayerStats.h"
-#include "SoundMgr.h" 
 #include "Text.h"
-#include "Level.h"
-#include "LevelsMgr.h"
+
  
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
 #pragma comment( lib, "glu32.lib" )									// Search For GLu32.lib While Linking    ( NEW )
@@ -64,10 +65,9 @@ SoundMgr *sndMgr;												//suoni gioco e musica background
 
 Text *txt;														//scrittura testo su schermo
 
-PlayerStats pStats(winMgr.SCREEN_W, winMgr.SCREEN_H);			//punteggio, progressi giocatore
-
 LevelsMgr *levelsMgr;											//carica livelli: mappa, skybox, gemme, akuaku, bkgnd music
 
+PlayerStats pStats(winMgr.SCREEN_W, winMgr.SCREEN_H);			//punteggio, progressi giocatore
 
 extern clock_t lastUpdate;										//usato per calcolare deltaT tra frame e l'altro
 double deltaT = 0;												//deltaT tra un frame e l'altro

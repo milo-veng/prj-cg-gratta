@@ -1,4 +1,4 @@
-
+#pragma once
 #include <Windows.h>
 #include <gl\gl.h>													// Header File For The OpenGL32 Library
 #include <gl\glu.h>													// Header File For The GLu32 Library
@@ -8,13 +8,13 @@
 #include "MilkshapeModel.h"
 #include "BoundingBox2D.h"
 
-#pragma once
 
 
 
 class Pickable3DObject : public MilkshapeModel
 {
 public:
+
 	enum Pickable3DObjectType {
 		GEM,
 		AKUAKU
@@ -74,8 +74,5 @@ public:
 	//disegna la bounding box dell'oggetto(all'altezza predefinita di 0.0f)
 	void drawBoundingBoxes();
 
-
-	//se true inverte la direzione di traslazione su asse y per fare l'animazione
-	//bool hasReachedAnimationLimit();
 };
 

@@ -1,6 +1,9 @@
 #include "PlayerStats.h"
 
-const float PlayerStats::LIFE_DEC_PER_SEC = 0.5f;
+#include "LevelsMgr.h"
+extern LevelsMgr *levelsMgr;
+
+const float PlayerStats::LIFE_DEC_PER_SEC = 1.0f;
 
 PlayerStats::PlayerStats(int SCREEN_W, int SCREEN_H)
 {
@@ -47,14 +50,6 @@ void PlayerStats::gemCollected() {
 
 void PlayerStats::maskCollected() {
 
-	if (collectedMasksNum >= MAX_MASKS_NUM) {
-		
-		//ho 3 maschere cambio livello
-		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
-		
-		levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
-
-	}
 
 	life = PlayerStats::MAX_LIFE;
 
@@ -64,6 +59,16 @@ void PlayerStats::maskCollected() {
 
 	//aggiorno overlay disegno # maschere
 	overlay->maskPicked();
+
+
+	if (collectedMasksNum >= MAX_MASKS_NUM) {
+		//ho 3 maschere cambio livello
+		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
+		
+		levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
+
+	}
+
 
 }				
 

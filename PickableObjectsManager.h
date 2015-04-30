@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <fstream>
 using namespace std;
@@ -8,7 +10,6 @@ using namespace std;
 #include "SoundMgr.h"
 #include "PlayerStats.h"
 
-#pragma once
 
 extern SoundMgr *sndMgr;
 extern PlayerStats pStats;
@@ -49,6 +50,8 @@ public:
 
 
 	bool isGoodPosition(BoundingBox2D obj, BoundingBox2D limits, TerrainModel *terrain);		//ritorna true se la gemma non è troppo vicina ad un altra e se non sta collidendo con
+
+
 
 };
 

@@ -5,8 +5,8 @@
 #include <fstream>
 using namespace std;
 
-#include "Level.h"
 #include "BoundingBox2D.h"
+#include "Level.h"
 
 
 extern ofstream logFile;
