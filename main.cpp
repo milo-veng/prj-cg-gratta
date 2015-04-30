@@ -109,8 +109,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,
 	/* caricamento suoni */
 	sndMgr = new SoundMgr();
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
-	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3"); //sounds contiene i nomi dei file
-	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");						//soundNames il nome di ciascun suono: sndMgr->play("NOME")
+	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3"); sounds.push_back("Data/audio/collision.mp3"); //sounds contiene i nomi dei file
+	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");					//soundNames il nome di ciascun suono: sndMgr->play("NOME")
 	sndMgr->loadSounds(sounds, soundNames);
 
 

@@ -46,8 +46,15 @@ void PlayerStats::gemCollected() {
 //presa maschera -> aggiorna lifef e points di conseguenza
 
 void PlayerStats::maskCollected() {
-	if (collectedMasksNum >= MAX_MASKS_NUM)
-		return;
+
+	if (collectedMasksNum >= MAX_MASKS_NUM) {
+		
+		//ho 3 maschere cambio livello
+		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
+		
+		levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
+
+	}
 
 	life = PlayerStats::MAX_LIFE;
 

@@ -27,6 +27,11 @@ Overlay::Overlay(int SCREEN_W, int SCREEN_H)
 	//iniz. oggetto per disegno del # maschere raccolte
 	akus = NULL;
 	akus = new AkuAku(SCREEN_W, SCREEN_H);
+
+#if (_MSC_VER < 1800)
+	//iniz. colore lifebar per vs < 2013
+	lifebarColorR = 0.08f, lifebarColorG = 0.48f, lifebarColorB = 0.3f;
+#endif
 	
 }
 
@@ -37,25 +42,35 @@ void Overlay::drawLife(float life)
 
 	float w = (w_max*life) / 100.0f;
 	
-	//glDisable(GL_LIGHTING);
+	
 
 	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
 	glPushMatrix(); // Store The Projection Matrix
 	glLoadIdentity(); // Reset The Projection Matrix
-	glOrtho(10, SCREEN_W, SCREEN_H, 0, 1, -1);
+	glOrtho(0, SCREEN_W, SCREEN_H, 0, 1, -1);
 	glMatrixMode(GL_MODELVIEW); // Select The Modelview Matrix
 	glPushMatrix(); // Store The Modelview Matrix
 	glLoadIdentity(); // Reset The Modelview Matrix
 	glTranslated(0, 0, 0); // draw some stuff (blended, textured, alpha tested quad etc.)*/
 
+	//serve disattivarli x far funzionare il colore
+	glDisable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
 
 	glBegin(GL_QUADS);				// Draw The Quad
+
+	 //glColor3ub( lifeBarColorR, lifeBarColorG, lifeBarColorB );
+	glColor3f(lifebarColorR, lifebarColorG, lifebarColorB);
+
 	 glVertex3f(x1, h2, 0.0f);		// Bottom Left
 	 glVertex3f(w, h2, 0.0f);				// Bottom Right
 	 glVertex3f(w, h1, 0.0f);				// Top Right
 	 glVertex3f(x1, h1, 0.0f);				// Top Left
 	glEnd();
 
+	glEnable(GL_LIGHTING);
+	glEnable(GL_TEXTURE_2D);
+	
 	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
 	glPopMatrix(); // Restore The Old Projection Matrix
 	glMatrixMode(GL_MODELVIEW); // Select The Modelview Matrix

@@ -2,9 +2,13 @@
 #include <iostream>
 #include <cstring>
 #include <windows.h>	
+#include <vector>
+#include <map>
+#include <exception>
+
 #include "audiere.h"
 #include "Sound.h"
-#include <vector>
+
 using namespace std;
 using namespace audiere;
 
@@ -49,13 +53,26 @@ void SoundMgr::loadSounds(vector<string> filenames, vector<string> soundnames)
 void SoundMgr::play(string name)
 {
 
-	mp[name.c_str()].playSound();
+	//mp[name.c_str()].playSound();				//qst aggiunge la chiave se non è presente
+	try {
+		mp.at(name.c_str()).playSound();			//qst non aggiunge una chiave non presente
+	}
+	catch (out_of_range e) {
+		return;
+	}
 }
 
 void SoundMgr::stop(string name)
 {
 
-	mp[name.c_str()].stopSound();
+	//mp[name.c_str()].stopSound();
+	try {
+		mp.at(name.c_str()).stopSound();			//qst non aggiunge una chiave non presente
+	}
+	catch (out_of_range e) {
+		return;
+	}
+
 }
 		
 

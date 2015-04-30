@@ -293,7 +293,7 @@ int WindowMgr::InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 	gluLookAt(camera.xpos, camera.ypos, camera.zpos, 0, camera.angley, camera.anglex, 0, 1, 0);
 
 
-	glEnable(GL_CULL_FACE);		//non lo uso per via della skybox e degli interni dei modelli???
+	//glEnable(GL_CULL_FACE);		//se lo metto non disegna le penne dell aku da dietro
 
 
 	return TRUE;													// Initialization Went OK

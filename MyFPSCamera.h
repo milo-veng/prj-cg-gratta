@@ -12,8 +12,11 @@ using namespace std;
 #include "PickableObjectsManager.h"
 #include "Level.h"
 #include "LevelsMgr.h"
+#include "Sound.h"
+#include "SoundMgr.h"
 
 
+extern SoundMgr *sndMgr;												//suoni gioco e musica background
 extern LevelsMgr *levelsMgr;		
 
 

@@ -18,8 +18,11 @@ class LevelsMgr
 	Level *level;
 	int levelNum;	//# del livello attivo
 
-
+	
 public:
+
+	static const int TOTAL_LEVEL_NUM = 2;	//# di livelli presnti nel gioco
+
 	LevelsMgr();
 	~LevelsMgr();
 
@@ -30,6 +33,8 @@ public:
 
 	//dealloca livello attuale e carica il livello num
 	bool loadLevel(int num);
+
+
 
 
 	//nomi dei file contenenti le mappe 3d e le BB per ogni livello e le risp. musiche di sottofondo

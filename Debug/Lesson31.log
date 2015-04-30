@@ -1,29 +1,215 @@
-﻿Compilazione avviata 29/04/2015 17.51.26.
+﻿Compilazione avviata 30/04/2015 18.02.01.
      1>Progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Overlay.cpp
-         Overlay.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib audiere.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\BoundingBox2D.obj
-         .\Debug\Level.obj
-         .\Debug\LevelsMgr.obj
-         .\Debug\main.obj
-         .\Debug\MaskOverlay.obj
-         .\Debug\MilkshapeModel.obj
-         .\Debug\Model.obj
-         .\Debug\MyFPSCamera.obj
-         .\Debug\Overlay.obj
-         .\Debug\Pickable3DObject.obj
-         .\Debug\PickableObjectsManager.obj
-         .\Debug\PlayerStats.obj
-         .\Debug\Sound.obj
-         .\Debug\SoundMgr.obj
-         .\Debug\TerrainModel.obj
-         .\Debug\Text.obj
-         .\Debug\WindowMgr.obj
-         Lesson31.vcxproj -> C:\Users\Amila\Documents\GitHub\prj-cg-gratta\.\Debug\progetto cg.exe
-     1>Compilazione progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" (destinazioni: Build) completata.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Level.cpp LevelsMgr.cpp MyFPSCamera.cpp PickableObjectsManager.cpp PlayerStats.cpp WindowMgr.cpp main.cpp
+         main.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): error C2011: 'PickableObjectsManager': ridefinizione tipo 'class'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\main.cpp(67): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\main.cpp(67): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\main.cpp(67): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\main.cpp(67): error C2078: troppi inizializzatori
+     1>c:\users\amila\documents\github\prj-cg-gratta\main.cpp(126): error C2228: l'elemento a sinistra di '.initMasksOverlay' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+         WindowMgr.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): error C2011: 'PickableObjectsManager': ridefinizione tipo 'class'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.h(24): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.cpp(358): error C2228: l'elemento a sinistra di '.getPoints' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.cpp(367): error C2228: l'elemento a sinistra di '.updateLifeAmount' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.cpp(368): error C2228: l'elemento a sinistra di '.drawLifeBar' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+     1>c:\users\amila\documents\github\prj-cg-gratta\windowmgr.cpp(369): error C2228: l'elemento a sinistra di '.drawPickedMasks' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+         PlayerStats.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+         PickableObjectsManager.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): error C2011: 'PickableObjectsManager': ridefinizione tipo 'class'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(5): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(7): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(7): error C2059: errore di sintassi: ')'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(8): error C2143: errore di sintassi: ';' mancante prima di '{'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(8): error C2447: '{': intestazione di funzione mancante. Elenco formale di tipo obsoleto?
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(19): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(19): error C2059: errore di sintassi: ')'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(20): error C2143: errore di sintassi: ';' mancante prima di '{'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(20): error C2447: '{': intestazione di funzione mancante. Elenco formale di tipo obsoleto?
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(27): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(51): error C3861: 'isGoodPosition': identificatore non trovato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(55): error C2065: 'RANDOM_PLACING_MAX_ITERATIONS': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(67): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(67): error C2228: l'elemento a sinistra di '.push_back' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(72): error C2065: 'gemsNum': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(72): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(72): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(83): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(96): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(101): error C2065: 'gemsNum': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(122): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(122): error C2228: l'elemento a sinistra di '.push_back' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(132): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(136): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(136): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(137): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(137): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(137): error C2227: l'elemento a sinistra di '->isActive' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(139): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(139): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(139): error C2227: l'elemento a sinistra di '->getBoundingBox' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(141): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(141): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(141): error C2227: l'elemento a sinistra di '->isCollidingWith' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(142): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(142): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(142): error C2227: l'elemento a sinistra di '->setActive' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(145): error C2228: l'elemento a sinistra di '.gemCollected' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(156): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(156): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(158): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(158): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(158): error C2227: l'elemento a sinistra di '->isActive' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(160): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(160): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(160): error C2227: l'elemento a sinistra di '->getBoundingBox' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(162): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(162): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(162): error C2227: l'elemento a sinistra di '->isCollidingWith' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(164): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(164): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(164): error C2227: l'elemento a sinistra di '->setActive' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(167): error C2228: l'elemento a sinistra di '.maskCollected' deve avere una classe, struttura o unione
+                 il tipo è 'int'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(183): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(197): error C2065: 'oldX': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(197): error C2065: 'oldZ': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(201): error C2065: 'oldX': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(202): error C2065: 'oldZ': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(230): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(233): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(233): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(234): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(234): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(234): error C2227: l'elemento a sinistra di '->reloadTextures' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(238): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(238): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(239): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(239): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(239): error C2227: l'elemento a sinistra di '->reloadTextures' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(246): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(249): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(249): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(250): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(250): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(250): error C2227: l'elemento a sinistra di '->draw' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(254): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(254): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(255): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(255): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(255): error C2227: l'elemento a sinistra di '->draw' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(261): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(265): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(265): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(266): error C2065: 'gems': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(266): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(266): error C2227: l'elemento a sinistra di '->drawBoundingBoxes' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(270): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(270): error C2228: l'elemento a sinistra di '.size' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(271): error C2065: 'masks': identificatore non dichiarato
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(271): error C2228: l'elemento a sinistra di '.at' deve avere una classe, struttura o unione
+                 il tipo è 'unknown-type'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(271): error C2227: l'elemento a sinistra di '->drawBoundingBoxes' deve puntare a un tipo classe, struttura, unione o generico
+         MyFPSCamera.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): error C2086: 'int pStats': ridefinizione
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(14): vedere la dichiarazione di 'pStats'
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): error C2011: 'PickableObjectsManager': ridefinizione tipo 'class'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(233): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(233): error C2227: l'elemento a sinistra di '->checkCollisions' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(274): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(274): error C2227: l'elemento a sinistra di '->checkCollisions' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(324): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(324): error C2227: l'elemento a sinistra di '->checkCollisions' deve puntare a un tipo classe, struttura, unione o generico
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(373): error C2027: utilizzo di tipo non definito 'PickableObjectsManager'
+                 c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.h(18): vedere la dichiarazione di 'PickableObjectsManager'
+     1>c:\users\amila\documents\github\prj-cg-gratta\myfpscamera.cpp(373): error C2227: l'elemento a sinistra di '->checkCollisions' deve puntare a un tipo classe, struttura, unione o generico
+         LevelsMgr.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\playerstats.h(10): error C2143: errore di sintassi: ';' mancante prima di '*'
+     1>c:\users\amila\documents\github\prj-cg-gratta\playerstats.h(10): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+         Level.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(18): error C2143: errore di sintassi: ';' mancante prima di '*'
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(18): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(29): error C2143: errore di sintassi: ';' mancante prima di '*'
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(29): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(29): warning C4183: 'get': tipo restituito mancante. Si presume che sia una funzione membro che restituisce 'int'.
+     1>c:\users\amila\documents\github\prj-cg-gratta\levelsmgr.h(29): error C2065: 'level': identificatore non dichiarato
+         Generazione del codice in corso...
+     1>Compilazione progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" (destinazioni: Build) NON COMPLETATA.
 
-Compilazione completata.
+Compilazione NON RIUSCITA.
 
-Tempo trascorso 00:00:01.92
+Tempo trascorso 00:00:04.92

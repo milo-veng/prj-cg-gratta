@@ -221,6 +221,8 @@ void MyFPSCamera::moveForward(double deltaT) {
 			//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
 			xDelta = zDelta = 0.0;
 
+			sndMgr->play("COLLISION");
+
 		}
 
 
@@ -260,6 +262,8 @@ void MyFPSCamera::moveBackward(double deltaT) {
 
 			//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
 			xDelta = zDelta = 0.0;
+
+			sndMgr->play("COLLISION");
 
 		}
 
@@ -310,6 +314,8 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 					//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
 					xDelta = zDelta = 0.0;
 
+					sndMgr->play("COLLISION");
+
 				}
 
 				//Collisioni con le gemme e gestione di esse
@@ -356,6 +362,8 @@ void MyFPSCamera::strafeRight(double deltaT) {
 
 					//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
 					xDelta = zDelta = 0.0;
+
+					sndMgr->play("COLLISION");
 
 				}
 
