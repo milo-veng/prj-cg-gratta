@@ -5,11 +5,13 @@
 #include <fstream>
 using namespace std;
 
+
 #include "BoundingBox2D.h"
 #include "Level.h"
 
 
 extern ofstream logFile;
+
 
 
 class LevelsMgr
@@ -42,7 +44,10 @@ public:
 	vector<string> bbFiles;
 	vector<string> backgroundMusicFiles;
 	vector<int> gemNum;
-	vector<BoundingBox2D> limits;
+	vector<BoundingBox2D> mapLimits;	//limiti di ciascuna mappa per ciascun livello, il giocatore è confinato in questi rettangoli
+	vector<BoundingBox2D> limits;		//rettangoli dentro ai quali vengono disseminate a caso le gemme
+	vector<vector<float>> posX;	//posiz. delle maschere per ciascun livello asse X
+	vector<vector<float>> posZ;	//"" asse Z
 	
 
 	string getLevelTerrainFilename(int lNum) { return terrainFiles.at(lNum-1); }

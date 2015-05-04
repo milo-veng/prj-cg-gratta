@@ -19,25 +19,25 @@ extern ofstream logFile;
 //id è un num. UNIVOCO che identifica l'oggetto
 Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points )
 {
-	bb = new BoundingBox2D(0.0f, 0.0f, 0.0f, 0.0f);
-	bb->x = 0.0f;
-	bb->z = 0.0f;
+	//bb = new BoundingBox2D(0.0f, 0.0f, 0.0f, 0.0f);
+	bb.x = 0.0f;
+	bb.z = 0.0f;
 	
 	objType = type;
 
 	//imposta la dimensione della bounding box in base al tipo di oggetto rappresentato
 	if (type == Pickable3DObjectType::GEM) {
 		//OK
-		bb->w = 2.8f;
-		bb->h = 2.8f;
+		bb.w = 2.8f;
+		bb.h = 2.8f;
 
 		
 		ypos = defaultYPos = 1.0f;
 	}
 	else if (type == Pickable3DObjectType::AKUAKU) {
 		//da verificare!!!!!!!!!!!!!!!
-		bb->w = 3.0f;
-		bb->h = 3.0f;
+		bb.w = 3.0f;
+		bb.h = 3.0f;
 		
 		ypos = defaultYPos = 0.35f;
 	}
@@ -58,6 +58,7 @@ Pickable3DObject::Pickable3DObject(int id, Pickable3DObjectType type, int points
 
 Pickable3DObject::~Pickable3DObject()
 {
+	
 }
 
 
@@ -69,8 +70,8 @@ void Pickable3DObject::setPosition(float x, float y, float z) {
 
 	//aggiorno BB, l'oggetto sta al centro della bounding box
 	//w e h di bb dipendono dal Pickable3DObjectType specificato e sono impostati auto. dal costruttore
-	bb->x = x - bb->w / 2;
-	bb->z = z - bb->h / 2;
+	bb.x = x - bb.w / 2;
+	bb.z = z - bb.h / 2;
 
 }
 
@@ -108,7 +109,7 @@ bool Pickable3DObject::isCollidingWith(BoundingBox2D other) {
 		return false;
 	}
 
-	BoundingBox2D tmpbb = *bb;
+	BoundingBox2D tmpbb = bb;
 	
 	
 	/*if (bb->x < other.x + other.w &&
@@ -255,7 +256,7 @@ void Pickable3DObject::drawBoundingBoxes() {
 
 	//aku BB
 	glBegin(GL_QUADS);
-	const BoundingBox2D *b = bb;
+	const BoundingBox2D *b = &bb;
 
 	glVertex3f(b->x, 0.0f, b->z);
 	glVertex3f(b->x + b->w, 0.0f, b->z);

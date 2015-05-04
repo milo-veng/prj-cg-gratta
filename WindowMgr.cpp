@@ -6,6 +6,23 @@ WindowMgr::WindowMgr()
 {
 	active = TRUE;
 	fullscreen = FALSE;
+
+#if (_MSC_VER < 1800)	
+		//winapi
+	hDC = NULL;												// Private GDI Device Context
+	hRC = NULL;												// Permanent Rendering Context
+	hWnd = NULL;												// Holds Our Window Handle
+	hInstance;
+
+	//impostazioni finestra
+	SCREEN_W = 800;
+	SCREEN_H = 600;
+	SCREEN_BIT = 16;
+									
+
+	showFPS = TRUE;
+	showCameraPosition = TRUE;
+#endif
 }
 
 
@@ -197,6 +214,7 @@ LRESULT  WindowMgr::WndProc(HWND	hWnd,							// Handle For This Window
 		p = MAKEPOINTS(lParam);
 
 		//calcolo di quanto si è spostato il mouse in un frame
+		//#########	questo andrebbe aggiornato nel MAIN LOOP, non QUI!!! ##########
 		camera.updateMouseDeltaPos(p.x, p.y);
 
 		return 0;

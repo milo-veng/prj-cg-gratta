@@ -10,7 +10,7 @@ using namespace std;
 extern ofstream logFile;
 
 
-TerrainModel::TerrainModel()
+TerrainModel::TerrainModel(BoundingBox2D map_limits)
 {
 	
 	terrainLoaded = false;
@@ -19,6 +19,9 @@ TerrainModel::TerrainModel()
 	pBoundingBoxes = new MilkshapeModel();
 
 	bb = NULL;
+
+	mapLimits = map_limits;
+	
 }
 
 
@@ -137,4 +140,39 @@ BoundingBox2D TerrainModel::isCollidingWith( BoundingBox2D playerBox ) {
 
 	//no collision
 	return collider;
+}
+
+
+//ritorna true se il giocatore si trova dentro ai limiti della mappa
+bool TerrainModel::isInsideMapLimits( BoundingBox2D playerBox ) {
+	BoundingBox2D tmpbb = mapLimits;
+
+	if( tmpbb.x < playerBox.x + playerBox.w &&
+			tmpbb.x + tmpbb.w > playerBox.x &&
+			tmpbb.z < playerBox.z + playerBox.h &&
+			tmpbb.h + tmpbb.z > playerBox.z ) 
+		{
+			return true;
+		} 
+
+	return false;
+
+}
+
+
+void TerrainModel::drawBoundingBoxes() {
+
+	//bb degli elementi collidibili della mappa(alberi, rocce, ...
+	pBoundingBoxes->draw();
+
+	//bb map boundaries
+	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+	glBegin(GL_QUADS);
+	glVertex3f( mapLimits.x, 1.0f, mapLimits.z);
+	glVertex3f( mapLimits.x, 1.0f, mapLimits.z + mapLimits.h);
+	glVertex3f( mapLimits.x + mapLimits.w, 1.0f, mapLimits.z + mapLimits.h);
+	glVertex3f( mapLimits.x + mapLimits.w, 1.0f, mapLimits.z);
+	glEnd();
+	glPolygonMode( GL_FRONT_AND_BACK, GL_FILL );
+	
 }

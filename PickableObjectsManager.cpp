@@ -1,6 +1,11 @@
 #include "PickableObjectsManager.h"
+#include "MyFPSCamera.h"
+#include "LevelsMgr.h"
 
 extern ofstream logFile;
+extern MyFPSCamera camera;
+extern LevelsMgr *levelsMgr;
+
 
 int PickableObjectsManager::masksNum;
 
@@ -13,11 +18,15 @@ PickableObjectsManager::PickableObjectsManager()
 	PickableObjectsManager::masksNum = 3;	//valori di default
 
 	//masksNum = 3;		//valore hard coded
+
+	gemsAndMasksPlaced = false;
 }
 
 
 PickableObjectsManager::~PickableObjectsManager()
 {
+	//for( int i = 0; i < masks.size(); i++ )
+		//delete masks.at(i);
 }
 
 //piazza num gemme sparse in modo random per la mappa 
@@ -48,7 +57,7 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 
 			obj->setRandomPosition(limits);
 
-			if (isGoodPosition(*obj->getBoundingBox(), limits, terrain))
+			if (isGoodPosition(obj->getBoundingBox(), limits, terrain))
 				done = true;
 
 			iterations++;
@@ -61,7 +70,7 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 
 		obj->setActive(true);
 
-		logFile << "Piazzata una gemma in (x,z)=" << obj->getBoundingBox()->x << ", " << obj->getBoundingBox()->z << endl;
+		logFile << "Piazzata una gemma in (x,z)=" << obj->getBoundingBox().x << ", " << obj->getBoundingBox().z << endl;
 
 		//inserisce il puntatore nel vettore
 		gems.push_back(obj);
@@ -80,6 +89,7 @@ bool PickableObjectsManager::placeGems(BoundingBox2D limits, TerrainModel *terra
 //dentro alla BB limits. 
 //Si occupa di allocare gli elementi del vettore gems e 
 //di richiamare per ciascuno setRandomPosition()
+/*
 bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain, vector<float> posX, vector<float> posZ) {
 	//le posizioni e il num. di maschere sono HARD CODED!
 	//float posX[PickableObjectsManager::masksNum] = {92.8f, -136.0f, 20.0f };
@@ -93,14 +103,52 @@ bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terr
 		return false;
 	}
 
+
+	//aggiorno il valore di default del # masks
 	PickableObjectsManager::masksNum = posX.size();
+	masks.resize(PickableObjectsManager::masksNum);
 
-
+	//ok
+	//logFile << "PickableObjsMgr::placeMasks(): sto per caricare " << PickableObjectsManager::masksNum << " masks in un array che adesso contiene " << masks.size() << endl;
 
 	//crea e piazza le masks
-	for (int i = 0, ID = gemsNum; i < masksNum; i++, ID++) {
+	for (int i = 0, ID = gemsNum; i < PickableObjectsManager::masksNum; i++, ID++) {
 
 		//gemma standard(10 punti)
+		Pickable3DObject *obj = new Pickable3DObject(ID, Pickable3DObject::Pickable3DObjectType::AKUAKU);
+
+		//carica modello 3d gemma
+		if (!obj->loadModelData("data/akuaku.ms3d")) {
+			logFile << "PickableObjectsManager::placeMasks(): Impossibile caricare modello akuaku!" << endl;
+			return false;
+		}
+
+		//posizioni hard coded
+		obj->setPosition( posX.at(i), 0.0f, posZ.at(i) );
+
+
+		obj->setActive(true);
+
+		logFile << "PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=" << ID << "," << obj->getBoundingBox().x << ", " << obj->getBoundingBox().z << endl;
+		//logFile << "### " << posX.at(i) << "," << posZ.at(i) << endl;   //posX e posZ sono OK
+
+		//inserisce il puntatore nel vettore
+		masks.push_back(obj);
+		//masks[i] = obj;
+		
+	} //for
+
+	//logFile << "Ci sono " << masks.size() << " maschere" << endl;
+
+	gemsAndMasksPlaced = true; 
+
+	return true;
+}*/
+
+bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terrain, vector<float> posX, vector<float> posZ) {
+	PickableObjectsManager::masksNum = 3;
+
+	for (int i = 0, ID = gemsNum; i < PickableObjectsManager::masksNum; i++, ID++) {
 		Pickable3DObject *obj = new Pickable3DObject(ID, Pickable3DObject::Pickable3DObjectType::AKUAKU);
 
 		//carica modello 3d gemma
@@ -116,29 +164,31 @@ bool PickableObjectsManager::placeMasks(BoundingBox2D limits, TerrainModel *terr
 
 		obj->setActive(true);
 
-		logFile << "PickableObjMgr::placeMasks(): piazzata una maschera in (ID,x,z)=" << ID << "," << obj->getBoundingBox()->x << ", " << obj->getBoundingBox()->z << endl;
+		masks.push_back( obj );
 
-		//inserisce il puntatore nel vettore
-		masks.push_back(obj);
+	}
 
-	} //for
-
-
-	return true;
+	gemsAndMasksPlaced = true;
 }
 
-
 //controlla per ogni gemma e per ogni maschera se sta collidendo con il player(camera)
-BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
+BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D player) {
 	BoundingBox2D bb(0.0f, 0.0f, 0.0f, 0.0f);
+
+	//le collisioni sono disabilitate, accade quando si sta ancora caricando un livello
+	if( !camera.collisionsEnabled || !levelsMgr->get()->isLevelLoaded() || !gemsAndMasksPlaced ) {
+		return bb;
+	}
+
 
 	//coll. con gemme
 	for (int i = 0; i < gems.size(); i++) {
 		if (!gems.at(i)->isActive()) continue;	//considero solo le gemme "ACTIVE"
 
-		BoundingBox2D *b = gems.at(i)->getBoundingBox();
+		BoundingBox2D b = gems.at(i)->getBoundingBox();
 
-		if (gems.at(i)->isCollidingWith(camera)) {
+		if (gems.at(i)->isCollidingWith(player)) {
+			//non disegno e non collido più questa gemma
 			gems.at(i)->setActive(false);
 			
 			//gestione punteggio
@@ -155,12 +205,16 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
 	//coll. con maschere
 	for( int i = 0; i < masks.size(); i++ ) {
 
-		if(!masks.at(i)->isActive()) continue;
+		//########## commentandolo per provare basta passare 3 volte su una stessa gemma ###########
+		//if(!masks.at(i)->isActive()) continue;	//considero solo le maschere non ancora prese
 
-		BoundingBox2D *b = masks.at(i)->getBoundingBox();
 
-		if( masks.at(i)->isCollidingWith(camera)) {
+		//bb della maschera
+		BoundingBox2D b = masks.at(i)->getBoundingBox();
+		
 
+		if( masks.at(i)->isCollidingWith(player)) {
+			//non disegno e collido più con questa maschera
 			masks.at(i)->setActive(false);
 
 			//punteggio.
@@ -170,7 +224,7 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D camera) {
 
 		}
 
-	}
+	} //for masks
 
 
 	return bb;

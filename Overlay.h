@@ -29,7 +29,7 @@ public:
 #if (_MSC_VER >= 1800)	
 	//da visual studio 2013 in su posso usare c++11
 	float lifebarColorR = 0.08f, lifebarColorG = 0.48f, lifebarColorB = 0.3f;
-#elif
+#else
 	float lifebarColorR, lifebarColorG, lifebarColorB;
 #endif
 

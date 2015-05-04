@@ -41,6 +41,7 @@ extern float cumulativeDeltaT; //deltaT per renderizzare 100 frame
 class WindowMgr
 {
 public:
+#if (_MSC_VER >= 1800)	
 	//winapi
 	HDC			hDC = NULL;												// Private GDI Device Context
 	HGLRC		hRC = NULL;												// Permanent Rendering Context
@@ -48,14 +49,29 @@ public:
 	HINSTANCE	hInstance;
 
 	//impostazioni finestra
-	const int SCREEN_W = 800;
-	const int SCREEN_H = 600;
-	const int SCREEN_BIT = 16;
+	int SCREEN_W = 800;
+	int SCREEN_H = 600;
+	int SCREEN_BIT = 16;
 									
 
 	bool showFPS = TRUE;
 	bool showCameraPosition = TRUE;
+#else
+		//winapi
+	HDC			hDC;
+	HGLRC		hRC;
+	HWND		hWnd;
+	HINSTANCE	hInstance;
 
+	//impostazioni finestra
+	int SCREEN_W;
+	int SCREEN_H;
+	int SCREEN_BIT;
+									
+
+	bool showFPS;
+	bool showCameraPosition;
+#endif
 
 	WindowMgr();
 	~WindowMgr();

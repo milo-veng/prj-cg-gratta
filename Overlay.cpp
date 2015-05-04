@@ -40,7 +40,7 @@ void Overlay::drawLife(float life)
 	if (life <= 0.0f)
 		life = 1.0f;
 
-	float w = (w_max*life) / 100.0f;
+	float w = (w_max*life) / 250.0f;
 	
 	
 
@@ -63,8 +63,8 @@ void Overlay::drawLife(float life)
 	glColor3f(lifebarColorR, lifebarColorG, lifebarColorB);
 
 	 glVertex3f(x1, h2, 0.0f);		// Bottom Left
-	 glVertex3f(w, h2, 0.0f);				// Bottom Right
-	 glVertex3f(w, h1, 0.0f);				// Top Right
+	 glVertex3f(x1+w, h2, 0.0f);				// Bottom Right
+	 glVertex3f(x1+w, h1, 0.0f);				// Top Right
 	 glVertex3f(x1, h1, 0.0f);				// Top Left
 	glEnd();
 

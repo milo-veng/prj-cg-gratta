@@ -27,7 +27,7 @@ extern SoundMgr *sndMgr;
 class Level
 {
 	TerrainModel *terrain;						//mondo
-	
+
 	PickableObjectsManager *objMgr;				//gemme e maschere
 
 
@@ -68,7 +68,7 @@ public:
 
 
 
-	Level();
+	Level(vector<float> posX, vector<float> posZ, BoundingBox2D mapLimits);
 	~Level();
 
 

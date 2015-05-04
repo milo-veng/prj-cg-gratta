@@ -29,7 +29,18 @@ void PlayerStats::updateLifeAmount(float deltaT) {
 	//controlla se è passato un secondo
 	if (elapsedTime >= 1.0f) {
 		//riduco la vita
-		life -= PlayerStats::LIFE_DEC_PER_SEC;
+		if( life - PlayerStats::LIFE_DEC_PER_SEC > 1 ) {
+			life -= PlayerStats::LIFE_DEC_PER_SEC;
+		}
+		else {
+			//vita a zero
+			//############ GAME OVER!!!!!!##############
+
+			logFile << "GAME OVER: life = 0" << endl;
+
+			//...
+
+		}
 
 		elapsedTime = 0.0f;
 	}
@@ -65,7 +76,9 @@ void PlayerStats::maskCollected() {
 		//ho 3 maschere cambio livello
 		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
 		
-		levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
+		if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
+			levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
+		}
 
 	}
 

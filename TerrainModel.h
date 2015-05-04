@@ -35,8 +35,9 @@ public:
 	bool boundingBoxesLoaded;
 
 	Model *pModel;		//modello ms3d della mappa
+	BoundingBox2D mapLimits;		//limiti della mappa, il giocatore collide con essi!
 	
-	Model *pBoundingBoxes; //modello contenente le bounding boxes della mappa
+	Model *pBoundingBoxes; //modello contenente le bounding boxes degli elementi della mappa(alberi, rocce,...)
 	BoundingBox2D *bb;		//struttura per gestire le Bounding Box come rettangolo 2D sul piano  x-z
 	int boundingBoxNum;		//numero di struttue Bounding Box in bb
 
@@ -60,13 +61,13 @@ public:
 	void draw() { pModel->draw(); }
 
 	//funzione per DEBUG
-	void drawBoundingBoxes() { pBoundingBoxes->draw(); }
+	void drawBoundingBoxes();
 
 
 	//se player sta collidendo con una bounding box ritorna la bb corrispondente
 	//null altrimenti
 	BoundingBox2D isCollidingWith( BoundingBox2D playerBox );
-
+	bool isInsideMapLimits( BoundingBox2D playerBox );
 	
 	//gestione collisioni su piano
 	//ritorna true se il rettangolo passato come argomento è dentro una delle facce piatte
@@ -84,7 +85,7 @@ public:
 	
 
 
-	TerrainModel(void);
+	TerrainModel(BoundingBox2D map_limits);
 	~TerrainModel(void);
 };
 

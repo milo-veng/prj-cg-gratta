@@ -28,6 +28,8 @@ class PickableObjectsManager
 	float oldX;
 	float oldZ;
 
+	bool gemsAndMasksPlaced;		//true quando masks e gems sono state piazzate
+
 public:
 
 	static int masksNum;						//# di maschere presenti( = a masks.size() )

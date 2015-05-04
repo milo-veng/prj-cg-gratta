@@ -219,7 +219,9 @@ void MyFPSCamera::moveForward(double deltaT) {
 		if( !collider.isNull() ) {
 
 			//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
-			xDelta = zDelta = 0.0;
+			//xDelta = zDelta = 0.0f;
+			xDelta = -xDelta/10.0f;
+			zDelta = -zDelta/10.0f;
 
 			sndMgr->play("COLLISION");
 
@@ -227,10 +229,16 @@ void MyFPSCamera::moveForward(double deltaT) {
 
 
 
-		//Collisioni con le gemme e gestione di esse
+		//Collisioni con le gemme e gestione di esse + collisioni con masks
 		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
 		//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
 		BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
+
+
+		//collisione con i limiti della mappa oltre i quali il giocatore non può andare(evita che cammini nel vuoto)
+		if( !levelsMgr->get()->getTerrainModel()->isInsideMapLimits(player) ) {
+			xDelta = zDelta = 0.0f;
+		}
 
 	} //fine collisioni
 
@@ -261,7 +269,9 @@ void MyFPSCamera::moveBackward(double deltaT) {
 		if( !collider.isNull() ) {
 
 			//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
-			xDelta = zDelta = 0.0;
+			//xDelta = zDelta = 0.0;
+			xDelta = -xDelta/10.0f;
+			zDelta = -zDelta/10.0f;
 
 			sndMgr->play("COLLISION");
 
@@ -272,6 +282,12 @@ void MyFPSCamera::moveBackward(double deltaT) {
 		//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
 		//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
 		BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
+
+
+		//collisione con i limiti della mappa oltre i quali il giocatore non può andare(evita che cammini nel vuoto)
+		if( !levelsMgr->get()->getTerrainModel()->isInsideMapLimits(player) ) {
+			xDelta = zDelta = 0.0f;
+		}
 
 	}
 
@@ -312,7 +328,9 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 				if( !collider.isNull() ) {
 
 					//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
-					xDelta = zDelta = 0.0;
+					//xDelta = zDelta = 0.0;
+				xDelta = -xDelta/10.0f;
+				zDelta = -zDelta/10.0f;
 
 					sndMgr->play("COLLISION");
 
@@ -323,6 +341,10 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 				//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
 				BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
+				//collisione con i limiti della mappa oltre i quali il giocatore non può andare(evita che cammini nel vuoto)
+				if( !levelsMgr->get()->getTerrainModel()->isInsideMapLimits(player) ) {
+					xDelta = zDelta = 0.0f;
+				}
 			}
 
 			//update posiz.
@@ -361,17 +383,24 @@ void MyFPSCamera::strafeRight(double deltaT) {
 				if( !collider.isNull() ) {
 
 					//poichè c'è stata una collisione nella posizione predetta fermo il player dal proseguire in qst direzione
-					xDelta = zDelta = 0.0;
+					//xDelta = zDelta = 0.0;
+				xDelta = -xDelta/10.0f;
+				zDelta = -zDelta/10.0f;
 
 					sndMgr->play("COLLISION");
 
 				}
 
-				//Collisioni con le gemme e gestione di esse
+				//Collisioni con le gemme e gestione di esse + collisioni con masks
 				//la gestione di un eventuale collisione avvenuta è dentro checkCollisions()
 				//BoundingBox2D gemCollider = objMgr->checkCollisions(player);
 				BoundingBox2D gemCollider = levelsMgr->get()->getPickableObjMgr()->checkCollisions(player);
 
+				//collisione con i limiti della mappa oltre i quali il giocatore non può andare(evita che cammini nel vuoto)
+				if( !levelsMgr->get()->getTerrainModel()->isInsideMapLimits(player) ) {
+					xDelta = zDelta = 0.0f;
+				}
+						
 			}
 
 			//update posiz.

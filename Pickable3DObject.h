@@ -24,7 +24,7 @@ public:
 private:
 	int ID;					//num. UNIVOCO che identifica l'oggetto(corrisp. alla posiz. nel vett. gems\masks in PickableObjectManager
 
-	BoundingBox2D *bb;
+	BoundingBox2D bb;
 	BoundingBox2D randomPosLimits;		//contiene il rettangolo dentro al quale può essere posiz. a caso da setRandomPosition()
 
 	int points;			//# di punti che il giocatore riceve quando ci passa sopra
@@ -45,7 +45,7 @@ public:
 	~Pickable3DObject();
 
 
-	BoundingBox2D *getBoundingBox() { return bb; }
+	BoundingBox2D getBoundingBox() { return bb; }
 
 
 	void setActive(bool a) { this->active = a; }

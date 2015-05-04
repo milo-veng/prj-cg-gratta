@@ -1,10 +1,20 @@
-﻿Compilazione avviata 01/05/2015 00.00.34.
-     1>Progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
+﻿Compilazione avviata 04/05/2015 02.38.40.
+     1>Progetto "C:\Users\amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
+       Il file di progetto contiene ToolsVersion="12.0". Questo set di strumenti potrebbe essere sconosciuto o mancante. In tal caso, è possibile risolvere il problema installando la versione appropriata di MSBuild. Altrimenti, è possibile che per la build sia stato forzato l'uso di un parametro ToolsVersion specifico per soddisfare i criteri. Il progetto verrà considerato come se contenesse ToolsVersion="4.0". Per ulteriori informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=291333.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PlayerStats.cpp
-         PlayerStats.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt PickableObjectsManager.cpp
+         PickableObjectsManager.cpp
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(185): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(206): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(287): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(292): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(303): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(308): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(319): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(324): warning C4018: '<': errata corrispondenza tra signed e unsigned
+     1>c:\users\amila\documents\github\prj-cg-gratta\pickableobjectsmanager.cpp(172): warning C4715: 'PickableObjectsManager::placeMasks': non tutti i percorsi di controllo restituiscono un valore
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib audiere.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\BoundingBox2D.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib audiere.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\BoundingBox2D.obj
          .\Debug\Level.obj
          .\Debug\LevelsMgr.obj
          .\Debug\main.obj
@@ -21,9 +31,9 @@
          .\Debug\TerrainModel.obj
          .\Debug\Text.obj
          .\Debug\WindowMgr.obj
-         Lesson31.vcxproj -> C:\Users\Amila\Documents\GitHub\prj-cg-gratta\.\Debug\progetto cg.exe
-     1>Compilazione progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" (destinazioni: Build) completata.
+         Lesson31.vcxproj -> C:\Users\amila\Documents\GitHub\prj-cg-gratta\.\Debug\progetto cg.exe
+     1>Compilazione progetto "C:\Users\amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" (destinazioni: Build) completata.
 
 Compilazione completata.
 
-Tempo trascorso 00:00:01.48
+Tempo trascorso 00:00:01.53

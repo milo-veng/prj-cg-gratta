@@ -1,7 +1,7 @@
 #include "Level.h"
 
 
-Level::Level()
+Level::Level(vector<float> posX1, vector<float> posZ1, BoundingBox2D mapLimits)
 {
 	levelLoaded = false;
 
@@ -25,16 +25,20 @@ Level::Level()
 
 
 	//posiz. masks per liv1
+#if (_MSC_VER >= 1800)	
 	vector<float> posX = { 92.8f, -136.0f, 20.0f };
 	vector<float> posZ = { -127.9f, -101.8f, 20.0f };
-
+#else
+	vector<float> posX; posX.push_back(92.8f); posX.push_back(-136.0f); posX.push_back(20.0f);
+	vector<float> posZ; posZ.push_back(-127.9f); posZ.push_back(-101.8f); posZ.push_back(20.0f);
+#endif
+	//####
 	masksPosX = posX;
 	masksPosZ = posZ;
 
-	//masksPositions = pos;
 
 
-	terrain = new TerrainModel();
+	terrain = new TerrainModel(mapLimits);
 	objMgr = new PickableObjectsManager();
 
 	fogEnabled = true;
@@ -112,6 +116,9 @@ void Level::unloadLevel() {
 
 	delete terrain;
 	delete objMgr;
+
+	masksPosX.clear();
+	masksPosZ.clear();
 
 	levelLoaded = false;
 
