@@ -77,7 +77,8 @@ void PlayerStats::maskCollected() {
 		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
 		
 		if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
-			levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
+			//il caricamento del livello succ. non funziona. Crash. Memory leak da qualche parte.
+			//levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
 		}
 
 	}
@@ -99,4 +100,12 @@ void PlayerStats::maskRemoved() {
 
 	overlay->removeMask();
 
+}
+
+void PlayerStats::enemyColliding() {
+	life -= 50 * (PlayerStats::LIFE_INC_AMOUNT_PER_GEM);
+
+	points -= 5 * (PlayerStats::POINTS_PER_GEM);
+
+	collectedGemsNum -= 5;
 }

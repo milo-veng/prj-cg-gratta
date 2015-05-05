@@ -16,6 +16,7 @@ using namespace std;
 #include "Level.h"
 #include "LevelsMgr.h"
 #include "Text.h"
+#include "MenuMgr.h"
 
 extern ofstream logFile;
 extern MyFPSCamera camera;
@@ -56,6 +57,8 @@ public:
 
 	bool showFPS = TRUE;
 	bool showCameraPosition = TRUE;
+
+
 #else
 		//winapi
 	HDC			hDC;
@@ -72,6 +75,8 @@ public:
 	bool showFPS;
 	bool showCameraPosition;
 #endif
+
+	bool done;
 
 	WindowMgr();
 	~WindowMgr();
@@ -97,6 +102,9 @@ public:
 	//MAIN LOOP DEL GIOCO
 	void gameLoop(MSG &msg, double &deltaT);
 
+
+	//esce dal gioco
+	void quit() { done = true; }
 	
 };
 

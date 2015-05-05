@@ -50,6 +50,8 @@ public:
 
 	void maskCollected();								//presa maschera -> aggiorna lifef e points di conseguenza
 	void maskRemoved();									//rimuovo una delle machere già prese, niente se non ne ho nessuna
+	void enemyColliding();								//toccato da enemy -> aggiorna life e points di conseguenza
+
 
 	void drawLifeBar() { overlay->drawLife(life); }
 	void drawPickedMasks() { overlay->drawMasks(); }

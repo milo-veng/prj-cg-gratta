@@ -32,6 +32,8 @@ using namespace std;
 #include "MyFPSCamera.h"											//header per la telecamera
 #include "PlayerStats.h"
 #include "Text.h"
+#include "Enemy.h"
+#include "MenuMgr.h"
 
  
 #pragma comment( lib, "opengl32.lib" )								// Search For OpenGL32.lib While Linking ( NEW )
@@ -80,22 +82,23 @@ int frameCounter;												//usato per calcolo fps, conta 100 frame renderizza
 float cumulativeDeltaT;											//tempo necessario per renderizzare 100 frame -> aggiorno fps ogni 100 frame 
 
 
+Enemy e;
+MenuMgr menu(SCREEN_W, SCREEN_H);
 
 
-
-int WINAPI WinMain(	HINSTANCE	hInstance,							
-					HINSTANCE	hPrevInstance,						
-					LPSTR		lpCmdLine,							
-					int			nCmdShow)							
+int WINAPI WinMain(HINSTANCE	hInstance,
+	HINSTANCE	hPrevInstance,
+	LPSTR		lpCmdLine,
+	int			nCmdShow)
 {
 	MSG		msg;													// Windows Message Structure										// Bool Variable To Exit Loop
 	time_t currentTime;
-    time(&currentTime);
-	
+	time(&currentTime);
+
 	//apre il file di log
-	logFile.open( "cg-prj-log.txt" , ios::out );
-	if( !logFile.is_open() ) {
-		MessageBox(NULL, "Impossibile creare il file di log!", "Warning", MB_OK|MB_ICONWARNING);
+	logFile.open("cg-prj-log.txt", ios::out);
+	if (!logFile.is_open()) {
+		MessageBox(NULL, "Impossibile creare il file di log!", "Warning", MB_OK | MB_ICONWARNING);
 	}
 
 	logFile << "Progetto CG" << endl;
@@ -104,8 +107,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,
 	/* caricamento livello */
 	levelsMgr = new LevelsMgr();
 	levelsMgr->loadLevel(levelsMgr->LEVEL_1);								//carica mappa + skybox + gemme + mask + bkgnd music
-	
-	
+
+
 	/* caricamento suoni */
 	sndMgr = new SoundMgr();
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
@@ -113,6 +116,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,
 	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");					//soundNames il nome di ciascun suono: sndMgr->play("NOME")
 	sndMgr->loadSounds(sounds, soundNames);
 
+	//carica modello fantasmino
+	e.loadModelData("Data/gem.ms3d");
 
 	// Create Our OpenGL Window
 	logFile << "Creazione finestra" << endl;
@@ -123,7 +128,12 @@ int WINAPI WinMain(	HINSTANCE	hInstance,
 	}
 
 
-	pStats.initMasksOverlay("Data/texture/Aku_Aku2.png","Data/texture/Aku_Aku1.png");	//carica le immagini degli aku aku per l'overlay - va messo qui perchè deve già esistere un opengl context quando la chiamo
+	pStats.initMasksOverlay("Data/texture/Aku_Aku2.png", "Data/texture/Aku_Aku1.png");	//carica le immagini degli aku aku per l'overlay - va messo qui perchè deve già esistere un opengl context quando la chiamo
+
+
+	//carico immagini menu e item del menu principale
+	vector<string> f; f.push_back("Data/texture/GIOCA.png"); f.push_back("Data/texture/GIOCA_hover.png"); f.push_back("Data/texture/HELP.png"); f.push_back("Data/texture/HELP_hover.png"); f.push_back("Data/texture/ESCI.png"); f.push_back("Data/texture/ESCI_hover.png");
+	menu.loadTextures("Data/bk.png", "Data/bk.png", "Data/bk.png", "Data/bk.png", f);
 
 	ShowCursor(FALSE);												//nasconde punt. mouse
 
@@ -133,6 +143,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,
 
 
 
+	//agg. menu show a drawGLSCene()
+	
 
 
 	/* GAME LOOP */

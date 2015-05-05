@@ -1,6 +1,10 @@
 #include "WindowMgr.h"
+#include "Enemy.h"
+#include "MenuMgr.h"
 
 extern double calculateDeltaT();
+extern Enemy e;
+extern MenuMgr menu;
 
 WindowMgr::WindowMgr()
 {
@@ -23,6 +27,7 @@ WindowMgr::WindowMgr()
 	showFPS = TRUE;
 	showCameraPosition = TRUE;
 #endif
+	done = false;
 }
 
 
@@ -34,7 +39,7 @@ WindowMgr::~WindowMgr()
 
 //MAIN LOOP del gioco
 void WindowMgr::gameLoop(MSG &msg, double &deltaT) {
-	BOOL done = false;
+	//BOOL done = false;
 
 	//GAME LOOP
 	while (!done)													// Loop That Runs While done=FALSE
@@ -127,6 +132,15 @@ void WindowMgr::gameLoop(MSG &msg, double &deltaT) {
 			}
 
 
+			//invia i tasti premuti al manager del menu(che decidera se farsene qlcs o meno)
+			//menu.manageKeyPressed(keys, 256);
+
+
+			//muove fantasmino
+			e.setAngle(deltaT);
+			e.isColliding(camera.getBoundingBox());
+
+
 			//riposiz. il puntatore al centro della finestra
 			RECT r;
 			GetWindowRect(hWnd, &r);
@@ -208,14 +222,17 @@ LRESULT  WindowMgr::WndProc(HWND	hWnd,							// Handle For This Window
 		ReSizeGLScene(LOWORD(lParam), HIWORD(lParam));			// LoWord=Width, HiWord=Height
 		return 0;												// Jump Back
 	}
-
+		
 	case WM_MOUSEMOVE:
 	{
 		p = MAKEPOINTS(lParam);
 
 		//calcolo di quanto si è spostato il mouse in un frame
-		//#########	questo andrebbe aggiornato nel MAIN LOOP, non QUI!!! ##########
+		//#########	questo andrebbe aggiornato nel MAIN LOOP, non QUI?!? ##########
 		camera.updateMouseDeltaPos(p.x, p.y);
+		
+		//posiz. mouse nei menu
+		menu.manageMouseMovedOrPressed(p);
 
 		return 0;
 	}
@@ -330,6 +347,19 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 	glLoadIdentity();
 
 
+	/* DISEGNO SCENA 3D oppure DISEGNO MENU */
+	/*if (menu.showingMainMenu) {
+		menu.drawMainMenu();
+		return TRUE;
+	}*/
+	
+	//se l'utente si trova in un menu disegna il menu e rit. true, altrimenti non fa niente e rit. false
+	if (menu.draw())
+		return TRUE;
+
+
+
+
 
 	//telecamera, xpos + lx; zpos+lz
 	gluLookAt(camera.xpos, camera.ypos, camera.zpos, camera.xpos + camera.lx, camera.ypos + camera.ly, camera.zpos + camera.lz, 0.0f, 1.0f, 0.0f);
@@ -352,7 +382,11 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 	glEnable(GL_LIGHT0); //enable LIGHT0, our Diffuse Light
 	glShadeModel(GL_FLAT); //set the shader to flat(per low poly effect) shader
 
+	//disegna il fantasmino
+	e.draw();
 
+	if (levelsMgr->get()->drawBoundingBoxes)
+		e.drawBoundingBoxes();
 
 
 	//SCRITTE A SCHERMO - overlyay, gui, ...

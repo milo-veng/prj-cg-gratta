@@ -206,7 +206,7 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D player) {
 	for( int i = 0; i < masks.size(); i++ ) {
 
 		//########## commentandolo per provare basta passare 3 volte su una stessa gemma ###########
-		//if(!masks.at(i)->isActive()) continue;	//considero solo le maschere non ancora prese
+		if(!masks.at(i)->isActive()) continue;	//considero solo le maschere non ancora prese
 
 
 		//bb della maschera
