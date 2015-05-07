@@ -133,7 +133,7 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 
 	//carico immagini menu e item del menu principale
 	vector<string> f; f.push_back("Data/texture/GIOCA.png"); f.push_back("Data/texture/GIOCA_hover.png"); f.push_back("Data/texture/HELP.png"); f.push_back("Data/texture/HELP_hover.png"); f.push_back("Data/texture/ESCI.png"); f.push_back("Data/texture/ESCI_hover.png");
-	menu.loadTextures("Data/bk.png", "Data/bk.png", "Data/bk.png", "Data/bk.png", f);
+	menu.loadTextures("Data/texture/mainmenubkgnd.png", "Data/texture/GUEMOVER.png", "Data/texture/WIN.png", "Data/texture/helpbkng.png", f);
 
 	ShowCursor(FALSE);												//nasconde punt. mouse
 

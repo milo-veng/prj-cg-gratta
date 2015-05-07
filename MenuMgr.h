@@ -11,6 +11,7 @@
 #include <fstream>
 #include <vector>
 #include "SOIL.h"
+#include "BoundingBox2D.h"
 using namespace std;
 
 extern ofstream logFile;
@@ -30,11 +31,11 @@ class MenuMgr
 	string winTexFilename;
 	string helpTexFilename;
 
-	void draw(int i);	//funz. disegno menu condivisa
-	void drawMenuItem(int menuItemNum, int x, int y, bool mouseOver);	//disegna gli elementi selezionabili del menu
+	void draw(int i);	//funz. disegno menu condivisa, NOTA che draw() pubblica non prende argomenti!
+	void drawMenuItem(int menuItemNum, bool mouseOver);	//disegna gli elementi selezionabili del menu
 
 	//disegnano i rispettivi menu
-	void drawMainMenu() { draw(1); showingMainMenu = true; }
+	void drawMainMenu() { draw(1); showingMainMenu = true; drawMenuItem(0, true); drawMenuItem(1, false); drawMenuItem(2, false); }
 	void drawGameOver() { draw(2); showingGAMEOVER = true; }
 	void drawWin() { draw(3); showingWin = true; }
 	void drawHelp() { draw(4); showingHelp = true; }
@@ -43,8 +44,10 @@ class MenuMgr
 
 
 	static const int MAINMENU_ITEMS_NUM = 3;			//# di item  che compongono main menu
-	int selectedMenuItem;								//item del menu su cui è attiva la selezione(o mouseover)
+	int selectedMenuItem;								//item del menu su cui è attiva la selezione(o mouseover),// 0 - GIOCA , 1- HELP, 2 - ESCI
 	GLuint mainMenuItemsTex[2 * MAINMENU_ITEMS_NUM];					//scritte, i = scritta, i+1 = scritta_hover
+	vector<BoundingBox2D> mainMenuItemsSize;			//posizione (x,y) dell'angolo sx e w e h per ciascun item del menu - sono le dim. della texture
+
 
 public:
 	MenuMgr(int screenW, int screenH);

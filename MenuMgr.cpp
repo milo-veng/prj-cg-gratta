@@ -14,6 +14,23 @@ MenuMgr::MenuMgr(int screenW, int screenH)
 	showingWin = false;
 
 	selectedMenuItem = 0; // 0 - GIOCA , 1- HELP, 2 - ESCI
+
+	mainMenuTex = gameoverTex = winTex = helpTex = 0;	//iniz. a 0
+
+	//iniz. le dimensioni dei "tasti" del menu
+	int playW = 192, playH = 61;
+	int helpW = 165, helpH = 60;
+	int esciW = 147, esciH = 61;
+
+	//posiz. e dimensioni dei "tasti" del main menu
+	BoundingBox2D playBB(SCREEN_W/2 - playW/2, 200, playW, playH);
+	BoundingBox2D helpBB(SCREEN_W / 2 - helpW / 2, 300, helpW, helpH);
+	BoundingBox2D esciBB(SCREEN_W/2 - esciW/2, 400, esciW, esciH);
+
+	//li salvo
+	mainMenuItemsSize.push_back(playBB);
+	mainMenuItemsSize.push_back(helpBB);
+	mainMenuItemsSize.push_back(esciBB);
 }
 
 
@@ -28,6 +45,7 @@ bool MenuMgr::loadTextures(string main, string gameover, string win, string help
 	mainMenuTexFilename = main;
 	gameoverTexFilename = gameover;
 	winTexFilename = win;
+	helpTexFilename = help;
 
 	logFile << "MenuMgr::loadTextures(f1,f2,f3)...";
 
@@ -56,6 +74,19 @@ bool MenuMgr::loadTextures(string main, string gameover, string win, string help
 		NULL /*SOIL_FLAG_INVERT_Y*/
 		);
 
+	helpTex = SOIL_load_OGL_texture
+		(
+		helpTexFilename.c_str(),
+		SOIL_LOAD_AUTO,
+		SOIL_CREATE_NEW_ID,
+		NULL /*SOIL_FLAG_INVERT_Y*/
+		);
+
+	if (mainMenuTex == 0 || gameoverTex == 0 || winTex == 0 || helpTex == 0) {
+		logFile << "MenuMgr::loadTextures(f1,f2,f3,f4,vector<string>): Impossibile caricare uno degli sfondi dei menu!" << endl;
+		MessageBox(NULL, "MenuMgr::loadTextures(): sfondo menu non caricato!", "Errore", MB_ICONWARNING);
+	}
+
 
 	//caricoc tex. menuitems, i = scritta, i+1 = scritta HOVER
 	for (int i = 0; i < menuItems.size(); i++) {
@@ -66,6 +97,11 @@ bool MenuMgr::loadTextures(string main, string gameover, string win, string help
 			SOIL_CREATE_NEW_ID,
 			NULL /*SOIL_FLAG_INVERT_Y*/
 			);
+
+		if (mainMenuItemsTex[i] == 0) {
+			logFile << "MenuMgr::loadTextures(): impossibile caricare uno o piu menu items!" << endl;
+			MessageBox(NULL, "MenuMgr::loadTextures(): impossibile caricare elementi menu", "Errore", MB_ICONWARNING);
+		}
 
 	}
 
@@ -128,10 +164,42 @@ void MenuMgr::draw(int i) {
 
 
 
-void MenuMgr::drawMenuItem(int menuItemNum, int x, int y, bool mouseOver) {
+void MenuMgr::drawMenuItem(int menuItemNum, bool mouseOver) {
 
 	//disegna un quad di certe dimensioni nella posiz. specificata con o meno mouseover
-	//...
+	
+	// 0 - GIOCA , 1- HELP, 2 - ESCI
+	//#############	l 'INDICE è sbagliato1!!!!!!!! ############### menuItemNum va corretto!
+	if (!mouseOver)
+		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum]); //pulsante normale
+	else
+		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum + 1]); //pulsante selezionato
+
+	BoundingBox2D item = mainMenuItemsSize.at(menuItemNum);
+
+	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
+	glPushMatrix(); // Store The Projection Matrix
+	glLoadIdentity(); // Reset The Projection Matrix
+	glOrtho(10, SCREEN_W, SCREEN_H, 0, 1, -1);
+	glMatrixMode(GL_MODELVIEW); // Select The Modelview Matrix
+	glPushMatrix(); // Store The Modelview Matrix
+	glLoadIdentity(); // Reset The Modelview Matrix
+	glTranslated(0, 0, 0); // draw some stuff (blended, textured, alpha tested quad etc.)*/
+
+	
+	glBegin(GL_QUADS);														// Draw The Quad	
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(item.x, item.z, 0.0f);					// Bottom Left
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(item.x + item.w, item.z, 0.0f);				// Bottom Right
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(item.x + item.w, item.z + item.h, 0.0f);
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(item.x, item.z + item.h, 0.0f);
+					// Top Left
+	glEnd();
+
+
+	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
+	glPopMatrix(); // Restore The Old Projection Matrix
+	glMatrixMode(GL_MODELVIEW); // Select The Modelview Matrix
+	glPopMatrix();
 
 }
 
