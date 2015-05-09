@@ -1,12 +1,13 @@
 #include <ctime>
 #include <cmath>
+#include "WindowMgr.h"
 using namespace std;
 
 
 #include "MyFPSCamera.h"
 #include "BoundingBox2D.h"
 
-
+extern WindowMgr winMgr;
 
 MyFPSCamera::MyFPSCamera(void) {
 
@@ -47,6 +48,11 @@ MyFPSCamera::MyFPSCamera(void) {
 //aggiorna i valori di mouseDeltaX e mouseDeltaY
 //passo dei long int perchè la struttura POINTS delle WINANPI usa LONG = long int
 void MyFPSCamera::updateMouseDeltaPos(long x, long y) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
+
 	//calcolo di quanto si è spostato il mouse in un frame
 	mouseDeltaX = x - oldMouseX;
 	mouseDeltaY = y - oldMouseY;
@@ -104,6 +110,10 @@ void MyFPSCamera::resetCursorPos(RECT windowRect, POINTS mousePos, int SCREEN_W,
 
 //rotazioni
 void MyFPSCamera::rotateLeft(double deltaT) {
+			//se il gioco è in pausa non aggiorna
+			if (winMgr.paused)
+			return;
+
 			//rotazione risp. asse y - YAW
 			if( angley + cameraRotationSpeed*deltaT > 2*PIGRECO )
 				angley = 0.0;
@@ -117,6 +127,11 @@ void MyFPSCamera::rotateLeft(double deltaT) {
 }
 
 void MyFPSCamera::rotateRight(double deltaT) {
+			//se il gioco è in pausa non aggiorna
+			if (winMgr.paused)
+			return;
+
+
 			//rotaz. risp asse y - YAW
 			if( angley - cameraRotationSpeed*deltaT < 0 ) 
 				angley = 2*PIGRECO;
@@ -130,6 +145,10 @@ void MyFPSCamera::rotateRight(double deltaT) {
 
 //ruota a sx la telecamera in modo proporzionale a mouseDeltaX
 void MyFPSCamera::mouseRotateLeft() {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	//angolo di cui ruotare la telecamera(yaw)
 	double rotationAngle = cameraRotationSpeed*0.01;
 
@@ -148,6 +167,10 @@ void MyFPSCamera::mouseRotateLeft() {
 
 
 void MyFPSCamera::mouseRotateRight() {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	//angolo di cui ruotare la telecamera(yaw)
 	double rotationAngle = cameraRotationSpeed*0.01;
 
@@ -165,6 +188,11 @@ void MyFPSCamera::mouseRotateRight() {
 
 //guarda in alto con il mouse
 void MyFPSCamera::mouseRotateUp() {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
+
 	//angolo di cui ruotare la telecamera(pitch)
 	double rotationAngle = cameraRotationSpeed*0.01;
 
@@ -181,6 +209,10 @@ void MyFPSCamera::mouseRotateUp() {
 
 //guarda in basso con il mouse
 void MyFPSCamera::mouseRotateDown() {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	//angolo di cui ruotare la telecamera(pitch)
 	double rotationAngle = cameraRotationSpeed*0.01;
 
@@ -198,6 +230,9 @@ void MyFPSCamera::mouseRotateDown() {
 	
 //avanti, indietro
 void MyFPSCamera::moveForward(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
 
 	// di qnto mi sposterei nel prossimo frame rispetto alla posizione attuale nel caso mi muovessi
 	double xDelta = lx*cameraMovementspeed*deltaT;
@@ -250,6 +285,10 @@ void MyFPSCamera::moveForward(double deltaT) {
 }
 
 void MyFPSCamera::moveBackward(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	double xDelta = -lx*cameraMovementspeed*deltaT;
 	double zDelta = -lz*cameraMovementspeed*deltaT;
 
@@ -299,6 +338,10 @@ void MyFPSCamera::moveBackward(double deltaT) {
 
 //strafe laterale
 void MyFPSCamera::strafeLeft(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 			//componenti della direzione in qui punta la telecamera
 			lx = cos( angley );
 			lz = -sin( angley );
@@ -354,6 +397,10 @@ void MyFPSCamera::strafeLeft(double deltaT) {
 }
 
 void MyFPSCamera::strafeRight(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 		//componenti della direzione in qui punta la telecamera
 			lx = cos( angley );
 			lz = -sin( angley );
@@ -411,10 +458,18 @@ void MyFPSCamera::strafeRight(double deltaT) {
 
 //mov. verticale
 void MyFPSCamera::moveUp(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	ypos -= cameraMovementspeed*deltaT;
 }
 
 void MyFPSCamera::moveDown(double deltaT) {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
 	ypos += cameraMovementspeed*deltaT;
 }
 

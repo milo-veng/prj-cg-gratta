@@ -8,10 +8,12 @@
 
 #include "audiere.h"
 #include "Sound.h"
+#include "WindowMgr.h"
 
 using namespace std;
 using namespace audiere;
 
+extern WindowMgr winMgr;
 
 SoundMgr::SoundMgr()
 {
@@ -24,8 +26,11 @@ SoundMgr::SoundMgr()
 void SoundMgr::playBackgroundMusic(string filename)
 {
 
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
 	
-	if( backgroundMusic.LoadFile(filename, *device) ) {
+	if (backgroundMusic.LoadFile(filename, *device)) {
 		backgroundMusic.playSound();
 	}
 
@@ -52,6 +57,9 @@ void SoundMgr::loadSounds(vector<string> filenames, vector<string> soundnames)
 
 void SoundMgr::play(string name)
 {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
 
 	//mp[name.c_str()].playSound();				//qst aggiunge la chiave se non è presente
 	try {

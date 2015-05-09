@@ -1,7 +1,10 @@
 #include "MenuMgr.h"
 
 #include "WindowMgr.h"
+#include "SoundMgr.h"
+
 extern WindowMgr winMgr;
+extern SoundMgr *sndMgr;
 
 MenuMgr::MenuMgr(int screenW, int screenH)
 {
@@ -12,6 +15,7 @@ MenuMgr::MenuMgr(int screenW, int screenH)
 	showingMainMenu = true;	//parte mostrando il menu
 	showingGAMEOVER = false;
 	showingWin = false;
+	showingHelp = false;
 
 	selectedMenuItem = 0; // 0 - GIOCA , 1- HELP, 2 - ESCI
 
@@ -137,6 +141,10 @@ void MenuMgr::draw(int i) {
 	case 3:
 		glBindTexture(GL_TEXTURE_2D, winTex);
 		break;
+	case 4:
+		glBindTexture(GL_TEXTURE_2D, helpTex);
+		break;
+
 	}
 	 
 	glMatrixMode(GL_PROJECTION); // Select The Projection Matrix
@@ -171,9 +179,9 @@ void MenuMgr::drawMenuItem(int menuItemNum, bool mouseOver) {
 	// 0 - GIOCA , 1- HELP, 2 - ESCI
 	//#############	l 'INDICE è sbagliato1!!!!!!!! ############### menuItemNum va corretto!
 	if (!mouseOver)
-		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum]); //pulsante normale
+		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum*2]); //pulsante normale
 	else
-		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum + 1]); //pulsante selezionato
+		glBindTexture(GL_TEXTURE_2D, mainMenuItemsTex[menuItemNum*2 + 1]); //pulsante selezionato
 
 	BoundingBox2D item = mainMenuItemsSize.at(menuItemNum);
 
@@ -218,47 +226,83 @@ bool MenuMgr::draw() {
 		drawGameOver();
 	else if (showingWin)
 		drawWin();
+	else if (showingHelp) {
+		drawHelp();
+	}
 
 	return true;
 }
 
 
 
+//disegna sfondo main menu e menu items
+void MenuMgr::drawMainMenu() {
+
+	draw(1);					//disegna sfondo main menu
+	
+	showingMainMenu = true; 
+
+	//disegna elementi menu principale)
+	(selectedMenuItem == 0) ? drawMenuItem(0, true) : drawMenuItem(0, false);
+	(selectedMenuItem == 1) ? drawMenuItem(1, true) : drawMenuItem(1, false);
+	(selectedMenuItem == 2) ? drawMenuItem(2, true) : drawMenuItem(2, false);
+
+
+}
+
+
+//disegna il gioco invece che il menui
+void MenuMgr::drawGame() {
+	resetShowing();				//nessun menu disegnato
+
+	winMgr.paused = false;		//avvia disegno e gestione input gioco
+
+	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//avvia musica sottofondo
+
+}
+
 //gestisce i tasti premuti dall'utente
-void MenuMgr::manageKeyPressed(bool *keys, int size) {
+void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 
 	//sto disegnando game, no menu
-	if (!showingMainMenu && !showingGAMEOVER && !showingWin)
+	if (!showingMainMenu && !showingGAMEOVER && !showingWin &&!showingHelp)
 		return;
 
-
+	timeSinceLastKeypress += deltaT;
 
 	//sono nel Main menu
 	if (showingMainMenu) {
-
-		if (keys[VK_UP]) {
-
-			//selez. elem. sopra, se primo non va + su di così
-			if (selectedMenuItem == 1 || selectedMenuItem == 2)
-				selectedMenuItem--;
-
-		}
-		else if (keys[VK_DOWN]) {
-
-			if (selectedMenuItem == 0 || selectedMenuItem == 1)
-				selectedMenuItem++;
-		
-		}
-		else if (keys[VK_RETURN]) {
 			
-			if (selectedMenuItem == 0)
-				drawGame();
-			else if (selectedMenuItem == 1)
-				drawHelp();
-			else if (selectedMenuItem == 2)
-				winMgr.quit();
-		}
+		
+		//posso premere un tasto ogni 100ms, evito di "saltare" elem. menu perchè selez. cambia troppo velocemente.
+		if (timeSinceLastKeypress >= 0.100) {
+			timeSinceLastKeypress = 0;	//azzero contatore
 
+			if (keys[VK_UP]) {
+
+				//selez. elem. sopra, se primo non va + su di così
+				if (selectedMenuItem == 1 || selectedMenuItem == 2)
+					selectedMenuItem--;
+
+			}
+			else if (keys[VK_DOWN]) {
+
+				if (selectedMenuItem == 0 || selectedMenuItem == 1)
+					selectedMenuItem++;
+
+			}
+			else if (keys[VK_RETURN]) {
+
+				if (selectedMenuItem == 0)
+					drawGame();
+				else if (selectedMenuItem == 1)
+					drawHelp();
+				else if (selectedMenuItem == 2)
+					winMgr.quit();
+
+			}
+
+		} //timeSinceLastKeyPRess > ...
 
 	}
 	else if (showingGAMEOVER) {
@@ -269,6 +313,11 @@ void MenuMgr::manageKeyPressed(bool *keys, int size) {
 	else if (showingWin) {
 		//qls tasto si prema si finisce nel main menu
 		showingWin = false;
+		showingMainMenu = true;
+	}
+	else if (showingHelp) {
+		//qls tasto si preme si finsce nel main menu
+		showingHelp = false;
 		showingMainMenu = true;
 	}
 

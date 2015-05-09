@@ -26,6 +26,7 @@ WindowMgr::WindowMgr()
 
 	showFPS = TRUE;
 	showCameraPosition = TRUE;
+	paused = true;
 #endif
 	done = false;
 }
@@ -44,96 +45,98 @@ void WindowMgr::gameLoop(MSG &msg, double &deltaT) {
 	//GAME LOOP
 	while (!done)													// Loop That Runs While done=FALSE
 	{
-
-
-
 		//tempo passato a causa del disegno del frame
 		deltaT = calculateDeltaT();
 
+		
 
-		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))					// Is There A Message Waiting?
-		{
-			if (msg.message == WM_QUIT)								// Have We Received A Quit Message?
-			{
-				done = TRUE;											// If So done=TRUE
-			}
-			else													// If Not, Deal With Window Messages
-			{
-				TranslateMessage(&msg);								// Translate The Message
-				DispatchMessage(&msg);								// Dispatch The Message
-			}
-		}
-		else														// If There Are No Messages
-		{
-			// Draw The Scene.  Watch For ESC Key And Quit Messages From DrawGLScene()
-			if ((active && !DrawGLScene()) || keys[VK_ESCAPE])		// Active?  Was There A Quit Received?
-			{
-				done = TRUE;											// ESC or DrawGLScene Signalled A Quit
-			}
-			else													// Not Time To Quit, Update Screen
-			{
-				SwapBuffers(hDC);									// Swap Buffers (Double Buffering)
-			}
-
-
-
-
-			//rotazione telecamera
-			if (keys[VK_LEFT]) {
-				camera.rotateLeft(deltaT);
-			}
-			if (keys[VK_RIGHT]) {
-				camera.rotateRight(deltaT);
-			}
-
-			//movimento avanti/indietro
-			if (keys[VK_UP] || keys[0x57]) { //W
-				camera.moveForward(deltaT);
-			}
-			if (keys[VK_DOWN] || keys[0x53]) { //S
-				camera.moveBackward(deltaT);
-			}
-
-			//altezza telecamera
-			if (keys[0x51]) { //Q
-				camera.moveUp(deltaT);
-			}
-
-			if (keys[0x45]) { //E
-				camera.moveDown(deltaT);
-			}
-
-			//strafe laterale
-			if (keys[0x41]) { //A
-				camera.strafeLeft(deltaT);
-			}
-
-			if (keys[0x44]) { //D
-				camera.strafeRight(deltaT);
-			}
-
-			//altri comandi
-			if (keys[0x52]) { //R -> attiva/disattiva wireframe
-				levelsMgr->get()->wireframeOnly = !levelsMgr->get()->wireframeOnly;
-			}
-
-			if (keys[0x42]) { //B - disegna o meno le Bounding Box oggetti collidibili
-				levelsMgr->get()->drawBoundingBoxes = !levelsMgr->get()->drawBoundingBoxes;
-			}
-
-			if (keys[0x43]) { //C - attiva/disattiva collisioni camera(player) - mondo
-				camera.collisionsEnabled = !camera.collisionsEnabled;
-			}
-
-			if (keys[0x4E]) { //N - carica prox. livello
-				if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
-					levelsMgr->loadLevel(levelsMgr->LEVEL_2);
+				//########
+				if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))					// Is There A Message Waiting?
+				{
+					if (msg.message == WM_QUIT)								// Have We Received A Quit Message?
+					{
+						done = TRUE;											// If So done=TRUE
+					}
+					else													// If Not, Deal With Window Messages
+					{
+						TranslateMessage(&msg);								// Translate The Message
+						DispatchMessage(&msg);								// Dispatch The Message
+					}
 				}
-			}
+				else														// If There Are No Messages
+				{
+					// Draw The Scene.  Watch For ESC Key And Quit Messages From DrawGLScene()
+					if ((active && !DrawGLScene()) || keys[VK_ESCAPE])		// Active?  Was There A Quit Received?
+					{
+						done = TRUE;											// ESC or DrawGLScene Signalled A Quit
+					}
+					else													// Not Time To Quit, Update Screen
+					{
+						SwapBuffers(hDC);									// Swap Buffers (Double Buffering)
+					}
+
+
+
+
+					//rotazione telecamera
+					if (keys[VK_LEFT]) {
+						camera.rotateLeft(deltaT);
+					}
+					if (keys[VK_RIGHT]) {
+						camera.rotateRight(deltaT);
+					}
+
+					//movimento avanti/indietro
+					if (keys[VK_UP] || keys[0x57]) { //W
+						camera.moveForward(deltaT);
+					}
+					if (keys[VK_DOWN] || keys[0x53]) { //S
+						camera.moveBackward(deltaT);
+					}
+
+					//altezza telecamera
+					if (keys[0x51]) { //Q
+						camera.moveUp(deltaT);
+					}
+
+					if (keys[0x45]) { //E
+						camera.moveDown(deltaT);
+					}
+
+					//strafe laterale
+					if (keys[0x41]) { //A
+						camera.strafeLeft(deltaT);
+					}
+
+					if (keys[0x44]) { //D
+						camera.strafeRight(deltaT);
+					}
+
+					//altri comandi
+					if (keys[0x52]) { //R -> attiva/disattiva wireframe
+						levelsMgr->get()->wireframeOnly = !levelsMgr->get()->wireframeOnly;
+					}
+
+					if (keys[0x42]) { //B - disegna o meno le Bounding Box oggetti collidibili
+						levelsMgr->get()->drawBoundingBoxes = !levelsMgr->get()->drawBoundingBoxes;
+					}
+
+					if (keys[0x43]) { //C - attiva/disattiva collisioni camera(player) - mondo
+						camera.collisionsEnabled = !camera.collisionsEnabled;
+					}
+
+					if (keys[0x4E]) { //N - carica prox. livello
+						if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
+							levelsMgr->loadLevel(levelsMgr->LEVEL_2);
+						}
+					}
+
+					//###########
+			 
 
 
 			//invia i tasti premuti al manager del menu(che decidera se farsene qlcs o meno)
-			//menu.manageKeyPressed(keys, 256);
+			menu.manageKeyPressed(keys, 256, deltaT);
 
 
 			//muove fantasmino
@@ -359,66 +362,67 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 
 
 
+	if (!paused) {
+
+		//telecamera, xpos + lx; zpos+lz
+		gluLookAt(camera.xpos, camera.ypos, camera.zpos, camera.xpos + camera.lx, camera.ypos + camera.ly, camera.zpos + camera.lz, 0.0f, 1.0f, 0.0f);
 
 
-	//telecamera, xpos + lx; zpos+lz
-	gluLookAt(camera.xpos, camera.ypos, camera.zpos, camera.xpos + camera.lx, camera.ypos + camera.ly, camera.zpos + camera.lz, 0.0f, 1.0f, 0.0f);
+		//disegno filled/wireframe
+		if (levelsMgr->get()->wireframeOnly) {
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		}
+		else {
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		}
+
+		//disegno skybox + mappa + gemme + maschere
+		levelsMgr->get()->drawLevel(deltaT);
 
 
-	//disegno filled/wireframe
-	if (levelsMgr->get()->wireframeOnly) {
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	}
-	else {
-		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-	}
+		glEnable(GL_DEPTH_TEST); //enable the depth testing
+		glEnable(GL_LIGHTING); //enable the lighting
+		glEnable(GL_LIGHT0); //enable LIGHT0, our Diffuse Light
+		glShadeModel(GL_FLAT); //set the shader to flat(per low poly effect) shader
 
-	//disegno skybox + mappa + gemme + maschere
-	levelsMgr->get()->drawLevel(deltaT);
+		//disegna il fantasmino
+		e.draw();
 
-
-	glEnable(GL_DEPTH_TEST); //enable the depth testing
-	glEnable(GL_LIGHTING); //enable the lighting
-	glEnable(GL_LIGHT0); //enable LIGHT0, our Diffuse Light
-	glShadeModel(GL_FLAT); //set the shader to flat(per low poly effect) shader
-
-	//disegna il fantasmino
-	e.draw();
-
-	if (levelsMgr->get()->drawBoundingBoxes)
-		e.drawBoundingBoxes();
+		if (levelsMgr->get()->drawBoundingBoxes)
+			e.drawBoundingBoxes();
 
 
-	//SCRITTE A SCHERMO - overlyay, gui, ...
-	//scritte a schermo(OVERLAY e GUI varie)
-	//barra vita
+		//SCRITTE A SCHERMO - overlyay, gui, ...
+		//scritte a schermo(OVERLAY e GUI varie)
+		//barra vita
 
-	//calcolo fps ogni 100 frame
-	if (frameCounter >= 10) {
-		fps = "FPS = " + to_string(int(frameCounter / cumulativeDeltaT));
+		//calcolo fps ogni 100 frame
+		if (frameCounter >= 10) {
+			fps = "FPS = " + to_string(int(frameCounter / cumulativeDeltaT));
 
-		frameCounter = 0;
-		cumulativeDeltaT = 0.0f;
-	}
-	else {
-		frameCounter++;
-		cumulativeDeltaT += deltaT;
-	}
+			frameCounter = 0;
+			cumulativeDeltaT = 0.0f;
+		}
+		else {
+			frameCounter++;
+			cumulativeDeltaT += deltaT;
+		}
 
-	//scrivo la posiz. (x,y,z) della telecamera(player)
-	string camPos = "POS = " + to_string(camera.xpos) + ", " + to_string(camera.ypos) + ", " + to_string(camera.zpos);
-	string points = "Punteggio: " + to_string(pStats.getPoints());
-
-
-	if( showFPS ) txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);					//FPS
-	if( showCameraPosition ) txt->drawText(camPos, 10, 35, SCREEN_W, SCREEN_H);		//(x,y,z) di Camera
-	txt->drawText(points, SCREEN_W - 140, 75, SCREEN_W, SCREEN_H);					//punteggio
+		//scrivo la posiz. (x,y,z) della telecamera(player)
+		string camPos = "POS = " + to_string(camera.xpos) + ", " + to_string(camera.ypos) + ", " + to_string(camera.zpos);
+		string points = "Punteggio: " + to_string(pStats.getPoints());
 
 
-	//aggiorna punteggio
-	pStats.updateLifeAmount(deltaT);	//aggiorna qntà vita rimasta
-	pStats.drawLifeBar();				//disegna barra vita
-	pStats.drawPickedMasks();			//disegna # maschere raccolte
+		if (showFPS) txt->drawText(fps, 10, 20, SCREEN_W, SCREEN_H);					//FPS
+		if (showCameraPosition) txt->drawText(camPos, 10, 35, SCREEN_W, SCREEN_H);		//(x,y,z) di Camera
+		txt->drawText(points, SCREEN_W - 140, 75, SCREEN_W, SCREEN_H);					//punteggio
+
+
+		//aggiorna punteggio
+		pStats.updateLifeAmount(deltaT);	//aggiorna qntà vita rimasta
+		pStats.drawLifeBar();				//disegna barra vita
+		pStats.drawPickedMasks();			//disegna # maschere raccolte
+	} //if(!paused)
 
 	return TRUE;
 }

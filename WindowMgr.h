@@ -58,6 +58,8 @@ public:
 	bool showFPS = TRUE;
 	bool showCameraPosition = TRUE;
 
+	bool paused = true;								//se true il gioco è in pausa, non disegna, non aggiorna, non suona, ...
+
 
 #else
 		//winapi
@@ -74,6 +76,7 @@ public:
 
 	bool showFPS;
 	bool showCameraPosition;
+	bool paused;//se true il gioco è in pausa, non disegna, non aggiorna, non suona, ...
 #endif
 
 	bool done;

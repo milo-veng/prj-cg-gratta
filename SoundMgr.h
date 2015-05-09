@@ -6,18 +6,21 @@
 #include "audiere.h"
 #include "Sound.h"
 #include <vector>
+#include <string>
 using namespace std;
 using namespace audiere;
 
 class SoundMgr
 {
 	Sound backgroundMusic;
+	string backgroundMusicFilename;
 	AudioDevicePtr *device;
 	map<string, Sound> mp;
 
 public:
 	SoundMgr();
 
+	void setBackgroundMusic(string filename) { backgroundMusicFilename = filename; }
 	void playBackgroundMusic(string filename);
 
 	void stopBackgroundMusic();

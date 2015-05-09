@@ -78,7 +78,7 @@ void Level::loadLevel(string terrainFilename, string terrainBBFilename) {
 	
 	//fa partire musica di sfondo
 	if (sndMgr != NULL)
-		sndMgr->playBackgroundMusic(backgroundMusicFile);
+		sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");
 
 
 	levelLoaded = true;

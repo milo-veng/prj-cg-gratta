@@ -2,8 +2,10 @@
 #include "MyFPSCamera.h"
 #include "BoundingBox2D.h"
 #include "PlayerStats.h"
+#include "WindowMgr.h"
 
 extern PlayerStats pStats;
+extern WindowMgr winMgr;
 
 Enemy::Enemy(void)
 {
@@ -20,8 +22,15 @@ Enemy::Enemy(void)
 	active = true;
 }
 
+//movimento fantasma in direzione del giocatore
 void Enemy:: setAngle(double deltaT)
 {
+
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return;
+
+	//inattivo dopo che ha colliso col player
 	if (!active)
 		return;
 
@@ -40,6 +49,10 @@ void Enemy:: setAngle(double deltaT)
 
 bool Enemy:: isColliding(BoundingBox2D playerBox)
 {
+	//se il gioco è in pausa non aggiorna
+	if (winMgr.paused)
+		return false;
+
 	if (!active)
 		return false;
 

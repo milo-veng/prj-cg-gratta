@@ -35,11 +35,11 @@ class MenuMgr
 	void drawMenuItem(int menuItemNum, bool mouseOver);	//disegna gli elementi selezionabili del menu
 
 	//disegnano i rispettivi menu
-	void drawMainMenu() { draw(1); showingMainMenu = true; drawMenuItem(0, true); drawMenuItem(1, false); drawMenuItem(2, false); }
-	void drawGameOver() { draw(2); showingGAMEOVER = true; }
-	void drawWin() { draw(3); showingWin = true; }
-	void drawHelp() { draw(4); showingHelp = true; }
-	void drawGame() { showingMainMenu = showingGAMEOVER = showingWin = false; }
+	void drawMainMenu();
+	void drawGameOver() { draw(2); resetShowing();  showingGAMEOVER = true; }
+	void drawWin() { draw(3); resetShowing();  showingWin = true; }
+	void drawHelp() { draw(4); resetShowing(); showingHelp = true; }
+	void drawGame();
 
 
 
@@ -47,6 +47,7 @@ class MenuMgr
 	int selectedMenuItem;								//item del menu su cui è attiva la selezione(o mouseover),// 0 - GIOCA , 1- HELP, 2 - ESCI
 	GLuint mainMenuItemsTex[2 * MAINMENU_ITEMS_NUM];					//scritte, i = scritta, i+1 = scritta_hover
 	vector<BoundingBox2D> mainMenuItemsSize;			//posizione (x,y) dell'angolo sx e w e h per ciascun item del menu - sono le dim. della texture
+	float timeSinceLastKeypress;						//delta t dall'ultimo tasto premuto e passato a manageKeyPressed
 
 
 public:
@@ -60,7 +61,7 @@ public:
 
 
 	//gestisce input utente quando si trova in un menu
-	void manageKeyPressed(bool *keys, int size);
+	void manageKeyPressed(bool *keys, int size, float deltaT);
 	void manageMouseMovedOrPressed(POINTS p);
 
 
@@ -69,6 +70,7 @@ public:
 	bool showingGAMEOVER;
 	bool showingWin;
 	bool showingHelp;		//mostrandop help
+	void resetShowing() { showingMainMenu = false; showingGAMEOVER = false; showingWin = false; showingHelp = false; }	//mette a false tutti i showing*
 
 };
 
