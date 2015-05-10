@@ -114,6 +114,11 @@ public:
 
 	void walk() { if(running) { cameraMovementspeed /= cameraRunningSpeedMult; running = false;} }
 
+
+
+	//riposiziona camera nella posiz. inizale, chiamato quando ricarico livello dopo aver perso
+	void resetCameraPos() {	anglex = angley = anglez = 0.0;	lx = ly = lz = 0.0; xpos = zpos = 0.0f; }
+
 } ;
 
 #endif

@@ -20,5 +20,8 @@ public:
 	bool isColliding(BoundingBox2D playerBox);
 	void draw();		//ridefinisco
 	void drawBoundingBoxes();
+
+	//usato per riposizionarlo al suo posto riattivato, usato quando si ricarica liv. dopo la sconfitta
+	void enableAndResetPos();
 };
 

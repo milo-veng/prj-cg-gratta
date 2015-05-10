@@ -181,6 +181,7 @@ BoundingBox2D PickableObjectsManager::checkCollisions(BoundingBox2D player) {
 	}
 
 
+
 	//coll. con gemme
 	for (int i = 0; i < gems.size(); i++) {
 		if (!gems.at(i)->isActive()) continue;	//considero solo le gemme "ACTIVE"
@@ -324,5 +325,19 @@ void PickableObjectsManager::drawAllBoundingBoxes() {
 	for (int i = 0; i < masks.size(); i++) {
 		masks.at(i)->drawBoundingBoxes();
 	}
+
+}
+
+
+
+//enable di tutti i PickableObj3D a true, quando si ricarica lo stesso livello dopo aver perso la partita
+void PickableObjectsManager::enableAllGemsAndMasks() {
+
+	for( int i = 0; i < gems.size(); i++ )
+		gems[i]->setActive(true);
+
+	for( int i = 0; i < masks.size(); i++ ) 
+		masks[i]->setActive(true);
+
 
 }

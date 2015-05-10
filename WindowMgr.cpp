@@ -94,13 +94,15 @@ void WindowMgr::gameLoop(MSG &msg, double &deltaT) {
 						camera.moveBackward(deltaT);
 					}
 
-					//altezza telecamera
+					//rotazione telecamera
 					if (keys[0x51]) { //Q
-						camera.moveUp(deltaT);
+						//camera.moveUp(deltaT);
+						camera.rotateLeft(deltaT);
 					}
 
 					if (keys[0x45]) { //E
-						camera.moveDown(deltaT);
+						//camera.moveDown(deltaT);
+						camera.rotateRight(deltaT);
 					}
 
 					//strafe laterale
@@ -356,12 +358,12 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 		return TRUE;
 	}*/
 	
-	//se l'utente si trova in un menu disegna il menu e rit. true, altrimenti non fa niente e rit. false
+	//se l'utente si trova in un menu disegna il menu e rit. true, altrimenti continua e disegna il gioco
 	if (menu.draw())
 		return TRUE;
 
 
-
+	//se il gioco è in pausa non disegna niente
 	if (!paused) {
 
 		//telecamera, xpos + lx; zpos+lz

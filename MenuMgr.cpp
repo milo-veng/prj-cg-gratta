@@ -216,7 +216,7 @@ void MenuMgr::drawMenuItem(int menuItemNum, bool mouseOver) {
 //altrim. non fa niente e rit. false
 bool MenuMgr::draw() {
 
-	if (!showingGAMEOVER && !showingMainMenu && !showingWin)
+	if (!showingGAMEOVER && !showingMainMenu && !showingWin && !showingHelp)
 		return false;
 
 
@@ -265,7 +265,7 @@ void MenuMgr::drawGame() {
 void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 
 	//sto disegnando game, no menu
-	if (!showingMainMenu && !showingGAMEOVER && !showingWin &&!showingHelp)
+	if (!showingMainMenu && !showingGAMEOVER && !showingWin && !showingHelp)
 		return;
 
 	timeSinceLastKeypress += deltaT;
@@ -306,20 +306,36 @@ void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 
 	}
 	else if (showingGAMEOVER) {
-		//qls tasto si prema si finisce nel main menu
-		showingGAMEOVER = false;
-		showingMainMenu = true;
+		if (timeSinceLastKeypress >= 0.400 && keys[VK_RETURN] ) {
+			//qls tasto si prema si finisce nel main menu
+			//showingGAMEOVER = false;
+			resetShowing();
+			showingMainMenu = true;
+			timeSinceLastKeypress = 0;
+		}
 	}
 	else if (showingWin) {
-		//qls tasto si prema si finisce nel main menu
-		showingWin = false;
-		showingMainMenu = true;
+		if (timeSinceLastKeypress >= 0.400 && keys[VK_RETURN] ) {
+			//qls tasto si prema si finisce nel main menu
+			//showingWin = false;
+			resetShowing();
+			showingMainMenu = true;
+			timeSinceLastKeypress = 0;
+		}
 	}
 	else if (showingHelp) {
-		//qls tasto si preme si finsce nel main menu
-		showingHelp = false;
-		showingMainMenu = true;
+
+		//evita di prendere 2 invio in successione
+		if (timeSinceLastKeypress >= 0.400 && keys[VK_RETURN] ) {
+			timeSinceLastKeypress = 0;
+			//showingHelp = false;
+			resetShowing();
+			showingMainMenu = true;
+			timeSinceLastKeypress = 0;
+		}
+
 	}
+
 
 }
 

@@ -82,8 +82,8 @@ bool LevelsMgr::loadLevel(int num) {
 
 		logFile << "Deallocazione livello " << levelNum << endl;
 
-		level->unloadLevel();
-		delete level;
+		//level->unloadLevel();
+		//delete level;
 
 	}
 

@@ -53,7 +53,8 @@ public:
 
 	bool isGoodPosition(BoundingBox2D obj, BoundingBox2D limits, TerrainModel *terrain);		//ritorna true se la gemma non è troppo vicina ad un altra e se non sta collidendo con
 
-
+	//enable di tutti i PickableObj3D a true, quando si ricarica lo stesso livello dopo aver perso la partita
+	void enableAllGemsAndMasks();
 
 };
 

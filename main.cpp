@@ -112,12 +112,19 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 	/* caricamento suoni */
 	sndMgr = new SoundMgr();
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
-	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3"); sounds.push_back("Data/audio/collision.mp3"); //sounds contiene i nomi dei file
-	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");					//soundNames il nome di ciascun suono: sndMgr->play("NOME")
+	//sounds contiene i nomi dei file
+	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3"); sounds.push_back("Data/audio/collision.mp3"); 
+	sounds.push_back("Data/audio/win.mp3"); sounds.push_back("Data/audio/gameover.wav");
+	//soundNames il nome di ciascun suono: sndMgr->play("NOME")
+	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");  soundNames.push_back("WIN");	soundNames.push_back("GAMEOVER");						
 	sndMgr->loadSounds(sounds, soundNames);
 
+
+
 	//carica modello fantasmino
-	e.loadModelData("Data/gem.ms3d");
+	e.loadModelData("Data/ghost.ms3d");
+
+
 
 	// Create Our OpenGL Window
 	logFile << "Creazione finestra" << endl;

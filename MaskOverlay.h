@@ -36,5 +36,8 @@ public:
 	//inc/dec # maschere raccolte
 	void maskPicked();
 	void maskDelete();
+
+	//manda a 0 # mask raccolte, usato quando si ricarica liv. dopo che si ha perso
+	void resetPickedMasksNum() { mask = 0; }
 };
 

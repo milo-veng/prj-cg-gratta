@@ -9,11 +9,11 @@ extern WindowMgr winMgr;
 
 Enemy::Enemy(void)
 {
-	speed = 0.4;
+	speed = 0.2;
 	lx = lz = 0.0;
 
-	xpos = -60.0f;
-	zpos = 100.0f;
+	xpos = -90.0f;
+	zpos = 90.0f;
 
 	bound.w = bound.h = 2.0f;
 	bound.x = xpos - bound.w/2;
@@ -169,4 +169,14 @@ void Enemy::drawBoundingBoxes() {
 
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+}
+
+
+void Enemy::enableAndResetPos() {
+	lx = lz = 0.0;
+
+	xpos = -60.0f;
+	zpos = 100.0f;
+
+	active = true;
 }

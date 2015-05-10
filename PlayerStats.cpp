@@ -1,9 +1,19 @@
 #include "PlayerStats.h"
 
 #include "LevelsMgr.h"
+#include "WindowMgr.h"
+#include "MenuMgr.h"
+#include "SoundMgr.h"
+#include "Enemy.h"
+#include "MyFPSCamera.h"
 extern LevelsMgr *levelsMgr;
+extern WindowMgr winMgr;
+extern SoundMgr *sndMgr;
+extern MenuMgr menu;
+extern Enemy e;
+extern MyFPSCamera camera;
 
-const float PlayerStats::LIFE_DEC_PER_SEC = 1.0f;
+const float PlayerStats::LIFE_DEC_PER_SEC = 5.0f;
 
 PlayerStats::PlayerStats(int SCREEN_W, int SCREEN_H)
 {
@@ -38,7 +48,35 @@ void PlayerStats::updateLifeAmount(float deltaT) {
 
 			logFile << "GAME OVER: life = 0" << endl;
 
-			//...
+			//ferma musica background
+			sndMgr->stopBackgroundMusic();
+
+			sndMgr->play("GAMEOVER");
+
+			//non disegna, non gestisce collisioni, non muove camera.
+			winMgr.paused = true;
+
+
+			//mostra scherma game over
+			menu.drawGameOver();
+
+
+			//reset totale nel caso il giocatore inizi un altra partita
+			life = MAX_LIFE;
+			points = 0;
+			collectedGemsNum = collectedMasksNum = 0;
+
+			//rimetto al loro posto gemme e maschere
+			levelsMgr->get()->getPickableObjMgr()->enableAllGemsAndMasks();
+
+			//# mask raccolte = 0
+			overlay->akus->resetPickedMasksNum();
+			
+			//rimetto a posto il fantasmino
+			e.enableAndResetPos();
+
+			//riposiz. giocatore
+			camera.resetCameraPos();
 
 		}
 
@@ -73,13 +111,48 @@ void PlayerStats::maskCollected() {
 
 
 	if (collectedMasksNum >= MAX_MASKS_NUM) {
+		//############ WIN!!!!!!##############
+
+		logFile << "WIN! # masks = 3" << endl;
+
+			//ferma musica background
+			sndMgr->stopBackgroundMusic();
+
+			sndMgr->play("WIN");
+
+
+			//non disegna, non gestisce collisioni, non muove camera.
+			winMgr.paused = true;
+
+
+			//mostra scherma game over
+			menu.resetShowing();
+			menu.drawWin();
+
+			//reset totale nel caso il giocatore inizi un altra partita
+			life = MAX_LIFE;
+			points = 0;
+			collectedGemsNum = collectedMasksNum = 0;
+
+			//rimetto al loro posto gemme e maschere
+			levelsMgr->get()->getPickableObjMgr()->enableAllGemsAndMasks();
+			
+			//rimetto a posto il fantasmino
+			e.enableAndResetPos();
+
+			//riposiz. giocatore
+			camera.resetCameraPos();
+
+			//# maschere prese = 0
+			overlay->akus->resetPickedMasksNum();
+
 		//ho 3 maschere cambio livello
 		//if (levelsMgr->getActiveLevelNum() < LevelsMgr::TOTAL_LEVEL_NUM )
 		
-		if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
-			//il caricamento del livello succ. non funziona. Crash. Memory leak da qualche parte.
+		//il caricamento del livello succ. non funziona. Crash. Memory leak da qualche parte.
+		/*if (levelsMgr->getActiveLevelNum() == 1 && levelsMgr->get()->isLevelLoaded()) {
 			//levelsMgr->loadLevel( levelsMgr->getActiveLevelNum()+1 );
-		}
+		}*/
 
 	}
 
@@ -102,6 +175,7 @@ void PlayerStats::maskRemoved() {
 
 }
 
+//toglie punti e vita quando si scontra con fantasmino
 void PlayerStats::enemyColliding() {
 	life -= 50 * (PlayerStats::LIFE_INC_AMOUNT_PER_GEM);
 
