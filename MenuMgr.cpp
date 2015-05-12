@@ -88,7 +88,7 @@ bool MenuMgr::loadTextures(string main, string gameover, string win, string help
 
 	if (mainMenuTex == 0 || gameoverTex == 0 || winTex == 0 || helpTex == 0) {
 		logFile << "MenuMgr::loadTextures(f1,f2,f3,f4,vector<string>): Impossibile caricare uno degli sfondi dei menu!" << endl;
-		MessageBox(NULL, "MenuMgr::loadTextures(): sfondo menu non caricato!", "Errore", MB_ICONWARNING);
+		MessageBox(NULL, "MenuMgr::loadTextures(): uno o piu degli sfondi menu non caricato!", "Errore", MB_ICONWARNING);
 	}
 
 
@@ -257,6 +257,7 @@ void MenuMgr::drawGame() {
 
 	winMgr.paused = false;		//avvia disegno e gestione input gioco
 
+	
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//avvia musica sottofondo
 
 }
@@ -279,20 +280,20 @@ void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 			timeSinceLastKeypress = 0;	//azzero contatore
 
 			if (keys[VK_UP]) {
-
+				sndMgr->play("KEY");
 				//selez. elem. sopra, se primo non va + su di così
 				if (selectedMenuItem == 1 || selectedMenuItem == 2)
 					selectedMenuItem--;
 
 			}
 			else if (keys[VK_DOWN]) {
-
+				sndMgr->play("KEY");
 				if (selectedMenuItem == 0 || selectedMenuItem == 1)
 					selectedMenuItem++;
 
 			}
 			else if (keys[VK_RETURN]) {
-
+				sndMgr->play("MENUKEY");
 				if (selectedMenuItem == 0)
 					drawGame();
 				else if (selectedMenuItem == 1)
@@ -312,6 +313,7 @@ void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 			resetShowing();
 			showingMainMenu = true;
 			timeSinceLastKeypress = 0;
+			sndMgr->play("KEY");
 		}
 	}
 	else if (showingWin) {
@@ -321,6 +323,7 @@ void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 			resetShowing();
 			showingMainMenu = true;
 			timeSinceLastKeypress = 0;
+			sndMgr->play("KEY");
 		}
 	}
 	else if (showingHelp) {
@@ -332,6 +335,7 @@ void MenuMgr::manageKeyPressed(bool *keys, int size, float deltaT) {
 			resetShowing();
 			showingMainMenu = true;
 			timeSinceLastKeypress = 0;
+			sndMgr->play("KEY");
 		}
 
 	}

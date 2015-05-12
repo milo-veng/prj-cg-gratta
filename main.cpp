@@ -82,8 +82,10 @@ int frameCounter;												//usato per calcolo fps, conta 100 frame renderizza
 float cumulativeDeltaT;											//tempo necessario per renderizzare 100 frame -> aggiorno fps ogni 100 frame 
 
 
-Enemy e;
-MenuMgr menu(SCREEN_W, SCREEN_H);
+Enemy e;														//fantasmino
+MenuMgr menu(SCREEN_W, SCREEN_H);								//gestisce tutti i menu del gioco
+
+
 
 
 int WINAPI WinMain(HINSTANCE	hInstance,
@@ -104,6 +106,9 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 	logFile << "Progetto CG" << endl;
 	logFile << asctime(localtime(&currentTime)) << endl;					//momento di avvio del gioco
 
+
+
+
 	/* caricamento livello */
 	levelsMgr = new LevelsMgr();
 	levelsMgr->loadLevel(levelsMgr->LEVEL_1);								//carica mappa + skybox + gemme + mask + bkgnd music
@@ -114,16 +119,14 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 	sndMgr->playBackgroundMusic("Data/audio/monkeyislandsecretsintro.mp3");	//Secrets of Monkey Island - Title
 	//sounds contiene i nomi dei file
 	vector<string> sounds; sounds.push_back("Data/audio/gem.wav"); sounds.push_back("Data/audio/budega.mp3"); sounds.push_back("Data/audio/collision.mp3"); 
-	sounds.push_back("Data/audio/win.mp3"); sounds.push_back("Data/audio/gameover.wav");
+	sounds.push_back("Data/audio/win.mp3"); sounds.push_back("Data/audio/gameover.wav"); sounds.push_back("Data/audio/ghost.mp3"); sounds.push_back("Data/audio/menukey.wav"); sounds.push_back("Data/audio/morros.wav");
 	//soundNames il nome di ciascun suono: sndMgr->play("NOME")
-	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");  soundNames.push_back("WIN");	soundNames.push_back("GAMEOVER");						
+	vector<string> soundNames; soundNames.push_back("GEM"); soundNames.push_back("BUDEGA");	 soundNames.push_back("COLLISION");  soundNames.push_back("WIN"); soundNames.push_back("GAMEOVER"); soundNames.push_back("GHOST"); soundNames.push_back("KEY"); soundNames.push_back("MORROS");
 	sndMgr->loadSounds(sounds, soundNames);
-
-
+	
 
 	//carica modello fantasmino
-	e.loadModelData("Data/ghost.ms3d");
-
+	e.loadModelData("Data/morros2.ms3d");
 
 
 	// Create Our OpenGL Window
@@ -134,13 +137,13 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 		return 0;													// Quit If Window Was Not Created
 	}
 
+	//carica le immagini degli aku aku per l'overlay - va messo qui perchè deve già esistere un opengl context quando la chiamo
+	pStats.initMasksOverlay("Data/texture/Aku_Aku2.png", "Data/texture/Aku_Aku1.png");	
 
-	pStats.initMasksOverlay("Data/texture/Aku_Aku2.png", "Data/texture/Aku_Aku1.png");	//carica le immagini degli aku aku per l'overlay - va messo qui perchè deve già esistere un opengl context quando la chiamo
-
-
-	//carico immagini menu e item del menu principale
+	//carico immagini menu e item del menu principale - - va messo qui perchè deve già esistere un opengl context quando la chiamo
 	vector<string> f; f.push_back("Data/texture/GIOCA.png"); f.push_back("Data/texture/GIOCA_hover.png"); f.push_back("Data/texture/HELP.png"); f.push_back("Data/texture/HELP_hover.png"); f.push_back("Data/texture/ESCI.png"); f.push_back("Data/texture/ESCI_hover.png");
 	menu.loadTextures("Data/texture/mainmenubkgnd.png", "Data/texture/GUEMOVER.png", "Data/texture/WIN.png", "Data/texture/helpbkng.png", f);
+
 
 	ShowCursor(FALSE);												//nasconde punt. mouse
 
@@ -150,12 +153,13 @@ int WINAPI WinMain(HINSTANCE	hInstance,
 
 
 
-	//agg. menu show a drawGLSCene()
-	
+
 
 
 	/* GAME LOOP */
 	winMgr.gameLoop(msg, deltaT);
+
+
 
 
 

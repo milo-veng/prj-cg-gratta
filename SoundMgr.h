@@ -13,7 +13,9 @@ using namespace audiere;
 class SoundMgr
 {
 	Sound backgroundMusic;
+	Sound menuBackgroundMusic;
 	string backgroundMusicFilename;
+	string menuBackgroundMusicFilename;
 	AudioDevicePtr *device;
 	map<string, Sound> mp;
 
@@ -21,13 +23,16 @@ public:
 	SoundMgr();
 
 	void setBackgroundMusic(string filename) { backgroundMusicFilename = filename; }
+	void setMenuBackgroundMusic(string f) { menuBackgroundMusicFilename = f; }
 	void playBackgroundMusic(string filename);
+	void playMenuBackgroundMusic();
 
 	void stopBackgroundMusic();
+	void stopMenuBackgroundMusic();
 
 	void loadSounds(vector<string> filenames, vector<string> soundnames);
 
-	void play(string name);
+	void play(string name, bool noreset = false);
 
 	void stop(string name);
 

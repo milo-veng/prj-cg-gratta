@@ -16,7 +16,8 @@ public:
 
 	bool LoadFile(string filename, AudioDevicePtr device);
 	
-	void playSound();			//play
+	void playSound();			//play, se suono già in play fa reset e play
+	void playSound2();          //&play, se suono già in play non fa niente
 	void playSoundRepeat();		//play and loop
 
 	void stopSound();

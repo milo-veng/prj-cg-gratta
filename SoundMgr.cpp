@@ -36,6 +36,21 @@ void SoundMgr::playBackgroundMusic(string filename)
 
 }
 
+
+void SoundMgr::playMenuBackgroundMusic() {
+	//può partire solo quando il gioco è in pausa
+	if (!winMgr.paused)
+		return;
+
+	if (menuBackgroundMusicFilename == "")
+		return;
+
+	if (menuBackgroundMusic.LoadFile(menuBackgroundMusicFilename, *device)) {
+		menuBackgroundMusic.playSound();
+	}
+}
+
+
 void SoundMgr::stopBackgroundMusic()
 {
 
@@ -51,11 +66,18 @@ void SoundMgr::loadSounds(vector<string> filenames, vector<string> soundnames)
 		Sound sound;
 		sound.LoadFile(filenames.at(i), *device);
 		mp.insert( std::make_pair( soundnames.at(i), sound) );
-}
-
 	}
 
-void SoundMgr::play(string name)
+}
+
+void SoundMgr::stopMenuBackgroundMusic() {
+	if (menuBackgroundMusic.isPlaying()) menuBackgroundMusic.stopSound();
+	else menuBackgroundMusic.reset();
+}
+
+
+//noreset è false di default
+void SoundMgr::play(string name, bool noreset)
 {
 	//se il gioco è in pausa non aggiorna
 	if (winMgr.paused)
@@ -63,7 +85,10 @@ void SoundMgr::play(string name)
 
 	//mp[name.c_str()].playSound();				//qst aggiunge la chiave se non è presente
 	try {
-		mp.at(name.c_str()).playSound();			//qst non aggiunge una chiave non presente
+		if (!noreset)
+			mp.at(name.c_str()).playSound();			//qst non aggiunge una chiave non presente
+		else
+			mp.at(name.c_str()).playSound2();
 	}
 	catch (out_of_range e) {
 		return;

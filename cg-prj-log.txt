@@ -1,5 +1,5 @@
 Progetto CG
-Mon May 11 01:15:13 2015
+Tue May 12 14:28:11 2015
 
 Carico il livello 1
 Caricamento file del mondo...
@@ -8,70 +8,192 @@ Caricamento file bounding box del mondo...
 MilkshapeModel::loadModelData(): Caricati 84 vertici
 Generate 21 boundingBox2D
 Caricamento e posizionamento gemme e maschere...MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=43.8399, 50.4536
+Piazzata una gemma in (x,z)=-15.0313, 121.862
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-124.213, 123.523
+Piazzata una gemma in (x,z)=58.383, 81.5516
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-104.279, 73.2848
+Piazzata una gemma in (x,z)=53.1896, 27.4147
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-129.924, 2.23431
+Piazzata una gemma in (x,z)=-49.3778, 30.0305
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-25.5476, 69.0567
+Piazzata una gemma in (x,z)=57.883, 124.123
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=19.473, 84.4419
+Piazzata una gemma in (x,z)=38.617, 1.44396
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=84.3669, 74.4608
+Piazzata una gemma in (x,z)=69.0383, 126.53
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-83.2133, 52.8078
+Piazzata una gemma in (x,z)=56.9238, 46.475
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-56.7269, 35.3924
+Piazzata una gemma in (x,z)=-10.701, 35.1476
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=86.2708, 119.76
+Piazzata una gemma in (x,z)=114.409, 45.4219
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=36.6123, -14.5019
+Piazzata una gemma in (x,z)=-46.6159, 115.289
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-87.6335, 56.7336
+Piazzata una gemma in (x,z)=-115.55, 55.7464
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-136.125, 112.943
+Piazzata una gemma in (x,z)=26.1124, 17.9919
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-78.8194, 110.791
+Piazzata una gemma in (x,z)=113.669, 2.82294
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-140.037, 45.6253
+Piazzata una gemma in (x,z)=43.7665, 26.0752
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-35.7471, 14.8607
+Piazzata una gemma in (x,z)=96.6914, 51.3459
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=111.859, -20.1208
+Piazzata una gemma in (x,z)=-32.4142, 108.416
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-21.8571, 82.7339
+Piazzata una gemma in (x,z)=-14.9434, 34.5461
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=35.3937, 26.1616
+Piazzata una gemma in (x,z)=-85.118, 13.1389
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-23.2201, 100.137
+Piazzata una gemma in (x,z)=61.8818, -11.0763
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-139.327, 114.204
+Piazzata una gemma in (x,z)=-134.783, 13.6801
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-111.558, 123.669
+Piazzata una gemma in (x,z)=104.624, 64.3455
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-64.0134, 63.7165
+Piazzata una gemma in (x,z)=43.0616, 29.248
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=84.9607, 30.1979
+Piazzata una gemma in (x,z)=91.1461, 88.5332
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-21.3517, 75.1572
+Piazzata una gemma in (x,z)=-143.121, 83.9864
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-7.78387, 49.3418
+Piazzata una gemma in (x,z)=-44.8392, 81.6057
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=62.5261, 89.8946
+Piazzata una gemma in (x,z)=-0.293569, 92.8871
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-53.3514, 81.5059
+Piazzata una gemma in (x,z)=74.4626, 66.9096
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-37.2192, 102.417
+Piazzata una gemma in (x,z)=-11.8151, 23.8914
 MilkshapeModel::loadModelData(): Caricati 41 vertici
-Piazzata una gemma in (x,z)=-127.434, 109.489
+Piazzata una gemma in (x,z)=118.306, -30.7872
 MilkshapeModel::loadModelData(): Caricati 279 vertici
 MilkshapeModel::loadModelData(): Caricati 279 vertici
 MilkshapeModel::loadModelData(): Caricati 279 vertici
 Livello 1 caricato correttamente
-MilkshapeModel::loadModelData(): Caricati 133 vertici
+MilkshapeModel::loadModelData(): Caricati 62 vertici
 Creazione finestra
 AkuAku::LoadGLTextures(f1,f2)...OK
 MenuMgr::loadTextures(f1,f2,f3)...OK
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=33.675,1.3,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=56.9,-12.35,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=108.681,-0.428593,5,5
+Enemy::isColliding(camera): collisione con (x,z,w,h)=59.2811,13.4641,2,2
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=13.5006,19.4697,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.1523,13.8891,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=38.8326,22.7361,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=48.2324,23.0291,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=55.8576,41.4856,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=72.0713,61.9587,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=61.1238,83.1337,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-10.2799,37.9214,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-12.1758,30.6929,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-13.7367,26.6719,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=33.6918,2.296,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.8787,-8.29531,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=94.2225,-127.932,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=119.924,-35.7762,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=115.385,-2.16373,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=117.183,42.0929,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=107.386,63.7684,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=93.8778,86.5441,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=71.6948,126.673,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.6538,124.283,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=2.19427,95.5897,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-46.5874,32.6746,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-82.3676,13.711,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=33.6217,-0.974001,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=56.9227,-10.446,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=113.39,-30.8527,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=116.463,2.36147,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=113.905,40.445,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=101.459,59.3471,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=93.8769,84.3638,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=71.7297,123.529,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.6441,123.397,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.5072,84.3227,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=75.4189,69.7009,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-7.97508,34.0974,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-12.1619,34.5119,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-42.0741,83.1152,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-49.2748,110.302,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-19.9438,120.801,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=0.738961,95.6196,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=19.5198,21.4703,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.2432,20.3252,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=37.3515,4.2168,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=113.432,-28.643,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=92.29,-126.407,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=114.623,-2.13277,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=114.966,40.5015,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=93.6173,83.5665,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=71.327,121.602,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.6037,126.231,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-9.05902,24.265,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-112.893,57.7793,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-37.1334,109.737,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=54.3329,84.3301,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-46.6265,32.1728,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-49.8274,78.543,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-5.22389,89.0168,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=91.9233,54.0411,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=113.081,5.53455,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=26.1552,13.0056,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.4644,16.5973,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-12.2055,37.8348,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-12.7917,37.2904,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-82.4106,14.8477,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-134.288,8.7073,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=13.6143,14.8731,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.2207,17.202,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-9.10593,19.0317,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=51.7338,30.125,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=59.6783,43.46,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=53.3962,76.7591,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=73.078,69.6148,5,5
+Enemy::isColliding(camera): collisione con (x,z,w,h)=50.8961,62.4874,2,2
+GAME OVER: life = 0
+Enemy::isColliding(camera): collisione con (x,z,w,h)=11.6802,5.90461,2,2
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=13.5711,18.2639,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-19.8901,31.9045,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-15.5786,34.1256,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-42.1041,77.8481,5,5
+GAME OVER: life = 0
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=33.6665,1.09558,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=61.0975,-8.30261,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=93.1948,-126.481,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=117.88,-35.5248,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=116.394,-2.03983,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=115.993,40.704,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=105.686,59.4734,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=93.8729,90.1159,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=71.7557,122.89,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=60.6763,125.316,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=2.43401,94.0347,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-42.3172,78.7705,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-112.92,55.6677,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-134.165,16.2262,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-142.481,-105.328,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-14.0964,26.6731,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=19.8607,21.4367,5,5
+WIN! # masks = 3
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=33.6308,-1.08108,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=51.8119,22.6085,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=53.245,41.7136,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-47.112,32.6385,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-82.4164,10.5093,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.2124,21.4456,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=21.2122,20.6433,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=61.9825,-8.29268,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=94.2748,-130.669,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=46.3781,27.9183,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=45.6509,29.0555,5,5
+Pickable3DObject::isCollidingWith(other(): collisione con (x,z,w,h)=-140.876,-100.372,5,5
+WIN! # masks = 3

@@ -1,11 +1,16 @@
+#include <cmath>
 #include "Enemy.h"
 #include "MyFPSCamera.h"
 #include "BoundingBox2D.h"
 #include "PlayerStats.h"
 #include "WindowMgr.h"
+#include "SoundMgr.h"
 
 extern PlayerStats pStats;
 extern WindowMgr winMgr;
+extern SoundMgr *sndMgr;
+
+static const float PI_GRECO = 3.1415926535;
 
 Enemy::Enemy(void)
 {
@@ -45,9 +50,18 @@ void Enemy:: setAngle(double deltaT)
 
 	bound.x = xpos - bound.w / 2;
 	bound.z = zpos - bound.h / 2;
+
+
+	//se è abbastanza vicino al giocatore fa partire risata malefica
+	float d = sqrt(pow((camera.xpos - xpos), 2) + pow((camera.zpos - zpos), 2));
+	if (d < 25.0f) {
+
+		sndMgr->play("MORROS", true);
+	}
+
 }
 
-bool Enemy:: isColliding(BoundingBox2D playerBox)
+bool Enemy::isColliding(BoundingBox2D playerBox)
 {
 	//se il gioco è in pausa non aggiorna
 	if (winMgr.paused)
@@ -77,14 +91,18 @@ bool Enemy:: isColliding(BoundingBox2D playerBox)
 
 }
 
-
+float angle = 0.0f; float rotationSpeed = 100.0f;
 void Enemy::draw()
 {
-	//glPushMatrix();		//### lo aggiungo per colpa della chiama a glTranslatef in questa funzione
-	//che mi sposta tutto il sist. di rif., con il popMatrix faccio tornare tutto come era prima della chiamata
 
 	if (!active)
 		return;
+		
+
+	glTranslatef(xpos, ypos, zpos);	//posiz.
+		
+	billboardCheatSphericalBegin();	//ruoto nella direzione del giocatore(fa push prima)
+
 
 	GLboolean texEnabled = glIsEnabled(GL_TEXTURE_2D);
 
@@ -117,10 +135,6 @@ void Enemy::draw()
 		}
 
 
-		//traslo il modello nella sua posizione attuale
-		glTranslatef(xpos, ypos, zpos);
-
-
 		//disegno triangoli
 		glBegin(GL_TRIANGLES);
 		{
@@ -148,7 +162,8 @@ void Enemy::draw()
 		glDisable(GL_TEXTURE_2D);
 
 
-	//glPopMatrix();		//####
+	billboardEnd(); //popMatrix
+	
 }
 
 
@@ -179,4 +194,39 @@ void Enemy::enableAndResetPos() {
 	zpos = 100.0f;
 
 	active = true;
+}
+
+
+void Enemy::billboardCheatSphericalBegin() {
+	
+	float modelview[16];
+	int i,j;
+
+	// save the current modelview matrix
+	glPushMatrix();
+
+	// get the current modelview matrix
+	glGetFloatv(GL_MODELVIEW_MATRIX , modelview);
+
+	// undo all rotations
+	// beware all scaling is lost as well 
+	for( i=0; i<3; i++ ) 
+	    for( j=0; j<3; j++ ) {
+		if ( i==j )
+		    modelview[i*4+j] = 1.0;
+		else
+		    modelview[i*4+j] = 0.0;
+	    }
+
+	// set the modelview with no rotations
+	glLoadMatrixf(modelview);
+}
+
+
+
+void Enemy::billboardEnd() {
+
+	// restore the previously 
+	// stored modelview matrix
+	glPopMatrix();
 }

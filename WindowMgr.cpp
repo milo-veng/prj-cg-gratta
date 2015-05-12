@@ -283,7 +283,7 @@ GLvoid WindowMgr::ReSizeGLScene(GLsizei width, GLsizei height)					// Resize And
 int WindowMgr::InitGL(GLvoid)													// All Setup For OpenGL Goes Here
 {
 	levelsMgr->get()->reloadTextures();							//ricarica le texture di tutti i modelli
-
+	e.reloadTextures(); 
 
 	glEnable(GL_TEXTURE_2D);										// Enable Texture Mapping ( NEW )
 	glShadeModel(GL_FLAT);										// Enable flat(low poly style) Shading
@@ -353,10 +353,7 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 
 
 	/* DISEGNO SCENA 3D oppure DISEGNO MENU */
-	/*if (menu.showingMainMenu) {
-		menu.drawMainMenu();
-		return TRUE;
-	}*/
+
 	
 	//se l'utente si trova in un menu disegna il menu e rit. true, altrimenti continua e disegna il gioco
 	if (menu.draw())
@@ -365,6 +362,11 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 
 	//se il gioco è in pausa non disegna niente
 	if (!paused) {
+		glEnable(GL_DEPTH_TEST); //enable the depth testing
+		glEnable(GL_LIGHTING); //enable the lighting
+		glEnable(GL_LIGHT0); //enable LIGHT0, our Diffuse Light
+		glShadeModel(GL_FLAT); //set the shader to flat(per low poly effect) shader
+
 
 		//telecamera, xpos + lx; zpos+lz
 		gluLookAt(camera.xpos, camera.ypos, camera.zpos, camera.xpos + camera.lx, camera.ypos + camera.ly, camera.zpos + camera.lz, 0.0f, 1.0f, 0.0f);
@@ -378,14 +380,10 @@ int WindowMgr::DrawGLScene(GLvoid)												// Here's Where We Do All The Draw
 			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 		}
 
+
 		//disegno skybox + mappa + gemme + maschere
 		levelsMgr->get()->drawLevel(deltaT);
 
-
-		glEnable(GL_DEPTH_TEST); //enable the depth testing
-		glEnable(GL_LIGHTING); //enable the lighting
-		glEnable(GL_LIGHT0); //enable LIGHT0, our Diffuse Light
-		glShadeModel(GL_FLAT); //set the shader to flat(per low poly effect) shader
 
 		//disegna il fantasmino
 		e.draw();

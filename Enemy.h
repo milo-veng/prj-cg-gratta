@@ -23,5 +23,9 @@ public:
 
 	//usato per riposizionarlo al suo posto riattivato, usato quando si ricarica liv. dopo la sconfitta
 	void enableAndResetPos();
+
+	//usate per ruotare enemy nella direzione della camera
+	void billboardCheatSphericalBegin();
+	void billboardEnd();
 };
 
