@@ -9,7 +9,7 @@ extern MenuMgr menu;
 WindowMgr::WindowMgr()
 {
 	active = TRUE;
-	fullscreen = FALSE;
+	fullscreen = TRUE;
 
 #if (_MSC_VER < 1800)	
 		//winapi
@@ -534,16 +534,17 @@ BOOL WindowMgr::CreateGLWindow(char* title)
 		if (ChangeDisplaySettings(&dmScreenSettings, CDS_FULLSCREEN) != DISP_CHANGE_SUCCESSFUL)
 		{
 			// If The Mode Fails, Offer Two Options.  Quit Or Use Windowed Mode.
-			if (MessageBox(NULL, "The Requested Fullscreen Mode Is Not Supported By\nYour Video Card. Use Windowed Mode Instead?", "NeHe GL", MB_YESNO | MB_ICONEXCLAMATION) == IDYES)
-			{
+			//if (MessageBox(NULL, "The Requested Fullscreen Mode Is Not Supported By\nYour Video Card. Use Windowed Mode Instead?", "NeHe GL", MB_YESNO | MB_ICONEXCLAMATION) == IDYES)
+			//{
+			logFile << "Fullscreen mode not supported!" << endl;
 				fullscreen = FALSE;									// Windowed Mode Selected.  Fullscreen = FALSE
-			}
-			else
+			//}
+			/*else
 			{
 				// Pop Up A Message Box Letting User Know The Program Is Closing.
 				MessageBox(NULL, "Program Will Now Close.", "ERROR", MB_OK | MB_ICONSTOP);
 				return FALSE;										// Return FALSE
-			}
+			}*/
 		}
 	}
 

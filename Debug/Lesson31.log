@@ -1,8 +1,8 @@
-﻿Compilazione avviata 12/05/2015 14.35.56.
+﻿Compilazione avviata 13/05/2015 10.47.00.
      1>Progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" sul nodo 2 (destinazioni: Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Enemy.cpp
-         Enemy.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt WindowMgr.cpp
+         WindowMgr.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\progetto cg.exe" /INCREMENTAL /NOLOGO opengl32.lib glu32.lib glaux.lib odbc32.lib odbccp32.lib audiere.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\progetto cg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\progetto cg.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\BoundingBox2D.obj
          .\Debug\Enemy.obj
@@ -23,9 +23,13 @@
          .\Debug\TerrainModel.obj
          .\Debug\Text.obj
          .\Debug\WindowMgr.obj
+     1>SOIL.lib(image_DXT.obj) : warning LNK4099: impossibile trovare il PDB 'vc100.pdb' con 'SOIL.lib(image_DXT.obj)' o in 'C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Debug\vc100.pdb'; oggetto collegato senza informazioni di debug
+     1>SOIL.lib(image_helper.obj) : warning LNK4099: impossibile trovare il PDB 'vc100.pdb' con 'SOIL.lib(image_helper.obj)' o in 'C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Debug\vc100.pdb'; oggetto collegato senza informazioni di debug
+     1>SOIL.lib(SOIL.obj) : warning LNK4099: impossibile trovare il PDB 'vc100.pdb' con 'SOIL.lib(SOIL.obj)' o in 'C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Debug\vc100.pdb'; oggetto collegato senza informazioni di debug
+     1>SOIL.lib(stb_image_aug.obj) : warning LNK4099: impossibile trovare il PDB 'vc100.pdb' con 'SOIL.lib(stb_image_aug.obj)' o in 'C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Debug\vc100.pdb'; oggetto collegato senza informazioni di debug
          Lesson31.vcxproj -> C:\Users\Amila\Documents\GitHub\prj-cg-gratta\.\Debug\progetto cg.exe
      1>Compilazione progetto "C:\Users\Amila\Documents\GitHub\prj-cg-gratta\Lesson31.vcxproj" (destinazioni: Build) completata.
 
 Compilazione completata.
 
-Tempo trascorso 00:00:01.32
+Tempo trascorso 00:00:01.48
